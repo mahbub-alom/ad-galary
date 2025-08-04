@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ad-container {
+    width: 728px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #e8f5e8 0%, #f0f8ff 100%);
+}
+
+.background-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(139, 195, 74, 0.1), rgba(76, 175, 80, 0.1));
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.logo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e7d32;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    flex: 1;
+}
+
+.headline {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #388e3c;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+.product-showcase {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    text-align: center;
+    opacity: 0;
+    animation: fadeInScale 0.8s ease-out forwards;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-item:nth-child(1) { animation-delay: 0.9s; }
+.product-item:nth-child(2) { animation-delay: 1.1s; }
+.product-item:nth-child(3) { animation-delay: 1.3s; }
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+    border-radius: 50%;
+    margin: 0 auto 5px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.product-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.product-item span {
+    font-size: 11px;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 1.5s forwards;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+}
+
+.floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bubble {
+    position: absolute;
+    background: rgba(76, 175, 80, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.bubble-1 {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 50px;
+    animation-delay: 0s;
+}
+
+.bubble-2 {
+    width: 40px;
+    height: 40px;
+    bottom: 30px;
+    right: 100px;
+    animation-delay: 2s;
+}
+
+.bubble-3 {
+    width: 30px;
+    height: 30px;
+    top: 60%;
+    right: 20px;
+    animation-delay: 4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+.ad-container:hover .bubble {
+    animation-duration: 3s;
+}
+
+.ad-container:hover .product-item {
+    transform: scale(1.02);
+}

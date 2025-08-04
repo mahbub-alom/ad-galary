@@ -1,0 +1,123 @@
+{
+  "ads": [
+    {
+      "id": "1",
+      "name": "Meril Advanced Skincare Collection",
+      "slug": "meril-skincare-banner",
+      "brand": "Meril",
+      "category": "Skincare",
+      "dimensions": "728x300",
+      "fileSize": "245 KB",
+      "creationDate": "2024-01-15",
+      "filePath": "/ads-data/ads/meril-skincare-banner/",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Interactive banner showcasing Meril's premium skincare collection with elegant animations"
+    },
+    {
+      "id": "2",
+      "name": "Meril Glow Serum Campaign",
+      "slug": "meril-glow-serum",
+      "brand": "Meril",
+      "category": "Skincare",
+      "dimensions": "300x600",
+      "fileSize": "180 KB",
+      "creationDate": "2024-01-10",
+      "filePath": "/ads-data/ads/meril-glow-serum/",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Vertical banner highlighting the new Glow Serum with before/after comparisons"
+    },
+    {
+      "id": "3",
+      "name": "Meril Natural Beauty Range",
+      "slug": "meril-natural-beauty",
+      "brand": "Meril",
+      "category": "Skincare",
+      "dimensions": "970x250",
+      "fileSize": "320 KB",
+      "creationDate": "2024-02-01",
+      "filePath": "/ads-data/ads/meril-natural-beauty/",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Leaderboard banner promoting natural ingredients and organic skincare solutions"
+    },
+    {
+      "id": "4",
+      "name": "Lux Soap Premium Collection",
+      "slug": "lux-soap-premium",
+      "brand": "Lux",
+      "category": "Personal Care",
+      "dimensions": "728x90",
+      "fileSize": "150 KB",
+      "creationDate": "2024-01-20",
+      "filePath": "/ads-data/ads/lux-soap-premium/",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Elegant banner showcasing Lux's premium soap collection with luxury aesthetics"
+    },
+    {
+      "id": "5",
+      "name": "Lux Fragrance Experience",
+      "slug": "lux-fragrance-experience",
+      "brand": "Lux",
+      "category": "Personal Care",
+      "dimensions": "336x280",
+      "fileSize": "200 KB",
+      "creationDate": "2024-02-05",
+      "filePath": "/ads-data/ads/lux-fragrance-experience/",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Interactive ad featuring fragrance selection with sensory experience elements"
+    },
+    {
+      "id": "6",
+      "name": "Lux Spa Collection",
+      "slug": "lux-spa-collection",
+      "brand": "Lux",
+      "category": "Personal Care",
+      "dimensions": "300x250",
+      "fileSize": "175 KB",
+      "creationDate": "2024-02-10",
+      "filePath": "/ads-data/ads/lux-spa-collection/",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Medium rectangle banner promoting spa-quality bath products with relaxing visuals"
+    },
+    {
+      "id": "7",
+      "name": "Pepsi Generation Next",
+      "slug": "pepsi-generation-next",
+      "brand": "Pepsi",
+      "category": "Food & Beverage",
+      "dimensions": "728x300",
+      "fileSize": "400 KB",
+      "creationDate": "2024-01-25",
+      "filePath": "/ads-data/ads/pepsi-generation-next/",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Dynamic banner targeting young consumers with vibrant animations and music"
+    },
+    {
+      "id": "8",
+      "name": "Pepsi Lifestyle Campaign",
+      "slug": "pepsi-lifestyle-interactive",
+      "brand": "Pepsi",
+      "category": "Lifestyle",
+      "dimensions": "970x90",
+      "fileSize": "350 KB",
+      "creationDate": "2024-02-15",
+      "filePath": "/ads-data/ads/pepsi-lifestyle-interactive/",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Interactive lifestyle banner with gamification elements and social sharing"
+    },
+    {
+      "id": "9",
+      "name": "Pepsi Summer Refresh",
+      "slug": "pepsi-summer-refresh",
+      "brand": "Pepsi",
+      "category": "Food & Beverage",
+      "dimensions": "300x600",
+      "fileSize": "280 KB",
+      "creationDate": "2024-02-20",
+      "filePath": "/ads-data/ads/pepsi-summer-refresh/",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "description": "Vertical summer campaign banner with cooling effects and seasonal themes"
+    }
+  ],
+  "brands": ["Meril", "Lux", "Pepsi"],
+  "categories": ["Skincare", "Personal Care", "Food & Beverage", "Lifestyle"]
+}
