@@ -2,7 +2,8 @@ import { Ad, AdMetadata } from '@/types/ad';
 
 export async function getAdsMetadata(): Promise<AdMetadata> {
   try {
-    const response = await fetch('/ads-data/ads-metadata.json');
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    const response = await fetch(`${baseUrl}/ads-data/ads-metadata.json`);
     if (!response.ok) {
       throw new Error('Failed to fetch ads metadata');
     }
@@ -12,6 +13,7 @@ export async function getAdsMetadata(): Promise<AdMetadata> {
     return { ads: [], brands: [], categories: [] };
   }
 }
+
 
 export async function getAdBySlug(slug: string): Promise<Ad | null> {
   try {

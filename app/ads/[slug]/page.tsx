@@ -1,8 +1,8 @@
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import { ArrowLeft, Calendar, Tag, Monitor, HardDrive } from 'lucide-react';
-import { getAdBySlug, getAdsMetadata } from '@/lib/ads';
-import type { Metadata } from 'next';
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { ArrowLeft, Calendar, Tag, Monitor, HardDrive } from "lucide-react";
+import { getAdBySlug, getAdsMetadata } from "@/lib/ads";
+import type { Metadata } from "next";
 
 interface AdPageProps {
   params: {
@@ -17,21 +17,28 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: AdPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: AdPageProps): Promise<Metadata> {
+  console.log("slag ahere ",params.slug);
   const ad = await getAdBySlug(params.slug);
-  
+
   if (!ad) {
     return {
-      title: 'Ad Not Found - The Bridgers',
+      title: "Ad Not Found - The Bridgers",
     };
   }
 
   return {
     title: `${ad.name} - The Bridgers`,
-    description: ad.description || `${ad.name} - A ${ad.category} advertisement by ${ad.brand}`,
+    description:
+      ad.description ||
+      `${ad.name} - A ${ad.category} advertisement by ${ad.brand}`,
     openGraph: {
       title: `${ad.name} - The Bridgers`,
-      description: ad.description || `${ad.name} - A ${ad.category} advertisement by ${ad.brand}`,
+      description:
+        ad.description ||
+        `${ad.name} - A ${ad.category} advertisement by ${ad.brand}`,
       images: [ad.previewImage],
     },
   };
@@ -45,45 +52,45 @@ export default async function AdPage({ params }: AdPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main className="bg-gray-50 min-h-screen">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-6xl">
         {/* Back Navigation */}
         <div className="mb-6">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors"
           >
-            <ArrowLeft className="h-4 w-4" />
+            <ArrowLeft className="w-4 h-4" />
             <span>Back to Gallery</span>
           </Link>
         </div>
 
         {/* Ad Title */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">{ad.name}</h1>
-          <div className="flex items-center space-x-4 text-sm text-gray-600">
+          <h1 className="mb-2 font-bold text-gray-900 text-3xl">{ad.name}</h1>
+          <div className="flex items-center space-x-4 text-gray-600 text-sm">
             <div className="flex items-center space-x-1">
-              <Tag className="h-4 w-4" />
+              <Tag className="w-4 h-4" />
               <span>{ad.brand}</span>
             </div>
             <div className="flex items-center space-x-1">
-              <Calendar className="h-4 w-4" />
+              <Calendar className="w-4 h-4" />
               <span>{new Date(ad.creationDate).toLocaleDateString()}</span>
             </div>
-            <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">
+            <span className="bg-blue-100 px-2 py-1 rounded-full font-medium text-blue-800 text-xs">
               {ad.category}
             </span>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="gap-8 grid grid-cols-1 lg:grid-cols-4">
           {/* Ad Content */}
           <div className="lg:col-span-3">
-            <div className="bg-white rounded-lg shadow-sm border overflow-hidden">
-              <div className="aspect-video bg-gray-100 relative">
+            <div className="bg-white shadow-sm border rounded-lg overflow-hidden">
+              <div className="relative bg-gray-100 aspect-video">
                 <iframe
                   src={`/ads-data/ads/${ad.slug}/index.html`}
-                  className="w-full h-full border-0"
+                  className="border-0 w-full h-full"
                   title={ad.name}
                   allowFullScreen
                 />
@@ -93,52 +100,64 @@ export default async function AdPage({ params }: AdPageProps) {
 
           {/* Ad Metadata */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-sm border p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Ad Details</h3>
-              
+            <div className="bg-white shadow-sm p-6 border rounded-lg">
+              <h3 className="mb-4 font-semibold text-gray-900 text-lg">
+                Ad Details
+              </h3>
+
               <div className="space-y-4">
                 <div>
                   <div className="flex items-center space-x-2 mb-1">
-                    <Tag className="h-4 w-4 text-gray-500" />
-                    <span className="text-sm font-medium text-gray-700">Brand</span>
+                    <Tag className="w-4 h-4 text-gray-500" />
+                    <span className="font-medium text-gray-700 text-sm">
+                      Brand
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-900 ml-6">{ad.brand}</p>
+                  <p className="ml-6 text-gray-900 text-sm">{ad.brand}</p>
                 </div>
 
                 <div>
                   <div className="flex items-center space-x-2 mb-1">
-                    <Tag className="h-4 w-4 text-gray-500" />
-                    <span className="text-sm font-medium text-gray-700">Category</span>
+                    <Tag className="w-4 h-4 text-gray-500" />
+                    <span className="font-medium text-gray-700 text-sm">
+                      Category
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-900 ml-6">{ad.category}</p>
+                  <p className="ml-6 text-gray-900 text-sm">{ad.category}</p>
                 </div>
 
                 <div>
                   <div className="flex items-center space-x-2 mb-1">
-                    <Monitor className="h-4 w-4 text-gray-500" />
-                    <span className="text-sm font-medium text-gray-700">Dimensions</span>
+                    <Monitor className="w-4 h-4 text-gray-500" />
+                    <span className="font-medium text-gray-700 text-sm">
+                      Dimensions
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-900 ml-6">{ad.dimensions}</p>
+                  <p className="ml-6 text-gray-900 text-sm">{ad.dimensions}</p>
                 </div>
 
                 <div>
                   <div className="flex items-center space-x-2 mb-1">
-                    <HardDrive className="h-4 w-4 text-gray-500" />
-                    <span className="text-sm font-medium text-gray-700">File Size</span>
+                    <HardDrive className="w-4 h-4 text-gray-500" />
+                    <span className="font-medium text-gray-700 text-sm">
+                      File Size
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-900 ml-6">{ad.fileSize}</p>
+                  <p className="ml-6 text-gray-900 text-sm">{ad.fileSize}</p>
                 </div>
 
                 <div>
                   <div className="flex items-center space-x-2 mb-1">
-                    <Calendar className="h-4 w-4 text-gray-500" />
-                    <span className="text-sm font-medium text-gray-700">Created</span>
+                    <Calendar className="w-4 h-4 text-gray-500" />
+                    <span className="font-medium text-gray-700 text-sm">
+                      Created
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-900 ml-6">
-                    {new Date(ad.creationDate).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
+                  <p className="ml-6 text-gray-900 text-sm">
+                    {new Date(ad.creationDate).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
                     })}
                   </p>
                 </div>

@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://the-bridgers.ai/'),
   title: 'The Bridgers - Creative Ad Gallery',
   description: 'Explore our comprehensive collection of creative advertisements across multiple brands and categories. Discover innovative marketing campaigns and interactive experiences.',
   keywords: 'advertising, creative ads, marketing, campaigns, interactive media, brand advertising',
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
 };
+
 
 export default function RootLayout({
   children,
