@@ -22,19 +22,19 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="font-medium text-gray-700 hover:text-blue-600 transition-colors"
+              className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
             >
               Gallery
             </Link>
             <Link
               href="/about"
-              className="font-medium text-gray-700 hover:text-blue-600 transition-colors"
+              className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="font-medium text-gray-700 hover:text-blue-600 transition-colors"
+              className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
             >
               Contact
             </Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="focus:outline-none text-gray-700 hover:text-blue-600 focus:text-blue-600"
+              className="focus:outline-none text-gray-700 hover:text-[#0F828C] focus:text-[#0F828C]"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -61,21 +61,21 @@ export default function Navbar() {
             <div className="space-y-1 bg-white px-2 sm:px-3 pt-2 pb-3 border-t">
               <Link
                 href="/"
-                className="block px-3 py-2 font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="block px-3 py-2 font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Gallery
               </Link>
               <Link
                 href="/about"
-                className="block px-3 py-2 font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="block px-3 py-2 font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="block px-3 py-2 font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="block px-3 py-2 font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Contact

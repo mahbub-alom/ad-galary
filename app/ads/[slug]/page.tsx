@@ -58,7 +58,7 @@ export default async function AdPage({ params }: AdPageProps) {
         <div className="mb-6">
           <Link
             href="/"
-            className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors"
+            className="inline-flex items-center space-x-2 text-[#0F828C] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Gallery</span>
@@ -67,7 +67,7 @@ export default async function AdPage({ params }: AdPageProps) {
 
         {/* Ad Title */}
         <div className="mb-8">
-          <h1 className="mb-2 font-bold text-gray-900 text-3xl">{ad?.brand}: {ad?.name}</h1>
+          <h1 className="mb-2 font-bold text-[#0F828C] text-3xl">{ad?.brand}: {ad?.name}</h1>
 
         </div>
 
@@ -87,7 +87,7 @@ export default async function AdPage({ params }: AdPageProps) {
           </div>
 
           {/* Ad Metadata */}
-          <div className="lg:col-span-1">
+          {/* <div className="lg:col-span-1">
             <div className="bg-white shadow-sm p-6 border rounded-lg">
               <h3 className="mb-4 font-semibold text-gray-900 text-lg">
                 Ad Details
@@ -124,34 +124,48 @@ export default async function AdPage({ params }: AdPageProps) {
                   <p className="ml-6 text-gray-900 text-sm">{ad.dimensions}</p>
                 </div>
 
-                <div>
-                  <div className="flex items-center space-x-2 mb-1">
-                    <HardDrive className="w-4 h-4 text-gray-500" />
-                    <span className="font-medium text-gray-700 text-sm">
-                      File Size
-                    </span>
-                  </div>
-                  <p className="ml-6 text-gray-900 text-sm">{ad.fileSize}</p>
-                </div>
-
-                <div>
-                  <div className="flex items-center space-x-2 mb-1">
-                    <Calendar className="w-4 h-4 text-gray-500" />
-                    <span className="font-medium text-gray-700 text-sm">
-                      Created
-                    </span>
-                  </div>
-                  <p className="ml-6 text-gray-900 text-sm">
-                    {new Date(ad.creationDate).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </p>
-                </div>
+                
               </div>
             </div>
-          </div>
+          </div> */}
+          <div className="lg:col-span-1">
+  <div className="bg-gradient-to-br from-white via-gray-50 to-teal-50 shadow-md p-6 border border-gray-200 rounded-xl">
+    <h3 className="flex items-center gap-2 mb-5 font-bold text-teal-700 text-lg">
+      <Tag className="w-5 h-5 text-teal-600" />
+      Ad Details
+    </h3>
+
+    <div className="space-y-6">
+      {/* Brand */}
+      <div>
+        <div className="flex items-center gap-2 mb-1">
+          <Tag className="w-4 h-4 text-teal-500" />
+          <span className="font-medium text-gray-700 text-sm">Brand</span>
+        </div>
+        <p className="ml-6 font-semibold text-gray-900 text-sm">{ad.brand}</p>
+      </div>
+
+      {/* Category */}
+      <div>
+        <div className="flex items-center gap-2 mb-1">
+          <Tag className="w-4 h-4 text-rose-500" />
+          <span className="font-medium text-gray-700 text-sm">Category</span>
+        </div>
+        <p className="ml-6 font-semibold text-gray-900 text-sm">{ad.category}</p>
+      </div>
+
+      {/* Dimensions */}
+      <div>
+        <div className="flex items-center gap-2 mb-1">
+          <Monitor className="w-4 h-4 text-indigo-500" />
+          <span className="font-medium text-gray-700 text-sm">Dimensions</span>
+        </div>
+        <p className="ml-6 font-semibold text-gray-900 text-sm">{ad.dimensions}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </main>
