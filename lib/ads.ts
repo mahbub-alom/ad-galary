@@ -8,6 +8,7 @@ export async function getAdsMetadata(): Promise<AdMetadata> {
       throw new Error('Failed to fetch ads metadata');
     }
     return await response.json();
+    
   } catch (error) {
     console.error('Error fetching ads metadata:', error);
     return { ads: [], brands: [], categories: [] };

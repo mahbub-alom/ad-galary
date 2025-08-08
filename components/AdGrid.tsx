@@ -1,8 +1,10 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { Ad } from '@/types/ad';
 import AdCard from './AdCard';
-import { Search } from 'lucide-react';
+import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
+import SkeletonGrid, { SkeletonCard } from './SkeletonGrid';
 
 interface AdGridProps {
   ads: Ad[];
@@ -10,24 +12,30 @@ interface AdGridProps {
   error: string | null;
 }
 
+const ITEMS_PER_PAGE = 10;
+
 export default function AdGrid({ ads, loading, error }: AdGridProps) {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [skeletonLoading, setSkeletonLoading] = useState(false);
+
+  const totalPages = Math.ceil(ads.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const currentAds = ads.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  const handlePageChange = (page: number) => {
+    if (page === currentPage) return;
+
+    setSkeletonLoading(true);
+    setTimeout(() => {
+      setCurrentPage(page);
+      setSkeletonLoading(false);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 500); 
+  };
+
   if (loading) {
     return (
-      <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {Array.from({ length: 8 }).map((_, index) => (
-          <div key={index} className="bg-white shadow-sm border rounded-lg overflow-hidden animate-pulse">
-            <div className="bg-gray-200 aspect-video" />
-            <div className="space-y-3 p-4">
-              <div className="bg-gray-200 rounded w-3/4 h-4" />
-              <div className="bg-gray-200 rounded w-1/2 h-3" />
-              <div className="flex justify-between">
-                <div className="bg-gray-200 rounded w-1/4 h-3" />
-                <div className="bg-gray-200 rounded w-1/4 h-3" />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <SkeletonGrid />
     );
   }
 
@@ -51,10 +59,54 @@ export default function AdGrid({ ads, loading, error }: AdGridProps) {
   }
 
   return (
-    <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      {ads.map(ad => (
-        <AdCard key={ad.id} ad={ad} />
-      ))}
+    <div className="space-y-6">
+      {/* Ad Grid */}
+      <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {skeletonLoading
+          ? Array.from({ length: ITEMS_PER_PAGE }).map((_, index) => (
+              <SkeletonCard key={index} />
+            ))
+          : currentAds.map((ad) => <AdCard key={ad.id} ad={ad} />)}
+      </div>
+
+      {/* Pagination Controls */}
+      <div className="flex flex-wrap justify-center gap-2 pt-6">
+        {/* Prev Button */}
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+          className="bg-white hover:bg-gray-100 disabled:opacity-50 px-3 py-2 border border-gray-300 rounded text-gray-800 transition disabled:cursor-not-allowed"
+        >
+          <ChevronLeft className="w-4 h-4" />
+        </button>
+
+        {/* Numbered Buttons */}
+        {Array.from({ length: totalPages }).map((_, index) => {
+          const pageNumber = index + 1;
+          return (
+            <button
+              key={pageNumber}
+              onClick={() => handlePageChange(pageNumber)}
+              className={`px-4 py-2 rounded border ${
+                currentPage === pageNumber
+                  ? 'bg-[#0F828C] text-white border-[#0F828C]'
+                  : 'bg-white text-gray-800 border-gray-300 hover:bg-gray-100'
+              } transition`}
+            >
+              {pageNumber}
+            </button>
+          );
+        })}
+
+        {/* Next Button */}
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className="bg-white hover:bg-gray-100 disabled:opacity-50 px-3 py-2 border border-gray-300 rounded text-gray-800 transition disabled:cursor-not-allowed"
+        >
+          <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
     </div>
   );
 }

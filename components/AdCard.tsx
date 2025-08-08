@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Ad } from "@/types/ad";
-import { Eye, Calendar, Tag } from "lucide-react";
+import { Eye } from "lucide-react";
 
 interface AdCardProps {
   ad: Ad;

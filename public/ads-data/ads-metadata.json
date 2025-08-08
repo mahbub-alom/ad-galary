@@ -1,123 +1,773 @@
 {
   "ads": [
     {
-      "id": "1",
-      "name": "Advanced Skincare Collection",
-      "slug": "meril-skincare-banner",
-      "brand": "Meril",
-      "category": "Skincare",
-      "dimensions": "728x300",
-      "fileSize": "245 KB",
-      "creationDate": "2024-01-15",
-      "filePath": "/ads-data/ads/meril-skincare-banner/",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Interactive banner showcasing Meril's premium skincare collection with elegant animations"
-    },
-    {
-      "id": "2",
-      "name": "Glow Serum Campaign",
-      "slug": "meril-glow-serum",
-      "brand": "Meril",
-      "category": "Skincare",
+      "name": "3D Campaign",
+      "slug": "aci-3d",
+      "brand": "ACI",
+      "category": "3D",
       "dimensions": "300x600",
-      "fileSize": "180 KB",
-      "creationDate": "2024-01-10",
-      "filePath": "/ads-data/ads/meril-glow-serum/",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Vertical banner highlighting the new Glow Serum with before/after comparisons"
+      "shortDescription": "3D creative ad for ACI",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      "id": "3",
-      "name": "Natural Beauty Range",
-      "slug": "meril-natural-beauty",
-      "brand": "Meril",
-      "category": "Skincare",
-      "dimensions": "970x250",
-      "fileSize": "320 KB",
-      "creationDate": "2024-02-01",
-      "filePath": "/ads-data/ads/meril-natural-beauty/",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Leaderboard banner promoting natural ingredients and organic skincare solutions"
-    },
-    {
-      "id": "4",
-      "name": "Soap Premium Collection",
-      "slug": "lux-soap-premium",
-      "brand": "Lux",
-      "category": "Personal Care",
+      "name": "Animation Campaign",
+      "slug": "aarong-animation",
+      "brand": "Aarong",
+      "category": "Animation",
       "dimensions": "728x90",
-      "fileSize": "150 KB",
-      "creationDate": "2024-01-20",
-      "filePath": "/ads-data/ads/lux-soap-premium/",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Elegant banner showcasing Lux's premium soap collection with luxury aesthetics"
+      "shortDescription": "Animation creative ad for Aarong",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      "id": "5",
-      "name": "Fragrance Experience",
-      "slug": "lux-fragrance-experience",
-      "brand": "Lux",
-      "category": "Personal Care",
-      "dimensions": "336x280",
-      "fileSize": "200 KB",
-      "creationDate": "2024-02-05",
-      "filePath": "/ads-data/ads/lux-fragrance-experience/",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Interactive ad featuring fragrance selection with sensory experience elements"
+      "name": "Audio Campaign",
+      "slug": "airtel-audio",
+      "brand": "Airtel",
+      "category": "Audio",
+      "dimensions": "970x250",
+      "shortDescription": "Audio creative ad for Airtel",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      "id": "6",
-      "name": "Spa Collection",
-      "slug": "lux-spa-collection",
-      "brand": "Lux",
-      "category": "Personal Care",
-      "dimensions": "300x250",
-      "fileSize": "175 KB",
-      "creationDate": "2024-02-10",
-      "filePath": "/ads-data/ads/lux-spa-collection/",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Medium rectangle banner promoting spa-quality bath products with relaxing visuals"
+      "name": "Carousel Campaign",
+      "slug": "akij-carousel",
+      "brand": "Akij",
+      "category": "Carousel",
+      "dimensions": "728x90",
+      "shortDescription": "Carousel creative ad for Akij",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      "id": "7",
-      "name": "Generation Next",
-      "slug": "pepsi-generation-next",
-      "brand": "Pepsi",
-      "category": "Food & Beverage",
+      "name": "ClickToCall Campaign",
+      "slug": "angelic-clicktocall",
+      "brand": "Angelic",
+      "category": "ClickToCall",
+      "dimensions": "728x90",
+      "shortDescription": "ClickToCall creative ad for Angelic",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Contest Campaign",
+      "slug": "apex-contest",
+      "brand": "Apex",
+      "category": "Contest",
+      "dimensions": "970x250",
+      "shortDescription": "Contest creative ad for Apex",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Countdown Campaign",
+      "slug": "aygaz-countdown",
+      "brand": "Aygaz",
+      "category": "Countdown",
       "dimensions": "728x300",
-      "fileSize": "400 KB",
-      "creationDate": "2024-01-25",
-      "filePath": "/ads-data/ads/pepsi-generation-next/",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Dynamic banner targeting young consumers with vibrant animations and music"
+      "shortDescription": "Countdown creative ad for Aygaz",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      "id": "8",
-      "name": "Lifestyle Campaign",
-      "slug": "pepsi-lifestyle-interactive",
-      "brand": "Pepsi",
-      "category": "Lifestyle",
-      "dimensions": "970x90",
-      "fileSize": "350 KB",
-      "creationDate": "2024-02-15",
-      "filePath": "/ads-data/ads/pepsi-lifestyle-interactive/",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Interactive lifestyle banner with gamification elements and social sharing"
+      "name": "Cursor Campaign",
+      "slug": "banglalink-cursor",
+      "brand": "Banglalink",
+      "category": "Cursor",
+      "dimensions": "970x250",
+      "shortDescription": "Cursor creative ad for Banglalink",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      "id": "9",
-      "name": "Summer Refresh",
-      "slug": "pepsi-summer-refresh",
-      "brand": "Pepsi",
-      "category": "Food & Beverage",
+      "name": "Draggable Campaign",
+      "slug": "bata-draggable",
+      "brand": "Bata",
+      "category": "Draggable",
       "dimensions": "300x600",
-      "fileSize": "280 KB",
-      "creationDate": "2024-02-20",
-      "filePath": "/ads-data/ads/pepsi-summer-refresh/",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "description": "Vertical summer campaign banner with cooling effects and seasonal themes"
-    }
+      "shortDescription": "Draggable creative ad for Bata",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Dyanmic URL Campaign",
+      "slug": "bdtickets-dyanmic-url",
+      "brand": "BdTickets",
+      "category": "Dyanmic URL",
+      "dimensions": "300x600",
+      "shortDescription": "Dyanmic URL creative ad for BdTickets",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Expandable Campaign",
+      "slug": "bengal-meat-expandable",
+      "brand": "Bengal-Meat",
+      "category": "Expandable",
+      "dimensions": "300x250",
+      "shortDescription": "Expandable creative ad for Bengal-Meat",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Fireworks Campaign",
+      "slug": "berger-fireworks",
+      "brand": "Berger",
+      "category": "Fireworks",
+      "dimensions": "728x90",
+      "shortDescription": "Fireworks creative ad for Berger",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Flip Campaign",
+      "slug": "bkash-flip",
+      "brand": "Bkash",
+      "category": "Flip",
+      "dimensions": "300x250",
+      "shortDescription": "Flip creative ad for Bkash",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Floating Campaign",
+      "slug": "bruvana-floating",
+      "brand": "Bruvana",
+      "category": "Floating",
+      "dimensions": "970x90",
+      "shortDescription": "Floating creative ad for Bruvana",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Footer Scroll Campaign",
+      "slug": "butterfly-footer-scroll",
+      "brand": "Butterfly",
+      "category": "Footer Scroll",
+      "dimensions": "970x250",
+      "shortDescription": "Footer Scroll creative ad for Butterfly",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Gamification Campaign",
+      "slug": "chaldal-gamification",
+      "brand": "Chaldal",
+      "category": "Gamification",
+      "dimensions": "336x280",
+      "shortDescription": "Gamification creative ad for Chaldal",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Hover Campaign",
+      "slug": "closeup-hover",
+      "brand": "Closeup",
+      "category": "Hover",
+      "dimensions": "728x90",
+      "shortDescription": "Hover creative ad for Closeup",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Image Overlay Campaign",
+      "slug": "coke-image-overlay",
+      "brand": "Coke",
+      "category": "Image Overlay",
+      "dimensions": "300x250",
+      "shortDescription": "Image Overlay creative ad for Coke",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Interactive Campaign",
+      "slug": "coke-studio-interactive",
+      "brand": "Coke Studio",
+      "category": "Interactive",
+      "dimensions": "970x90",
+      "shortDescription": "Interactive creative ad for Coke Studio",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Interscroller Campaign",
+      "slug": "dano-interscroller",
+      "brand": "Dano",
+      "category": "Interscroller",
+      "dimensions": "970x90",
+      "shortDescription": "Interscroller creative ad for Dano",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Lead Generation Campaign",
+      "slug": "daraz-lead-generation",
+      "brand": "Daraz",
+      "category": "Lead Generation",
+      "dimensions": "970x250",
+      "shortDescription": "Lead Generation creative ad for Daraz",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Location Campaign",
+      "slug": "domino's-location",
+      "brand": "Domino's",
+      "category": "Location",
+      "dimensions": "728x300",
+      "shortDescription": "Location creative ad for Domino's",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Morph Campaign",
+      "slug": "drinko-morph",
+      "brand": "Drinko",
+      "category": "Morph",
+      "dimensions": "300x250",
+      "shortDescription": "Morph creative ad for Drinko",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Motion Campaign",
+      "slug": "ebl-motion",
+      "brand": "EBL",
+      "category": "Motion",
+      "dimensions": "300x250",
+      "shortDescription": "Motion creative ad for EBL",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Parallax Campaign",
+      "slug": "food-panda-parallax",
+      "brand": "Food Panda",
+      "category": "Parallax",
+      "dimensions": "336x280",
+      "shortDescription": "Parallax creative ad for Food Panda",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Prediction Campaign",
+      "slug": "fresh-prediction",
+      "brand": "Fresh",
+      "category": "Prediction",
+      "dimensions": "728x90",
+      "shortDescription": "Prediction creative ad for Fresh",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Ramadan Campaign",
+      "slug": "gp-ramadan",
+      "brand": "GP",
+      "category": "Ramadan",
+      "dimensions": "336x280",
+      "shortDescription": "Ramadan creative ad for GP",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Rotation Campaign",
+      "slug": "glucomaxd-rotation",
+      "brand": "GlucoMaxD",
+      "category": "Rotation",
+      "dimensions": "970x90",
+      "shortDescription": "Rotation creative ad for GlucoMaxD",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Scratch Campaign",
+      "slug": "godrej-scratch",
+      "brand": "Godrej",
+      "category": "Scratch",
+      "dimensions": "336x280",
+      "shortDescription": "Scratch creative ad for Godrej",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Selection Campaign",
+      "slug": "gold-kinen-selection",
+      "brand": "Gold Kinen",
+      "category": "Selection",
+      "dimensions": "970x250",
+      "shortDescription": "Selection creative ad for Gold Kinen",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Shake Campaign",
+      "slug": "harpic-shake",
+      "brand": "Harpic",
+      "category": "Shake",
+      "dimensions": "728x300",
+      "shortDescription": "Shake creative ad for Harpic",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Shooting Campaign",
+      "slug": "heidelberg-shooting",
+      "brand": "Heidelberg",
+      "category": "Shooting",
+      "dimensions": "728x300",
+      "shortDescription": "Shooting creative ad for Heidelberg",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Shoppable Campaign",
+      "slug": "holcim-shoppable",
+      "brand": "Holcim",
+      "category": "Shoppable",
+      "dimensions": "336x280",
+      "shortDescription": "Shoppable creative ad for Holcim",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Slider Campaign",
+      "slug": "ice-cool-slider",
+      "brand": "Ice Cool",
+      "category": "Slider",
+      "dimensions": "300x250",
+      "shortDescription": "Slider creative ad for Ice Cool",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Social Campaign",
+      "slug": "joya-social",
+      "brand": "Joya",
+      "category": "Social",
+      "dimensions": "970x90",
+      "shortDescription": "Social creative ad for Joya",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Special Campaign",
+      "slug": "kfc-special",
+      "brand": "KFC",
+      "category": "Special",
+      "dimensions": "970x90",
+      "shortDescription": "Special creative ad for KFC",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Swipe Campaign",
+      "slug": "kamasutra-swipe",
+      "brand": "Kamasutra",
+      "category": "Swipe",
+      "dimensions": "300x250",
+      "shortDescription": "Swipe creative ad for Kamasutra",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Takeover Campaign",
+      "slug": "lg-takeover",
+      "brand": "LG",
+      "category": "Takeover",
+      "dimensions": "728x90",
+      "shortDescription": "Takeover creative ad for LG",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Tap Campaign",
+      "slug": "lion-tap",
+      "brand": "Lion",
+      "category": "Tap",
+      "dimensions": "970x90",
+      "shortDescription": "Tap creative ad for Lion",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Tilt Campaign",
+      "slug": "m&s-tilt",
+      "brand": "M&S",
+      "category": "Tilt",
+      "dimensions": "336x280",
+      "shortDescription": "Tilt creative ad for M&S",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Uncategorized Campaign",
+      "slug": "maggi-uncategorized",
+      "brand": "Maggi",
+      "category": "Uncategorized",
+      "dimensions": "728x300",
+      "shortDescription": "Uncategorized creative ad for Maggi",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Video Campaign",
+      "slug": "meril-video",
+      "brand": "Meril",
+      "category": "Video",
+      "dimensions": "336x280",
+      "shortDescription": "Video creative ad for Meril",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Voice Speech Campaign",
+      "slug": "mortein-voice-speech",
+      "brand": "Mortein",
+      "category": "Voice Speech",
+      "dimensions": "300x250",
+      "shortDescription": "Voice Speech creative ad for Mortein",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Weather Campaign",
+      "slug": "movies-weather",
+      "brand": "Movies",
+      "category": "Weather",
+      "dimensions": "970x250",
+      "shortDescription": "Weather creative ad for Movies",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "3D Campaign",
+      "slug": "nagad-3d",
+      "brand": "Nagad",
+      "category": "3D",
+      "dimensions": "970x90",
+      "shortDescription": "3D creative ad for Nagad",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Animation Campaign",
+      "slug": "natura-animation",
+      "brand": "Natura",
+      "category": "Animation",
+      "dimensions": "336x280",
+      "shortDescription": "Animation creative ad for Natura",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Audio Campaign",
+      "slug": "nippon-audio",
+      "brand": "Nippon",
+      "category": "Audio",
+      "dimensions": "728x90",
+      "shortDescription": "Audio creative ad for Nippon",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Carousel Campaign",
+      "slug": "panjeree-carousel",
+      "brand": "Panjeree",
+      "category": "Carousel",
+      "dimensions": "728x300",
+      "shortDescription": "Carousel creative ad for Panjeree",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "ClickToCall Campaign",
+      "slug": "parachute-clicktocall",
+      "brand": "Parachute",
+      "category": "ClickToCall",
+      "dimensions": "728x90",
+      "shortDescription": "ClickToCall creative ad for Parachute",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Contest Campaign",
+      "slug": "polar-contest",
+      "brand": "Polar",
+      "category": "Contest",
+      "dimensions": "970x250",
+      "shortDescription": "Contest creative ad for Polar",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Countdown Campaign",
+      "slug": "pran-countdown",
+      "brand": "Pran",
+      "category": "Countdown",
+      "dimensions": "970x90",
+      "shortDescription": "Countdown creative ad for Pran",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Cursor Campaign",
+      "slug": "prime-bank-cursor",
+      "brand": "Prime Bank",
+      "category": "Cursor",
+      "dimensions": "970x90",
+      "shortDescription": "Cursor creative ad for Prime Bank",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Draggable Campaign",
+      "slug": "purplepatch-draggable",
+      "brand": "PurplePatch",
+      "category": "Draggable",
+      "dimensions": "970x250",
+      "shortDescription": "Draggable creative ad for PurplePatch",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Dyanmic URL Campaign",
+      "slug": "pusti-dyanmic-url",
+      "brand": "Pusti",
+      "category": "Dyanmic URL",
+      "dimensions": "728x300",
+      "shortDescription": "Dyanmic URL creative ad for Pusti",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Expandable Campaign",
+      "slug": "rfl-expandable",
+      "brand": "RFL",
+      "category": "Expandable",
+      "dimensions": "300x250",
+      "shortDescription": "Expandable creative ad for RFL",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Fireworks Campaign",
+      "slug": "rabbithole-fireworks",
+      "brand": "Rabbithole",
+      "category": "Fireworks",
+      "dimensions": "970x250",
+      "shortDescription": "Fireworks creative ad for Rabbithole",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Flip Campaign",
+      "slug": "radhuni-flip",
+      "brand": "Radhuni",
+      "category": "Flip",
+      "dimensions": "970x90",
+      "shortDescription": "Flip creative ad for Radhuni",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Floating Campaign",
+      "slug": "raywhite-floating",
+      "brand": "RayWhite",
+      "category": "Floating",
+      "dimensions": "728x90",
+      "shortDescription": "Floating creative ad for RayWhite",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Footer Scroll Campaign",
+      "slug": "realme-footer-scroll",
+      "brand": "Realme",
+      "category": "Footer Scroll",
+      "dimensions": "300x600",
+      "shortDescription": "Footer Scroll creative ad for Realme",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Gamification Campaign",
+      "slug": "robi-gamification",
+      "brand": "Robi",
+      "category": "Gamification",
+      "dimensions": "728x300",
+      "shortDescription": "Gamification creative ad for Robi",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Hover Campaign",
+      "slug": "rosa-hover",
+      "brand": "Rosa",
+      "category": "Hover",
+      "dimensions": "300x600",
+      "shortDescription": "Hover creative ad for Rosa",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Image Overlay Campaign",
+      "slug": "smc-image-overlay",
+      "brand": "SMC",
+      "category": "Image Overlay",
+      "dimensions": "970x90",
+      "shortDescription": "Image Overlay creative ad for SMC",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Interactive Campaign",
+      "slug": "sailor-interactive",
+      "brand": "Sailor",
+      "category": "Interactive",
+      "dimensions": "728x90",
+      "shortDescription": "Interactive creative ad for Sailor",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Interscroller Campaign",
+      "slug": "samsung-interscroller",
+      "brand": "Samsung",
+      "category": "Interscroller",
+      "dimensions": "728x90",
+      "shortDescription": "Interscroller creative ad for Samsung",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Lead Generation Campaign",
+      "slug": "sandalina-lead-generation",
+      "brand": "Sandalina",
+      "category": "Lead Generation",
+      "dimensions": "728x90",
+      "shortDescription": "Lead Generation creative ad for Sandalina",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Location Campaign",
+      "slug": "savlon-location",
+      "brand": "Savlon",
+      "category": "Location",
+      "dimensions": "728x300",
+      "shortDescription": "Location creative ad for Savlon",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Morph Campaign",
+      "slug": "shanta-morph",
+      "brand": "Shanta",
+      "category": "Morph",
+      "dimensions": "970x250",
+      "shortDescription": "Morph creative ad for Shanta",
+      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Motion Campaign",
+      "slug": "shohoz-motion",
+      "brand": "Shohoz",
+      "category": "Motion",
+      "dimensions": "728x90",
+      "shortDescription": "Motion creative ad for Shohoz",
+      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Parallax Campaign",
+      "slug": "shukhee-parallax",
+      "brand": "Shukhee",
+      "category": "Parallax",
+      "dimensions": "728x300",
+      "shortDescription": "Parallax creative ad for Shukhee",
+      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Prediction Campaign",
+      "slug": "singer-prediction",
+      "brand": "Singer",
+      "category": "Prediction",
+      "dimensions": "728x300",
+      "shortDescription": "Prediction creative ad for Singer",
+      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Ramadan Campaign",
+      "slug": "sundora-ramadan",
+      "brand": "Sundora",
+      "category": "Ramadan",
+      "dimensions": "728x90",
+      "shortDescription": "Ramadan creative ad for Sundora",
+      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Rotation Campaign",
+      "slug": "sunquick-rotation",
+      "brand": "Sunquick",
+      "category": "Rotation",
+      "dimensions": "728x90",
+      "shortDescription": "Rotation creative ad for Sunquick",
+      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Scratch Campaign",
+      "slug": "sunshine-scratch",
+      "brand": "Sunshine",
+      "category": "Scratch",
+      "dimensions": "336x280",
+      "shortDescription": "Scratch creative ad for Sunshine",
+      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Selection Campaign",
+      "slug": "supercrete-selection",
+      "brand": "SuperCrete",
+      "category": "Selection",
+      "dimensions": "970x90",
+      "shortDescription": "Selection creative ad for SuperCrete",
+      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Shake Campaign",
+      "slug": "surf-excel-shake",
+      "brand": "Surf-Excel",
+      "category": "Shake",
+      "dimensions": "728x90",
+      "shortDescription": "Shake creative ad for Surf-Excel",
+      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },{
+    "name": "3D Campaign",
+    "slug": "systema-3d",
+    "brand": "Systema",
+    "category": "3D",
+    "dimensions": "300x600",
+    "shortDescription": "3D creative ad for Systema",
+    "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Animation Campaign",
+    "slug": "taaza-animation",
+    "brand": "Taaza",
+    "category": "Animation",
+    "dimensions": "728x90",
+    "shortDescription": "Animation creative ad for Taaza",
+    "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Audio Campaign",
+    "slug": "teer-audio",
+    "brand": "Teer",
+    "category": "Audio",
+    "dimensions": "336x280",
+    "shortDescription": "Audio creative ad for Teer",
+    "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Carousel Campaign",
+    "slug": "timezone-carousel",
+    "brand": "Timezone",
+    "category": "Carousel",
+    "dimensions": "728x300",
+    "shortDescription": "Carousel creative ad for Timezone",
+    "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "ClickToCall Campaign",
+    "slug": "toffee-clicktocall",
+    "brand": "Toffee",
+    "category": "ClickToCall",
+    "dimensions": "970x250",
+    "shortDescription": "ClickToCall creative ad for Toffee",
+    "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Contest Campaign",
+    "slug": "tvs-contest",
+    "brand": "TVS",
+    "category": "Contest",
+    "dimensions": "970x90",
+    "shortDescription": "Contest creative ad for TVS",
+    "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Countdown Campaign",
+    "slug": "vaseline-countdown",
+    "brand": "Vaseline",
+    "category": "Countdown",
+    "dimensions": "300x250",
+    "shortDescription": "Countdown creative ad for Vaseline",
+    "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Cursor Campaign",
+    "slug": "walton-cursor",
+    "brand": "Walton",
+    "category": "Cursor",
+    "dimensions": "300x250",
+    "shortDescription": "Cursor creative ad for Walton",
+    "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Draggable Campaign",
+    "slug": "x-ceramics-draggable",
+    "brand": "X-Ceramics",
+    "category": "Draggable",
+    "dimensions": "728x90",
+    "shortDescription": "Draggable creative ad for X-Ceramics",
+    "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+  }
   ],
-  "brands": ["Meril", "Lux", "Pepsi", "Coca-Cola","mojo","Dove","Meril", "Lux", "Pepsi", "Coca-Cola","mojo","Dove"],
-  "categories": ["Skincare", "Personal Care", "Food & Beverage", "Lifestyle","Skincare", "Personal Care", "Food & Beverage", "Lifestyle"]
+  "brands": [
+   "Aarong", "ACI", "Airtel", "Akij", "Angelic", "Apex", "Aygaz", "Banglalink", "Bata", "BdTickets", "Bengal-Meat", "Berger", "Bkash", "Bruvana", "Butterfly", "Chaldal", "Closeup", "Coke", "Coke Studio", "Dano", "Daraz", "Domino's", "Drinko", "EBL", "Food Panda", "Fresh", "GlucoMaxD", "Godrej", "Gold Kinen", "GP", "Harpic", "Heidelberg", "Holcim", "Ice Cool", "Joya", "Kamasutra", "KFC", "LG", "Lion", "M&S", "Maggi", "Meril", "Mortein", "Movies", "Nagad", "Natura", "Nippon", "Panjeree", "Parachute", "Polar", "Pran", "Prime Bank", "PurplePatch", "Pusti", "Rabbithole", "Radhuni", "RayWhite", "Realme", "RFL", "Robi", "Rosa", "Sailor", "Samsung", "Sandalina", "Savlon", "Shanta", "Shohoz", "Shukhee", "Singer", "SMC", "Sundora", "Sunquick", "Sunshine", "SuperCrete", "Surf-Excel", "Systema", "Taaza", "Teer", "Timezone", "Toffee", "TVS", "Vaseline", "Walton", "X-Ceramics"
+
+  ],
+  "categories": [
+    "Skincare",
+    "Personal Care",
+    "Food & Beverage",
+    "Lifestyle",
+    "Skincare",
+    "Personal Care",
+    "Food & Beverage",
+    "Lifestyle"
+  ]
 }
