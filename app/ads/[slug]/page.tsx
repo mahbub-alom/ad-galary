@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: AdPageProps): Promise<Metadata> {
-  console.log("slag ahere ",params.slug);
+  console.log("slag ahere ", params.slug);
   const ad = await getAdBySlug(params.slug);
 
   if (!ad) {
@@ -67,8 +67,9 @@ export default async function AdPage({ params }: AdPageProps) {
 
         {/* Ad Title */}
         <div className="mb-8">
-          <h1 className="mb-2 font-bold text-[#0F828C] text-3xl">{ad?.brand}: {ad?.name}</h1>
-
+          <h1 className="mb-2 font-bold text-[#0F828C] text-3xl">
+            {ad?.brand}: {ad?.name}
+          </h1>
         </div>
 
         <div className="gap-8 grid grid-cols-1 lg:grid-cols-4">
@@ -129,43 +130,54 @@ export default async function AdPage({ params }: AdPageProps) {
             </div>
           </div> */}
           <div className="lg:col-span-1">
-  <div className="bg-gradient-to-br from-white via-gray-50 to-teal-50 shadow-md p-6 border border-gray-200 rounded-xl">
-    <h3 className="flex items-center gap-2 mb-5 font-bold text-teal-700 text-lg">
-      <Tag className="w-5 h-5 text-teal-600" />
-      Ad Details
-    </h3>
+            <div className="bg-gradient-to-br from-white via-gray-50 to-teal-50 shadow-md p-6 border border-gray-200 rounded-xl">
+              <h3 className="flex items-center gap-2 mb-5 font-bold text-teal-700 text-lg">
+                <Tag className="w-5 h-5 text-teal-600" />
+                Ad Details
+              </h3>
 
-    <div className="space-y-6">
-      {/* Brand */}
-      <div>
-        <div className="flex items-center gap-2 mb-1">
-          <Tag className="w-4 h-4 text-teal-500" />
-          <span className="font-medium text-gray-700 text-sm">Brand</span>
-        </div>
-        <p className="ml-6 font-semibold text-gray-900 text-sm">{ad.brand}</p>
-      </div>
+              <div className="space-y-6">
+                {/* Brand */}
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <Tag className="w-4 h-4 text-teal-500" />
+                    <span className="font-medium text-gray-700 text-sm">
+                      Brand
+                    </span>
+                  </div>
+                  <p className="ml-6 font-semibold text-gray-900 text-sm">
+                    {ad.brand}
+                  </p>
+                </div>
 
-      {/* Category */}
-      <div>
-        <div className="flex items-center gap-2 mb-1">
-          <Tag className="w-4 h-4 text-rose-500" />
-          <span className="font-medium text-gray-700 text-sm">Category</span>
-        </div>
-        <p className="ml-6 font-semibold text-gray-900 text-sm">{ad.category}</p>
-      </div>
+                {/* Category */}
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <Tag className="w-4 h-4 text-rose-500" />
+                    <span className="font-medium text-gray-700 text-sm">
+                      Category
+                    </span>
+                  </div>
+                  <p className="ml-6 font-semibold text-gray-900 text-sm">
+                    {ad.category}
+                  </p>
+                </div>
 
-      {/* Dimensions */}
-      <div>
-        <div className="flex items-center gap-2 mb-1">
-          <Monitor className="w-4 h-4 text-indigo-500" />
-          <span className="font-medium text-gray-700 text-sm">Dimensions</span>
-        </div>
-        <p className="ml-6 font-semibold text-gray-900 text-sm">{ad.dimensions}</p>
-      </div>
-    </div>
-  </div>
-</div>
-
+                {/* Dimensions */}
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <Monitor className="w-4 h-4 text-indigo-500" />
+                    <span className="font-medium text-gray-700 text-sm">
+                      Dimensions
+                    </span>
+                  </div>
+                  <p className="ml-6 font-semibold text-gray-900 text-sm">
+                    {ad.dimensions}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

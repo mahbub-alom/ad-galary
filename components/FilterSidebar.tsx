@@ -1,9 +1,14 @@
-'use client';
+"use client";
 
-import { FilterState } from '@/types/ad';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { X } from 'lucide-react';
+import { FilterState } from "@/types/ad";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { X } from "lucide-react";
 
 interface FilterSidebarProps {
   brands: string[];
@@ -27,6 +32,8 @@ export default function FilterSidebar({
     onFilterChange({ brands: newBrands });
   };
 
+  console.log("brands", brands);
+
   const handleCategoryChange = (category: string, checked: boolean) => {
     const newCategories = checked
       ? [...filters.categories, category]
@@ -34,7 +41,8 @@ export default function FilterSidebar({
     onFilterChange({ categories: newCategories });
   };
 
-  const hasActiveFilters = filters.brands.length > 0 || filters.categories.length > 0;
+  const hasActiveFilters =
+    filters.brands.length > 0 || filters.categories.length > 0;
 
   return (
     <div className="top-24 sticky bg-white shadow-sm border rounded-lg h-fit">
@@ -53,19 +61,30 @@ export default function FilterSidebar({
       </div>
 
       <div className="p-6">
-        <Accordion type="multiple" defaultValue={['brands', 'categories']} className="space-y-4 w-full">
+        <Accordion
+          type="multiple"
+          defaultValue={["brands", "categories"]}
+          className="space-y-4 w-full"
+        >
           {/* Brands Accordion */}
           <AccordionItem value="brands">
-            <AccordionTrigger className="font-medium text-gray-900 text-sm">Brands</AccordionTrigger>
+            <AccordionTrigger className="font-medium text-gray-900 text-sm">
+              Brands
+            </AccordionTrigger>
             <AccordionContent>
-              <ScrollArea className="pr-2 max-h-48">
+              <ScrollArea className="pr-2">
                 <div className="space-y-2">
-                  {brands.map((brand) => (
-                    <label key={brand} className="group flex items-center space-x-2 cursor-pointer">
+                  {brands?.map((brand) => (
+                    <label
+                      key={brand}
+                      className="group flex items-center space-x-2 cursor-pointer"
+                    >
                       <input
                         type="checkbox"
                         checked={filters.brands.includes(brand)}
-                        onChange={(e) => handleBrandChange(brand, e.target.checked)}
+                        onChange={(e) =>
+                          handleBrandChange(brand, e.target.checked)
+                        }
                         className="border-gray-300 rounded focus:ring-[#0F828C] focus:ring-2 text-[#0F828C]"
                       />
                       <span className="text-gray-700 group-hover:text-gray-900 text-sm transition-colors">
@@ -80,16 +99,23 @@ export default function FilterSidebar({
 
           {/* Categories Accordion */}
           <AccordionItem value="categories">
-            <AccordionTrigger className="font-medium text-gray-900 text-sm">Categories</AccordionTrigger>
+            <AccordionTrigger className="font-medium text-gray-900 text-sm">
+              Categories
+            </AccordionTrigger>
             <AccordionContent>
               <ScrollArea className="pr-2 max-h-48">
                 <div className="space-y-2">
-                  {categories.map((category) => (
-                    <label key={category} className="group flex items-center space-x-2 cursor-pointer">
+                  {categories?.map((category) => (
+                    <label
+                      key={category}
+                      className="group flex items-center space-x-2 cursor-pointer"
+                    >
                       <input
                         type="checkbox"
                         checked={filters.categories.includes(category)}
-                        onChange={(e) => handleCategoryChange(category, e.target.checked)}
+                        onChange={(e) =>
+                          handleCategoryChange(category, e.target.checked)
+                        }
                         className="border-gray-300 rounded focus:ring-[#0F828C] focus:ring-2 text-[#0F828C]"
                       />
                       <span className="text-gray-700 group-hover:text-gray-900 text-sm transition-colors">
