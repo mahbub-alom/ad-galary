@@ -67,20 +67,8 @@ export default async function AdPage({ params }: AdPageProps) {
 
         {/* Ad Title */}
         <div className="mb-8">
-          <h1 className="mb-2 font-bold text-gray-900 text-3xl">{ad.name}</h1>
-          <div className="flex items-center space-x-4 text-gray-600 text-sm">
-            <div className="flex items-center space-x-1">
-              <Tag className="w-4 h-4" />
-              <span>{ad.brand}</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <Calendar className="w-4 h-4" />
-              <span>{new Date(ad.creationDate).toLocaleDateString()}</span>
-            </div>
-            <span className="bg-blue-100 px-2 py-1 rounded-full font-medium text-blue-800 text-xs">
-              {ad.category}
-            </span>
-          </div>
+          <h1 className="mb-2 font-bold text-gray-900 text-3xl">{ad?.brand}: {ad?.name}</h1>
+
         </div>
 
         <div className="gap-8 grid grid-cols-1 lg:grid-cols-4">

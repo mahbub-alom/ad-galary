@@ -38,7 +38,7 @@ export default function AdCard({ ad }: AdCardProps) {
       <div className="p-4">
         <h3 className="mb-2 font-semibold text-gray-900 group-hover:text-blue-600 text-lg transition-colors">
           <Link href={`/ads/${ad.slug}`} className="line-clamp-2">
-            {ad.name}
+            {ad?.brand}: {ad?.name}
           </Link>
         </h3>
 

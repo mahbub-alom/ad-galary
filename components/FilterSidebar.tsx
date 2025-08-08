@@ -35,39 +35,36 @@ export default function FilterSidebar({
   const hasActiveFilters = filters.brands.length > 0 || filters.categories.length > 0;
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border h-fit sticky top-24">
+    <div className="top-24 sticky bg-white shadow-sm border rounded-lg h-fit">
       <div className="p-6 border-b">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Filter className="h-5 w-5 text-gray-600" />
-            <h3 className="text-lg font-semibold text-gray-900">Filters</h3>
-          </div>
+        <div className="flex justify-between items-center">
+    
           {hasActiveFilters && (
             <button
               onClick={onClearFilters}
-              className="flex items-center space-x-1 text-sm text-blue-600 hover:text-blue-700 transition-colors"
+              className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 text-sm transition-colors"
             >
-              <X className="h-4 w-4" />
+              <X className="w-4 h-4" />
               <span>Clear</span>
             </button>
           )}
         </div>
       </div>
 
-      <div className="p-6 space-y-6">
+      <div className="space-y-6 p-6">
         {/* Brand Filters */}
         <div>
-          <h4 className="text-sm font-medium text-gray-900 mb-3">Brands</h4>
+          <h4 className="mb-3 font-medium text-gray-900 text-sm">Brands</h4>
           <div className="space-y-2 max-h-48 overflow-y-auto custom-scrollbar">
             {brands.map(brand => (
-              <label key={brand} className="flex items-center space-x-2 cursor-pointer group">
+              <label key={brand} className="group flex items-center space-x-2 cursor-pointer">
                 <input
                   type="checkbox"
                   checked={filters.brands.includes(brand)}
                   onChange={(e) => handleBrandChange(brand, e.target.checked)}
-                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 focus:ring-2"
+                  className="border-gray-300 rounded focus:ring-2 focus:ring-blue-500 text-blue-600"
                 />
-                <span className="text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                <span className="text-gray-700 group-hover:text-gray-900 text-sm transition-colors">
                   {brand}
                 </span>
               </label>
@@ -77,17 +74,17 @@ export default function FilterSidebar({
 
         {/* Category Filters */}
         <div>
-          <h4 className="text-sm font-medium text-gray-900 mb-3">Categories</h4>
+          <h4 className="mb-3 font-medium text-gray-900 text-sm">Categories</h4>
           <div className="space-y-2 max-h-48 overflow-y-auto custom-scrollbar">
             {categories.map(category => (
-              <label key={category} className="flex items-center space-x-2 cursor-pointer group">
+              <label key={category} className="group flex items-center space-x-2 cursor-pointer">
                 <input
                   type="checkbox"
                   checked={filters.categories.includes(category)}
                   onChange={(e) => handleCategoryChange(category, e.target.checked)}
-                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 focus:ring-2"
+                  className="border-gray-300 rounded focus:ring-2 focus:ring-blue-500 text-blue-600"
                 />
-                <span className="text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                <span className="text-gray-700 group-hover:text-gray-900 text-sm transition-colors">
                   {category}
                 </span>
               </label>

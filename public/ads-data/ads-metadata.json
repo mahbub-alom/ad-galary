@@ -2,7 +2,7 @@
   "ads": [
     {
       "id": "1",
-      "name": "Meril Advanced Skincare Collection",
+      "name": "Advanced Skincare Collection",
       "slug": "meril-skincare-banner",
       "brand": "Meril",
       "category": "Skincare",
@@ -15,7 +15,7 @@
     },
     {
       "id": "2",
-      "name": "Meril Glow Serum Campaign",
+      "name": "Glow Serum Campaign",
       "slug": "meril-glow-serum",
       "brand": "Meril",
       "category": "Skincare",
@@ -28,7 +28,7 @@
     },
     {
       "id": "3",
-      "name": "Meril Natural Beauty Range",
+      "name": "Natural Beauty Range",
       "slug": "meril-natural-beauty",
       "brand": "Meril",
       "category": "Skincare",
@@ -41,7 +41,7 @@
     },
     {
       "id": "4",
-      "name": "Lux Soap Premium Collection",
+      "name": "Soap Premium Collection",
       "slug": "lux-soap-premium",
       "brand": "Lux",
       "category": "Personal Care",
@@ -54,7 +54,7 @@
     },
     {
       "id": "5",
-      "name": "Lux Fragrance Experience",
+      "name": "Fragrance Experience",
       "slug": "lux-fragrance-experience",
       "brand": "Lux",
       "category": "Personal Care",
@@ -67,7 +67,7 @@
     },
     {
       "id": "6",
-      "name": "Lux Spa Collection",
+      "name": "Spa Collection",
       "slug": "lux-spa-collection",
       "brand": "Lux",
       "category": "Personal Care",
@@ -80,7 +80,7 @@
     },
     {
       "id": "7",
-      "name": "Pepsi Generation Next",
+      "name": "Generation Next",
       "slug": "pepsi-generation-next",
       "brand": "Pepsi",
       "category": "Food & Beverage",
@@ -93,7 +93,7 @@
     },
     {
       "id": "8",
-      "name": "Pepsi Lifestyle Campaign",
+      "name": "Lifestyle Campaign",
       "slug": "pepsi-lifestyle-interactive",
       "brand": "Pepsi",
       "category": "Lifestyle",
@@ -106,7 +106,7 @@
     },
     {
       "id": "9",
-      "name": "Pepsi Summer Refresh",
+      "name": "Summer Refresh",
       "slug": "pepsi-summer-refresh",
       "brand": "Pepsi",
       "category": "Food & Beverage",
