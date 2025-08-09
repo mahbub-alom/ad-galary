@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating: Aarong Falgun</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+  <style>
+    :root {
+      --background-bg: url('./newspaper/mobile.png');
+    }
+
+    @media (min-width: 601px) {
+      :root {
+        --background-bg: url('./newspaper/desktop.png');
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      width: 100dvw;
+      height: 100dvh;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <div class="ppm_container">
+    <img src="./assets/bg.png" class="ppm_bg" alt="">
+    <div class="ppm_swiper_container">
+      <div class="swiper ppm_swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/1.png" class="ppm_text_1" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/2.png" class="ppm_text_1" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/3.png" class="ppm_text_1" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="ppm_flying1_elms">
+      <img src="./assets/1_mini.png" class="ppm_flying1_elm1 singleElm1" alt="">
+      <img src="./assets/1_mini.png" class="ppm_flying1_elm2 singleElm1" alt="">
+      <img src="./assets/1_mini.png" class="ppm_flying1_elm3 singleElm1" alt="">
+      <img src="./assets/1_mini.png" class="ppm_flying1_elm4 singleElm1" alt="">
+      <img src="./assets/1_mini.png" class="ppm_flying1_elm5 singleElm1" alt="">
+      <img src="./assets/1_mini.png" class="ppm_flying1_elm6 singleElm1" alt="">
+    </div>
+    <div class="ppm_flying2_elms">
+      <img src="./assets/2_mini.png" class="ppm_flying2_elm1 singleElm2" alt="">
+      <img src="./assets/2_mini.png" class="ppm_flying2_elm2 singleElm2" alt="">
+      <img src="./assets/2_mini.png" class="ppm_flying2_elm3 singleElm2" alt="">
+      <img src="./assets/2_mini.png" class="ppm_flying2_elm4 singleElm2" alt="">
+      <img src="./assets/2_mini.png" class="ppm_flying2_elm5 singleElm2" alt="">
+      <img src="./assets/2_mini.png" class="ppm_flying2_elm6 singleElm2" alt="">
+    </div>
+    <div class="ppm_flying3_elms">
+      <img src="./assets/3_mini.png" class="ppm_flying3_elm1 singleElm3" alt="">
+      <img src="./assets/3_mini.png" class="ppm_flying3_elm2 singleElm3" alt="">
+      <img src="./assets/3_mini.png" class="ppm_flying3_elm3 singleElm3" alt="">
+      <img src="./assets/3_mini.png" class="ppm_flying3_elm4 singleElm3" alt="">
+      <img src="./assets/3_mini.png" class="ppm_flying3_elm5 singleElm3" alt="">
+      <img src="./assets/3_mini.png" class="ppm_flying3_elm6 singleElm3" alt="">
+    </div>
+    <div class="ppm_video_shape">
+      <img src="./assets/shape.png" class="ppm_shape" alt="">
+      <div id="ppm_video-player" class="video-wrapper">
+        <video id="ppm_video" src="./assets/vid.mp4" autoplay muted="true" loop></video>
+        <div class="ppm_video-controls">
+          <button id="ppm_sound" class="ppm_sound">
+            <i class="material-icons">volume_off</i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/cta.png" class="ppm_cta" alt="">
+    <img src="https://ms.purplepatch.online/assets/close/close_red.png" class="ppm_closeBtn_takeover" alt="" srcset="">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>

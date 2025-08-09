@@ -89,7 +89,7 @@ export default function AdGrid({ ads, loading, error }: AdGridProps) {
               onClick={() => handlePageChange(pageNumber)}
               className={`px-4 py-2 rounded border ${
                 currentPage === pageNumber
-                  ? 'bg-[#0F828C] text-white border-[#0F828C]'
+                  ? 'bg-[#2596be] text-white border-[#0F828C]'
                   : 'bg-white text-gray-800 border-gray-300 hover:bg-gray-100'
               } transition`}
             >

@@ -20,7 +20,6 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: AdPageProps): Promise<Metadata> {
-  console.log("slag ahere ", params.slug);
   const ad = await getAdBySlug(params.slug);
 
   if (!ad) {
@@ -88,47 +87,7 @@ export default async function AdPage({ params }: AdPageProps) {
           </div>
 
           {/* Ad Metadata */}
-          {/* <div className="lg:col-span-1">
-            <div className="bg-white shadow-sm p-6 border rounded-lg">
-              <h3 className="mb-4 font-semibold text-gray-900 text-lg">
-                Ad Details
-              </h3>
-
-              <div className="space-y-4">
-                <div>
-                  <div className="flex items-center space-x-2 mb-1">
-                    <Tag className="w-4 h-4 text-gray-500" />
-                    <span className="font-medium text-gray-700 text-sm">
-                      Brand
-                    </span>
-                  </div>
-                  <p className="ml-6 text-gray-900 text-sm">{ad.brand}</p>
-                </div>
-
-                <div>
-                  <div className="flex items-center space-x-2 mb-1">
-                    <Tag className="w-4 h-4 text-gray-500" />
-                    <span className="font-medium text-gray-700 text-sm">
-                      Category
-                    </span>
-                  </div>
-                  <p className="ml-6 text-gray-900 text-sm">{ad.category}</p>
-                </div>
-
-                <div>
-                  <div className="flex items-center space-x-2 mb-1">
-                    <Monitor className="w-4 h-4 text-gray-500" />
-                    <span className="font-medium text-gray-700 text-sm">
-                      Dimensions
-                    </span>
-                  </div>
-                  <p className="ml-6 text-gray-900 text-sm">{ad.dimensions}</p>
-                </div>
-
-                
-              </div>
-            </div>
-          </div> */}
+   
           <div className="lg:col-span-1">
             <div className="bg-gradient-to-br from-white via-gray-50 to-teal-50 shadow-md p-6 border border-gray-200 rounded-xl">
               <h3 className="flex items-center gap-2 mb-5 font-bold text-teal-700 text-lg">

@@ -19,6 +19,7 @@ export async function getAdsMetadata(): Promise<AdMetadata> {
 export async function getAdBySlug(slug: string): Promise<Ad | null> {
   try {
     const metadata = await getAdsMetadata();
+   
     return metadata.ads.find(ad => ad.slug === slug) || null;
   } catch (error) {
     console.error('Error fetching ad by slug:', error);

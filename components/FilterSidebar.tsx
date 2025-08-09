@@ -32,7 +32,6 @@ export default function FilterSidebar({
     onFilterChange({ brands: newBrands });
   };
 
-  console.log("brands", brands);
 
   const handleCategoryChange = (category: string, checked: boolean) => {
     const newCategories = checked
