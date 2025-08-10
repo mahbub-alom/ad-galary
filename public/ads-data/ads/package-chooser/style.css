@@ -1,0 +1,160 @@
+@font-face {
+  font-family: blFont;
+  src: url('./font/HindSiliguri-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.ppm_container {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  position: relative;
+  overflow: hidden;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  height: 250px;
+  width: 300px;
+}
+
+
+/* ppm_slide_1 */
+.ppm_bg {
+  top: 0px;
+  left: 0px;
+  height: 250px;
+  width: 300px;
+}
+
+.ppm_handIcon {
+  top: 135px;
+  left: 117px;
+  /* height: 20px; */
+  width: 30px;
+}
+.ppm_handIcon2 {
+  top: 94px;
+  left: 117px;
+  /* height: 20px; */
+  width: 30px;
+}
+
+.gbSlider {
+  width: 181px;
+  height: 22px;
+  margin: 0 auto;
+  position: absolute;
+  /* background: red; */
+  top: 100px;
+  left: 86px;
+}
+
+.gbSliderBar {
+  width: 20px;
+  height: 20px;
+  background: aqua;
+  left: 17%;
+  position: absolute;
+  background: url('./sBar.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top: 2px;
+}
+
+.daySlider {
+  width: 181px;
+  height: 22px;
+  margin: 0 auto;
+  position: absolute;
+  /* background: red; */
+  top: 136px;
+  left: 86px;
+}
+
+.daySliderBar {
+  width: 20px;
+  height: 20px;
+  /* background: aqua; */
+  left: 20%;
+  position: absolute;
+  background: url(./sBar.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top: 2px;
+}
+
+
+.ppm_webLink {
+  bottom: 10px;
+  left: 30px;
+  width: 119px;
+  height: 34px;
+}
+
+.ppm_appLink {
+  bottom: 12px;
+  right: 24px;
+  width: 119px;
+}
+
+.ppm_bonusText {
+  bottom: 18px;
+  left: 74px;
+  width: 77px;
+}
+
+
+.takaText {
+  font-family: blFont;
+  width: 164px;
+  background: #fff;
+  color: #000 !important;
+  position: absolute;
+  bottom: 60px;
+  left: 93px;
+  height: 28px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}

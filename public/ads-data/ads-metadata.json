@@ -55,6 +55,60 @@
       "previewImage": "https://iili.io/FLkJWPI.png"
     },
     {
+      "name": "Fruit Sal",
+      "slug": "fruit-sal",
+      "brand": "ACI",
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Fruit Sal creative ad for ACI",
+      "previewImage": "https://iili.io/FQ97QS4.png"
+    },
+    {
+      "name": "Freedom Sanitary Napkin Floating",
+      "slug": "freedom-sanitary-napkin-floating",
+      "brand": "ACI",
+      "category": "animation",
+      "dimensions": "full takeover",
+      "shortDescription": "Freedom Sanitary Napkin Floating creative ad for ACI",
+      "previewImage": "https://iili.io/FQH2bzN.png"
+    },
+    {
+      "name": "Slider",
+      "slug": "aci-slider",
+      "brand": "ACI",
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Slider creative ad for ACI",
+      "previewImage": "https://iili.io/FQHGlOG.png"
+    },
+    {
+      "name": "Iftar Sehri Countdown",
+      "slug": "iftar-sehri-countdown",
+      "brand": "ACI",
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Iftar Sehri Countdown creative ad for ACI",
+      "previewImage": "https://iili.io/FQHL3lI.png"
+    },
+    {
+      "name": "Package Chooser",
+      "slug": "package-chooser",
+      "brand": "Airtel",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "Package Chooser creative ad for Airtel",
+      "previewImage": "https://iili.io/FQJvyla.png"
+    },
+    {
+      "name": "Footer Scroller",
+      "slug": "footer-scroller",
+      "brand": "Airtel",
+      "category": "Footer Scroll",
+      "dimensions": "1600x120",
+      "shortDescription": "Footer scroller creative ad for Airtel",
+      "previewImage": "https://iili.io/FQddvP1.png"
+    },
+    {
       "name": "Countdown Campaign",
       "slug": "aygaz-countdown",
       "brand": "Aygaz",
