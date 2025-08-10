@@ -26,7 +26,7 @@ export default function Navbar() {
             >
               Gallery
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
             >
@@ -37,7 +37,7 @@ export default function Navbar() {
               className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile menu button */}

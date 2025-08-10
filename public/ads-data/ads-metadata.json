@@ -109,6 +109,24 @@
       "previewImage": "https://iili.io/FQddvP1.png"
     },
     {
+      "name": "Draggable Animation Banner",
+      "slug": "draggable-animation-banner",
+      "brand": "Airtel",
+      "category": "Animation",
+      "dimensions": "300x150",
+      "shortDescription": "Draggable Animation creative ad for Airtel",
+      "previewImage": "https://iili.io/FQfFQ3l.png"
+    },
+    {
+      "name": "Drag and Drop",
+      "slug": "drag-and-drop",
+      "brand": "Akij",
+      "category": "Draggable",
+      "dimensions": "300x250",
+      "shortDescription": "Draggable Animation creative ad for Akij",
+      "previewImage": "https://iili.io/FQfW28x.png"
+    },
+    {
       "name": "Countdown Campaign",
       "slug": "aygaz-countdown",
       "brand": "Aygaz",

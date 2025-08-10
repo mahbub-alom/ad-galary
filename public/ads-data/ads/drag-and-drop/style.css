@@ -1,0 +1,111 @@
+:root {
+  --ad-container-width: 300px;
+  --ad-container-height: 250px;
+  --ad-background-color: teal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+  user-select: none;
+}
+
+.ppm_container {
+  background-color: var(--ad-background-color);
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+  position: relative;
+  overflow: hidden;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+}
+
+
+/* ppm_slide_1 */
+.ppm_bg {
+  top: 0px;
+  left: 0px;
+}
+.ppm_handIcon {
+  top: 86px;
+  left: 92px;
+  width: 30px;
+  z-index: 100;
+  transform: rotateZ(-25deg);
+}
+.ppm_atta {
+  top: 42px;
+  left: 37px;
+  z-index: 3;
+}
+.ppm_attaText {
+  top: 100px;
+  left: 43px;
+  z-index: 99;
+}
+.ppm_maida {
+  top: 43px;
+  left: 128px;
+  z-index: 3;
+}
+.ppm_maidaText {
+  top: 100px;
+  left: 135px;
+  z-index: 99;
+}
+.ppm_chinigura {
+  top: 42px;
+  left: 214px;
+  z-index: 3;
+}
+.ppm_chiniguraText {
+  top: 100px;
+  left: 219px;
+  z-index: 99;
+}
+
+.ppm_finalPic{
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.ppm_positionedBox{
+  position: absolute;
+  top: 123px;
+  left: 136px;
+  width: 127px;
+  height: 120px;
+  background: #ff000000;
+}
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}
