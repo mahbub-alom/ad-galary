@@ -1,58 +1,58 @@
 {
   "ads": [
     {
-      "name": "3D Campaign",
-      "slug": "aci-3d",
-      "brand": "ACI",
-      "category": "3D",
-      "dimensions": "300x600",
-      "shortDescription": "3D creative ad for ACI",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "name": "Aarong Chese",
+      "slug": "aarong-chese",
+      "brand": "Aarong",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation creative ad for Aarong",
+      "previewImage": "https://iili.io/FLO5S2a.png"
     },
     {
       "name": "Aarong Falgun",
       "slug": "aarong-falgun",
-      "brand": "",
+      "brand": "Aarong",
       "category": "Animation",
       "dimensions": "728x90",
       "shortDescription": "Animation creative ad for Aarong",
       "previewImage": "https://i.ibb.co.com/zH7yDhDf/arong-thumb.png"
     },
     {
-      "name": "Audio Campaign",
-      "slug": "airtel-audio",
-      "brand": "Airtel",
-      "category": "Audio",
-      "dimensions": "970x250",
-      "shortDescription": "Audio creative ad for Airtel",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "name": "Blast Animation",
+      "slug": "blast-animation",
+      "brand": "Aarong",
+      "category": "animation",
+      "dimensions": "full takeover",
+      "shortDescription": "Animation creative ad for Aarong",
+      "previewImage": "https://iili.io/FLO4Kve.png"
     },
     {
-      "name": "Carousel Campaign",
-      "slug": "akij-carousel",
-      "brand": "Akij",
-      "category": "Carousel",
-      "dimensions": "728x90",
-      "shortDescription": "Carousel creative ad for Akij",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "name": "Shoppable",
+      "slug": "shoppable",
+      "brand": "Aarong",
+      "category": "Dynamic URL",
+      "dimensions": "300x250",
+      "shortDescription": "Dynamic URL creative ad for Aarong",
+      "previewImage": "https://iili.io/FLeT3Xt.png"
     },
     {
-      "name": "ClickToCall Campaign",
-      "slug": "angelic-clicktocall",
-      "brand": "Angelic",
-      "category": "ClickToCall",
-      "dimensions": "728x90",
-      "shortDescription": "ClickToCall creative ad for Angelic",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "name": "Flip Aarong",
+      "slug": "flip-aarong",
+      "brand": "Aarong",
+      "category": "Flip",
+      "dimensions": "300x250",
+      "shortDescription": "Flip Animation creative ad for Aarong",
+      "previewImage": "https://iili.io/FLewcp2.png"
     },
     {
-      "name": "Contest Campaign",
-      "slug": "apex-contest",
-      "brand": "Apex",
-      "category": "Contest",
-      "dimensions": "970x250",
-      "shortDescription": "Contest creative ad for Apex",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "name": "Speech Recognition",
+      "slug": "speech-recognition",
+      "brand": "Aarong",
+      "category": "Lead Generation",
+      "dimensions": "300x250",
+      "shortDescription": "Speech Recognition creative ad for Aarong",
+      "previewImage": "https://iili.io/FLkJWPI.png"
     },
     {
       "name": "Countdown Campaign",

@@ -22,6 +22,7 @@ export async function generateMetadata({
 }: AdPageProps): Promise<Metadata> {
   const ad = await getAdBySlug(params.slug);
 
+
   if (!ad) {
     return {
       title: "Ad Not Found - The Bridgers",

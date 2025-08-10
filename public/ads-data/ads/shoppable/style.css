@@ -1,0 +1,210 @@
+:root {
+  --ad-container-width: 300px;
+  --ad-container-height: 250px;
+  --ad-background-color: #fff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+  user-select: none;
+}
+
+.ppm_container {
+  background: url('./img/1.jpg');
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+  position: relative;
+  overflow: hidden;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+}
+
+
+/* ppm_slide_1 */
+.ppm_bg {
+  top: 0px;
+  left: 0px;
+}
+.ppm_callBtn {
+  bottom: 18px;
+  right: 37px;
+}
+
+.peopleType{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 115px;
+}
+.productType0,.productType1,.productType2{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 165px;
+}
+
+.btn{
+  width: 25%;
+  height: 90%;
+  border: 1px solid #FF5103;
+  border-radius: 5px;
+  color: #000;
+}
+.active{
+  background-color: #FF5103;
+  color: white;
+  border: 1px solid #fff;
+}
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}
+
+.priceBox{
+  position: absolute;
+  top: 65px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  /* color: #FF5103; */
+  color: #f08024;
+  font-weight: 700;
+  width: 100%;
+}
+
+.submitBtn{
+  position: absolute;
+  bottom: 15px;
+  width: 100px;
+  /* background: #FF5103; */
+  background: #fff;
+  color: black;
+  font-weight: 700;
+
+  padding: 3px;
+  text-align: center;
+  border-radius: 5px;
+  left: 100px;
+  border: 1px solid black;
+}
+
+.middle {
+	position: relative;
+	width: 100%;
+	/* max-width: 500px; */
+  top: 35px;
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	height: 10px;
+	margin: 0 15px;
+}
+.slider > .track {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #e9b68c;
+}
+.slider > .range {
+	position: absolute;
+	z-index: 2;
+	left: 25%;
+	right: 25%;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	/* background-color: #6200ee; */
+	background-color: #f08024;
+}
+.slider > .thumb {
+	position: absolute;
+	z-index: 3;
+	width: 16px;
+	height: 16px;
+	background-color: #f08024;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+	transition: box-shadow .3s ease-in-out;
+}
+.slider > .thumb.left {
+	left: 25%;
+	transform: translate(-8px, -3px);
+}
+.slider > .thumb.right {
+	right: 25%;
+	transform: translate(8px, -3px);
+}
+.slider > .thumb.hover {
+	box-shadow: 0 0 0 5px #f0802422;
+}
+.slider > .thumb.active {
+	box-shadow: 0 0 0 10px #f0802433;
+}
+
+input[type=range] {
+	position: absolute;
+	pointer-events: none;
+	-webkit-appearance: none;
+	z-index: 2;
+	height: 10px;
+	width: 100%;
+	opacity: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 30px;
+	height: 30px;
+	border-radius: 0;
+	border: 0 none;
+	background-color: red;
+	-webkit-appearance: none;
+}
+
+
+.youtube-link {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	color: #000;
+	text-decoration: none;
+	font-size: 12px;
+}

@@ -1,0 +1,300 @@
+.feature_img_section {
+  max-width: 600px !important;
+  aspect-ratio: 4/3;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.ppa_wrapper {
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.takeover_bg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.logo {
+  width: 100%;
+  position: absolute;
+  bottom: 174px;
+  right: 0px;
+  left: -254px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.purple_bg {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 533px;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.drip {
+  width: 100%;
+  position: absolute;
+  bottom: -86px;
+  right: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.drip_cheese {
+  width: 100%;
+  position: absolute;
+  bottom: -139px;
+  right: 0px;
+  left: 98px;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.product1 {
+  width: 100%;
+  position: absolute;
+  bottom: -143px;
+  right: 0px;
+  left: 229px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.product2 {
+  width: 100%;
+  position: absolute;
+  bottom: -79px;
+  right: 0px;
+  left: 155px;
+  scale: 0.3;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.product3 {
+  width: 100%;
+  position: absolute;
+  bottom: -78px;
+  right: 0px;
+  left: 221px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.copy {
+  width: 100%;
+  position: absolute;
+  bottom: 113px;
+  right: 0px;
+  left: -23px;
+  scale: 0.7;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.c1 {
+  width: 100%;
+  position: absolute;
+  bottom: -210px;
+  right: 0px;
+  left: -240px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.c2 {
+  width: 100%;
+  position: absolute;
+  bottom: -120px;
+  right: 0px;
+  left: -133px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.c3 {
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  left: -243px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.c4 {
+  width: 100%;
+  position: absolute;
+  bottom: -123px;
+  right: 0px;
+  left: -18px;
+  scale: 0.1;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.c5 {
+  width: 100%;
+  position: absolute;
+  bottom: 140px;
+  right: 0px;
+  left: 83px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.c6 {
+  width: 100%;
+  position: absolute;
+  bottom: 46px;
+  right: 0px;
+  left: 243px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.ppa_overlay {
+  bottom: 0;
+  width: 100% !important;
+  height: 120px;
+}
+
+.prev {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.overlay_logo {
+  width: 100%;
+  position: absolute;
+  bottom: -182px;
+  right: 0px;
+  left: -248px;
+  scale: 0.3;
+  z-index: 1;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.overlay_cheese {
+  max-width: 600px !important;
+  position: absolute;
+  bottom: -4px;
+  right: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.overlay_oh {
+  width: 100%;
+  position: absolute;
+  bottom: -122px;
+  right: 0px;
+  left: -179px;
+  scale: 0.1;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.overlay_my {
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+  left: -106px;
+  scale: 0.1;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.overlay_cheeseCopy {
+  width: 100%;
+  position: absolute;
+  bottom: -23px;
+  right: 0px;
+  left: -10px;
+  scale: 0.2;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.overlay_cheeseVideo {
+  width: 100%;
+  position: absolute;
+  bottom: -200px;
+  right: 0px;
+  left: 129px;
+  scale: 0.15;
+  box-sizing: border-box;
+  height: auto !important;
+  border: 7px solid yellow;
+}
+.overlay_product1 {
+  width: 100%;
+  position: absolute;
+  bottom: -247px;
+  right: 0px;
+  left: 223px;
+  scale: 0.1;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.overlay_product2 {
+  width: 100%;
+  position: absolute;
+  bottom: -160px;
+  right: 0px;
+  left: 258px;
+  scale: 0.1;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.overlay_product3 {
+  width: 100%;
+  position: absolute;
+  bottom: -147px;
+  right: 0px;
+  left: 220px;
+  scale: 0.1;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.overlay_cross {
+  width: 100%;
+  position: absolute;
+  bottom: -210px;
+  right: 0px;
+  left: 265px;
+  scale: 0.119;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.ppa_abs {
+  position: absolute;
+}
+
+.ppa_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}

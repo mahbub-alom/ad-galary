@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="ppm_container">
+    <div class="ppm_slide_1">
+      <div class="priceSlider">
+        <div class="middle">
+          <div class="multi-range-slider">
+            <input type="range" id="input-left" min="0" max="100" value="25">
+            <input type="range" id="input-right" min="0" max="100" value="75">
+
+            <div class="slider">
+              <div class="track"></div>
+              <div class="range"></div>
+              <div class="left thumb"></div>
+              <div class="right thumb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceBox">
+        <div>Price &nbsp; Min: <span class="minPrice" style="color: #fff;"></span></div>
+        <div>Max: <span class="maxPrice" style="color: #fff;"></span></div>
+      </div>
+
+
+
+      <div class="peopleType">
+        <button class="btn people0" onclick="peopleClick(0)">Women</button>
+        <button class="btn people1" onclick="peopleClick(1)">Men</button>
+        <button class="btn people2" onclick="peopleClick(2)">kid</button>
+      </div>
+      <div class="productType0">
+        <button class="btn btn0" onclick="productClick(0)">Saree</button>
+        <button class="btn btn1" onclick="productClick(1)">Kurta</button>
+        <button class="btn btn2" onclick="productClick(2)">Tops</button>
+      </div>
+      <div class="productType1 ppm_hidden">
+        <button class="btn btn0" onclick="productClick(0)">Panjabi</button>
+        <button class="btn btn1" onclick="productClick(1)">Coaty</button>
+        <button class="btn btn2" onclick="productClick(2)">Jackets</button>
+      </div>
+      <div class="productType2 ppm_hidden">
+        <button class="btn btn0" onclick="productClick(0)">Newborns</button>
+        <button class="btn btn1" onclick="productClick(1)">Boys</button>
+        <button class="btn btn2" onclick="productClick(2)">Girls</button>
+      </div>
+
+      <div class="submitBtn">Search</div>
+    </div>
+  </div>
+
+
+  <!-- <img src="./img/purple.png" alt="" class="ppm_check ppm_absolute" draggable="false"> -->
+
+  <!-- js -->
+  <script> let cm_id = 129; </script>
+
+  <!-- <script src="https://ms.purplepatch.online/assets/extra-data/extra-data-1.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script type="text/javascript">
+        document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', event => {
+      if ((event.ctrlKey || event.metaKey) && (event.shiftKey) && (event.key === 'I' || event.key === 'J') || event.keyCode === 123) {
+          event.preventDefault();
+      }
+  });
+  </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Draggable.min.js"></script> -->
+  <script src="./script.js"></script>
+  <!-- <script>document.querySelector('.ppm_slide_1').addEventListener('click',()=>{window.open(`{CLICK_MACRO}`)});</script> -->
+</body>
+
+</html>
