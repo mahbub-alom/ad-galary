@@ -127,6 +127,60 @@
       "previewImage": "https://iili.io/FQfW28x.png"
     },
     {
+      "name": "",
+      "slug": "angelic",
+      "brand": "Angelic",
+      "category": "Floating",
+      "dimensions": "300x250",
+      "shortDescription": "Floating creative ad for angelic",
+      "previewImage": "https://iili.io/FQADIV9.png"
+    },
+    {
+      "name": "Swipe up",
+      "slug": "swipe-up",
+      "brand": "Angelic",
+      "category": "Draggable",
+      "dimensions": "full takeover",
+      "shortDescription": "Swipe up creative ad for angelic",
+      "previewImage": "https://iili.io/FQRdlGp.png"
+    },
+    {
+      "name": "Side Entry",
+      "slug": "side-entry",
+      "brand": "Angelic",
+      "category": "Floating",
+      "dimensions": "full takeover",
+      "shortDescription": "side entry creative ad for angelic",
+      "previewImage": "https://iili.io/FQRqmHN.png"
+    },
+    {
+      "name": "Footer Scroller",
+      "slug": "footer-scroller-angelic",
+      "brand": "Angelic",
+      "category": "scroller",
+      "dimensions": "full takeover",
+      "shortDescription": "footer scroller creative ad for angelic",
+      "previewImage": "https://iili.io/FQRxw4s.png"
+    },
+    {
+      "name": "Parallax Animation",
+      "slug": "parallax-animation",
+      "brand": "Angelic",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "parallax animation creative ad for angelic",
+      "previewImage": "https://iili.io/FQRAtQ2.png"
+    },
+    {
+      "name": "3D",
+      "slug": "3d-angelic",
+      "brand": "Angelic",
+      "category": "3D",
+      "dimensions": "full takeover",
+      "shortDescription": "3d creative ad for angelic",
+      "previewImage": "https://iili.io/FQRqmHN.png"
+    },
+    {
       "name": "Countdown Campaign",
       "slug": "aygaz-countdown",
       "brand": "Aygaz",

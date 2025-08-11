@@ -1,0 +1,145 @@
+body {
+    width: 300px!important;
+    height: 250px!important;
+    margin: auto;
+    position: relative;
+    cursor: none;
+  }
+
+  .adArea {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* z-index: 88; */
+  }
+
+  .wrapperADF {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 300px!important;
+    height: 250px!important;
+    z-index: 99999999999;
+    /* cursor: pointer; */
+    /* background-color: red; */
+  }
+
+  .center,
+  .front-face,
+  .contents,
+  .back-face {
+    position: absolute;
+    height: 250px;
+    width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .center {
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .front-face,
+  .back-face {
+    height: 250px!important;
+    width: 300px!important;
+    text-align: center;
+    background: url('../images/design.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: translateY(0deg);
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+    -webkit-transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+    -moz-transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+    -ms-transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+    -o-transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+  }
+
+  .contents {
+    left: -52%;
+    top: 1%;
+    scale: .5;
+    /* margin: auto; */
+    width: 300px!important;
+    height: 250px!important;
+    perspective: 1000px;
+    transform: translateY(-50%) translateZ(60px) scale(0.93);
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .back-face {
+    transform: rotateY(180deg);
+  }
+
+  /* .center:hover > .back-face{
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+  }
+  .center:hover > .front-face{
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+  } */
+
+  .logo {
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999999;
+  }
+
+
+
+
+
+
+  @media (max-width: 299px) {
+    body {
+      overflow: hidden;
+      width: fit-content;
+/*      transform: scale(.9, .9);*/
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      transform-origin: top left;
+    }
+  }
+
+
+  @media (max-width: 250px) {
+    body {
+      overflow: hidden;
+      width: fit-content;
+      transform: scale(.79, .79);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      transform-origin: top left;
+    }
+  }

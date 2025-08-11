@@ -1,0 +1,135 @@
+#pp_floating {
+  z-index: 9999999999999;
+}
+
+.ppm_container {
+  bottom: 10dvh;
+  position: fixed;
+  right: 1%;
+  width: 180px;
+  aspect-ratio: 200/200;
+  /* background-color: #f005; */
+  /* overflow: hidden; */
+  z-index: 9999999999;
+  display: none;
+}
+
+.ppm_closeBtn_takeover {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 20px;
+}
+
+.ppm_logo_linear {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  width: 14px;
+}
+
+@media (min-width: 601px) and (min-height: 750px) {
+  .ppm_container {
+    bottom: 10dvh;
+    width: 200px;
+  }
+}
+
+.ppm_bg_hot,
+.ppm_bg_cool {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.ppm_bg_cool{
+  display: none;
+}
+
+.ppm_text1 {
+  position: absolute;
+  width: 90%;
+  bottom: 50%;
+  left: 5%;
+  display: none;
+}
+
+.ppm_text2 {
+  position: absolute;
+  width: 90%;
+  bottom: 60%;
+  left: 5%;
+  display: none;
+}
+
+.ppm_text3 {
+  position: absolute;
+  width: 80%;
+  bottom: 56%;
+  left: 10%;
+  display: none;
+}
+
+.ppm_logo {
+  position: absolute;
+  width: 40%;
+  bottom: 80%;
+  left: 30%;
+  display: none;
+}
+
+/*  left: 22.5%;
+    display: block;
+    width: 55%;
+    bottom: 0%; */
+.ppm_bottle {
+  position: absolute;
+  width: 33%;
+  bottom: 20%;
+  display: none;
+}
+.ppm_tapIcon {
+  position: absolute;
+  width: 15%;
+  bottom: 5%;
+  left: 55%;
+  display: none;
+}
+
+.ppm_bottle1 {
+  left: 0;
+}
+
+.ppm_bottle2 {
+  left: 33.5%;
+}
+
+.ppm_bottle3 {
+  left: 67%;
+}
+
+
+.ppm_flying1_elms,
+.ppm_flying2_elms,
+.ppm_flying3_elms {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+.singleElm1,
+.singleElm2,
+.singleElm3 {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 16%;
+}
+
+.ppm_flying1_elms,
+.ppm_flying2_elms,
+.ppm_flying3_elms {
+  display: none;
+}
