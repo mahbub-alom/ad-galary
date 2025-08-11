@@ -181,6 +181,24 @@
       "previewImage": "https://iili.io/FQRqmHN.png"
     },
     {
+      "name": "Nearby Store",
+      "slug": "nearby-store",
+      "brand": "Apex",
+      "category": "Draggable",
+      "dimensions": "300x250",
+      "shortDescription": "nearby store creative ad for apex",
+      "previewImage": "https://iili.io/FQRWG0G.png"
+    },
+    {
+      "name": "Facebook Name",
+      "slug": "facebook-name",
+      "brand": "Apex",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "facebook name creative ad for apex",
+      "previewImage": "https://iili.io/FQRjZB9.png"
+    },
+    {
       "name": "Countdown Campaign",
       "slug": "aygaz-countdown",
       "brand": "Aygaz",

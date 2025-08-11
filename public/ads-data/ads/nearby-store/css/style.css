@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.ppm_container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  height: 250px;
+  width: 300px;
+}
+.ppm_hand{
+  right: 55px;
+  top: 100px;
+}
+
+/* ppm_slide_1 */
+.ppm_bg {
+  top: 0px;
+  left: 0px;
+}
+
+.ppm_icon {
+  top: 220px;
+  left: 222px;
+}
+
+.ppm_shape {
+  top: 0px;
+  left: 31px;
+  z-index: 99;
+}
+
+.ppm_p1 {
+  top: 75px;
+  left: 12px;
+}
+
+.ppm_p2 {
+  top: 0px;
+  left: 0px;
+}
+
+.ppm_p3 {
+  top: 24px;
+  left: 15px;
+}
+
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}
+
+
+/* Map Style */
+.ppm_map{
+  position: absolute;
+  left: 300px;
+  top: 0px;
+}
+
+#openLayerMaps {
+  width: 300px;
+  height: 250px;
+  background-color: #fff;
+
+}
+
+.ppm_errorMsg {
+  bottom: 45px;
+  left: 10px;
+  font-size: 20px;
+  color: #f00;
+  text-align: center;
+  width: 300px;
+  z-index: 99;
+}
+
+
+#loading {
+  margin: 100px 120px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+.getDirectionBtn{
+  text-align: center;
+  top: 202px;
+  left: 174px;
+  background-color: #E12D36;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px;
+  border-radius: 5px;
+  text-decoration: none;
+}

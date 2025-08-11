@@ -1,0 +1,378 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Api</title>
+    <script src="js/jquery.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wprapp {
+        width: 300px;
+        height: 250px;
+        position: inherit;
+        overflow: hidden;
+      }
+      .fb-login-button {
+        position: absolute;
+        top: 10px;
+        right: -86px;
+        z-index: 10;
+        /* transform: translate(-50%, -50%); */
+      }
+      .wphi {
+        position: absolute;
+        top: 5px;
+        left: 48px;
+        color: #f50000;
+        z-index: 10;
+      }
+      ._5h0f ._5h0i td:first-child,
+      ._5h0f ._xvp._5h0i td:last-child {
+        width: 14px !important;
+      }
+      ._xvm ._5h0c ._5h0f ._5h0i {
+        max-width: 240px !important;
+        min-width: initial !important;
+        width: 28px !important;
+      }
+      ._xvm ._5h0f ._8jam ._5h0o {
+        margin-right: -124px !important;
+        max-width: 20px !important;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .hidden {
+        display: none;
+      }
+      @keyframes showZoomIn {
+        from {
+          transform: scale3d(0.5, 0.5, 0.5);
+        }
+        to {
+          transform: scale3d(1, 1, 1);
+        }
+      }
+      .showZoomIn {
+        animation-name: showZoomIn;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+      .slide-1 {
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+      }
+      .slide1 {
+        width: 300px;
+        height: 250px;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+      }
+      .product1 {
+        position: absolute;
+        width: 266px;
+        height: 186px;
+        top: 62px;
+        left: 7px;
+      }
+      .product2 {
+        position: absolute;
+        width: 266px;
+        height: 186px;
+        top: 62px;
+        left: 7px;
+      }
+      .product3 {
+        position: absolute;
+        width: 266px;
+        height: 186px;
+        top: 62px;
+        left: 7px;
+      }
+      .bganimation {
+        width: 640px;
+        height: 640px;
+        position: absolute;
+        top: -107px;
+        left: -260px;
+      }
+      .logo {
+        position: absolute;
+        width: 34px;
+        height: 16px;
+        bottom: 3px;
+        right: 7px;
+      }
+      .bg2 {
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+      }
+      .copy1 {
+        width: 149px;
+        height: 138px;
+        position: absolute;
+        top: 51px;
+        left: 62px;
+        opacity: 0;
+      }
+      .copy2 {
+        width: 161px;
+        height: 21px;
+        position: absolute;
+        bottom: 22px;
+        left: 56px;
+        opacity: 0;
+      }
+      .copy3 {
+        width: 160px;
+        height: 16px;
+        position: absolute;
+        bottom: 5px;
+        left: 56px;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=607861950143250&autoLogAppEvents=1" nonce="SLadBsP4"></script> -->
+
+    <div class="wprapp" onclick="ppclick()">
+      <div class="wphi">
+        <h1>Hi</h1>
+      </div>
+
+      <div class="fb-login-button absolute" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
+      <div class="slide-1 absolute">
+        <div class="slide1 absolute">
+          <img src="images/Apex-demo-3-BG%28animate%29.png" alt="" class="bganimation">
+          <img src="images/ApexLOGO.png" alt="" class="logo">
+          <img src="images/Apex-demo-3-Product1.png" alt="" class="product1">
+          <img src="images/Apex-demo-3-Product2.png" alt="" class="product2">
+          <img src="images/Apex-demo-3-Product3.png" alt="" class="product3">
+          <img class="bg2" src="images/Apex-demo-3-BG2.jpg" alt="">
+          <img class="copy1" src="images/Apex-demo-3-copy.png" alt="">
+          <img class="copy2" src="images/Apex-demo-3-copy2.png" alt="">
+          <img class="copy3" src="images/Apex-demo-3-copy3.png" alt="">
+        </div>
+      </div>
+      <!-- <div class="slider-2 absolute">
+        <div class="slide2 absolute">
+          <img src="//ms.purplepatch.online/2023/demo/apexfbname/v3/assets/Apex-demo-3-BG2.jpg" alt="" />
+        </div>
+      </div> -->
+    </div>
+
+    <script async="" defer="" crossorigin="anonymous" src="js/sdk.js"></script>
+
+    <!-- gsap animation -->
+    <script src="js/gsap.min.js"></script>
+
+    <script type="text/javascript">
+      var data = document.querySelector("._8kto");
+
+      console.log(data);
+
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "160185875960118",
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: "v12.0",
+        });
+        //
+
+        FB.getLoginStatus(function (res) {
+          console.log(res);
+          if (res.status == "connected") {
+            FB.api("/me", function (fbUser) {
+              console.log(fbUser.name);
+              $(".hi").html("Hi " + fbUser.name);
+            });
+          } else {
+            console.log("not connected");
+          }
+        });
+      };
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // setTimeout(slide, false);
+        function slide() {
+          setTimeout(function () {
+            $(".slide-1").addClass("hidden");
+            $(".slider-2").removeClass("hidden");
+            setTimeout(function () {
+              $(".slide-1").removeClass("hidden");
+              $(".slider-2").addClass("hidden");
+              slide();
+            }, 3000);
+          }, 3000);
+        }
+      });
+
+      dragElement(document.querySelector(".fb-login-button"));
+      dragElementMobile(document.querySelector(".fb-login-button"));
+
+      function dragElement(elmnt) {
+        var pos1 = 0,
+          pos2 = 0,
+          pos3 = 0,
+          pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+          /* if present, the header is where you move the DIV from:*/
+          document.getElementById(elmnt.id + "header").onmouseover =
+            dragMouseDown;
+        } else {
+          /* otherwise, move the DIV from anywhere inside the DIV:*/
+          elmnt.onmouseover = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // get the mouse cursor position at startup:
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          document.onmouseup = closeDragElement;
+          // call a function whenever the cursor moves:
+          document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // calculate the new cursor position:
+          pos1 = pos3 - e.clientX;
+          pos2 = pos4 - e.clientY;
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+
+          let top = elmnt.offsetTop - pos2;
+
+          if (top > 221 || top < 2) {
+            top = top > 221 ? 221 : 2;
+            elmnt.style.top = top + "px";
+          }
+
+          // set the element's new position:
+          elmnt.style.top = top - pos2 + "px";
+          // elmnt.style.top = buttom - pos2 + "px";
+
+          let left = elmnt.offsetLeft - pos1;
+
+          if (left > 102 || left < 2) {
+            left = left > 102 ? 102 : 2;
+          }
+          elmnt.style.left = left + "px";
+        }
+
+        function closeDragElement() {
+          /* stop moving when mouse button is released:*/
+          document.onmouseup = null;
+          document.onmousemove = null;
+        }
+      }
+
+      function dragElementMobile(elmnt) {
+        var pos1 = 0,
+          pos2 = 0,
+          pos3 = 0,
+          pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+          /* if present, the header is where you move the DIV from:*/
+          document.getElementById(elmnt.id + "header").ontouchstart =
+            dragMouseDown;
+        } else {
+          /* otherwise, move the DIV from anywhere inside the DIV:*/
+          elmnt.ontouchstart = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // get the mouse cursor position at startup:
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          document.onmouseup = closeDragElement;
+          // call a function whenever the cursor moves:
+          document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // calculate the new cursor position:
+          pos1 = pos3 - e.clientX;
+          pos2 = pos4 - e.clientY;
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+
+          let top = elmnt.offsetTop - pos2;
+
+          if (top > 221 || top < 2) {
+            top = top > 221 ? 221 : 2;
+            elmnt.style.top = top + "px";
+          }
+
+          // set the element's new position:
+          elmnt.style.top = top - pos2 + "px";
+          // elmnt.style.top = buttom - pos2 + "px";
+
+          let left = elmnt.offsetLeft - pos1;
+
+          if (left > 102 || left < 2) {
+            left = left > 102 ? 102 : 2;
+          }
+          elmnt.style.left = left + "px";
+        }
+
+        function closeDragElement() {
+          /* stop moving when mouse button is released:*/
+          document.onmouseup = null;
+          document.onmousemove = null;
+        }
+      }
+
+      // gsap
+      gsap
+        .timeline()
+        .from(".bganimation", { duration: 10, rotate: 360, repeat: -1 });
+      var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+      tl.from(".product1", { duration: 1, x: -300 });
+      tl.to(".product1", { duration: 1, x: 300 });
+      tl.from(".product2", { duration: 1, x: -300 });
+      tl.to(".product2", { duration: 1, x: 300 });
+      tl.from(".product3", { duration: 1, x: -300 });
+      tl.to(".product3", { duration: 1, x: 300 });
+      tl.to(".bganimation", { duration: 0.1, opacity: 0 });
+      tl.to(".bg2", { duration: 0.2, opacity: 1 });
+      tl.fromTo(
+        ".copy1",
+        { duration: 2, scale: 1 },
+        { scale: 1.2, opacity: 1 }
+      );
+      tl.to(".copy2", { duration: 0.1, opacity: 1 });
+      tl.to(".copy3", { duration: 0.2, opacity: 1 });
+
+      // onclick function
+      function ppclick() {
+        window.open("{CLICK_MACRO}", "_blank");
+      }
+    </script>
+  
+
+</body></html>
