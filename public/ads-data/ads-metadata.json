@@ -199,22 +199,130 @@
       "previewImage": "https://iili.io/FQRjZB9.png"
     },
     {
-      "name": "Countdown Campaign",
-      "slug": "aygaz-countdown",
+      "name": "Dynamic Location",
+      "slug": "dynamic-location",
       "brand": "Aygaz",
       "category": "Countdown",
-      "dimensions": "728x300",
+      "dimensions": "300x250",
       "shortDescription": "Countdown creative ad for Aygaz",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "previewImage": "https://iili.io/FQc6m2s.png"
     },
     {
-      "name": "Cursor Campaign",
-      "slug": "banglalink-cursor",
+      "name": "Catch Game",
+      "slug": "catch-game",
+      "brand": "Aygaz",
+      "category": "Gamification",
+      "dimensions": "300x250",
+      "shortDescription": "catch game creative ad for Aygaz",
+      "previewImage": "https://iili.io/FQlgA8v.png"
+    },
+    {
+      "name": "Car Fill",
+      "slug": "car-fill",
+      "brand": "Aygaz",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "car fill creative ad for Aygaz",
+      "previewImage": "https://iili.io/FQWODq7.png"
+    },
+    {
+      "name": "Switch On",
+      "slug": "switch-on",
+      "brand": "Aygaz",
+      "category": "Draggable",
+      "dimensions": "300x250",
+      "shortDescription": "switch on creative ad for Aygaz",
+      "previewImage": "https://iili.io/FQW44dN.png"
+    },
+    {
+      "name": "Cook",
+      "slug": "cook",
+      "brand": "Aygaz",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "cook creative ad for Aygaz",
+      "previewImage": "https://iili.io/FQWbn3u.png"
+    },
+    {
+      "name": "Bulk",
+      "slug": "bulk",
+      "brand": "Aygaz",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "bulk creative ad for Aygaz",
+      "previewImage": "https://iili.io/FQXBNyB.png"
+    },
+    {
+      "name": "Banglalink Beshi Offer",
+      "slug": "banglalink-beshi-offer",
       "brand": "Banglalink",
-      "category": "Cursor",
-      "dimensions": "970x250",
-      "shortDescription": "Cursor creative ad for Banglalink",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Floating",
+      "dimensions": "full takeover",
+      "shortDescription": "beshi offer creative ad for Banglalink",
+      "previewImage": "https://iili.io/FQXWA2j.png"
+    },
+    {
+      "name": "Banglalink Scratch",
+      "slug": "banglalink-scratch",
+      "brand": "Banglalink",
+      "category": "Floating",
+      "dimensions": "takeover",
+      "shortDescription": "banglalink scratch creative ad for Banglalink",
+      "previewImage": "https://iili.io/FQhxCru.png"
+    },
+    {
+      "name": "Banglalink CT",
+      "slug": "banglalink-ct",
+      "brand": "Banglalink",
+      "category": "Floating",
+      "dimensions": "takeover",
+      "shortDescription": "banglalink CT creative ad for Banglalink",
+      "previewImage": "https://iili.io/FQhMlmN.png"
+    },
+    {
+      "name": "Banglalink Odommo",
+      "slug": "banglalink-odommo",
+      "brand": "Banglalink",
+      "category": "Floating",
+      "dimensions": "takeover",
+      "shortDescription": "banglalink odommo creative ad for Banglalink",
+      "previewImage": "https://iili.io/FQw1sTB.png"
+    },
+    {
+      "name": "Banglalink Flip",
+      "slug": "banglalink-flip",
+      "brand": "Banglalink",
+      "category": "Floating",
+      "dimensions": "takeover",
+      "shortDescription": "banglalink flip creative ad for Banglalink",
+      "previewImage": "https://iili.io/FQN1Bup.png"
+    },
+    {
+      "name": "Audio Surah",
+      "slug": "audio-surah",
+      "brand": "Banglalink",
+      "category": "Audio",
+      "dimensions": "300x250",
+      "shortDescription": "Audio surah creative ad for Banglalink",
+      "previewImage": "https://iili.io/FQNm66Q.png"
+    },
+    {
+      "name": "Cricket Countdown",
+      "slug": "cricket-countdown",
+      "brand": "Banglalink",
+      "category": "Countdown",
+      "dimensions": "300x250",
+      "shortDescription": "cricket countdown creative ad for Banglalink",
+      "previewImage": "https://iili.io/FQO0cfn.png"
+    },
+    {
+      "name": "Package Choose",
+      "slug": "package-choose",
+      "brand": "Banglalink",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Package Choose creative ad for Banglalink",
+      "previewImage": "https://iili.io/FQOhmil.png"
     },
     {
       "name": "Draggable Campaign",

@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BL Ramadan Audio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="ppa_wrapper">
+            <div class="img1 ppa_abs"><audio id="audio1" src="media/surat_al_an_am.mp3"></audio></div>
+            <div class="img2 ppa_abs ppa_hidden"><audio id="audio2" src="media/surat_al_an_fal.mp3"></audio></div>
+            <div class="img3 ppa_abs ppa_hidden"><audio id="audio3" src="media/surat_al_araf.mp3"></audio></div>
+            <div class="img4 ppa_abs ppa_hidden"><audio id="audio4" src="media/surat_al_ma_ida.mp3"></audio></div>
+            <div class="img5 ppa_abs ppa_hidden"><audio id="audio4" src=""></audio></div>
+        
+            <div class="controls ppa_abs">
+                <a class="hand ppa_abs" href="https://www.banglalink.net/en/cms/content/deen/quran"></a>
+                <div class="left_i ppa_abs" onclick="showPlayButton()"></div>
+                <div class="play_i ppa_abs ppa_hidden"></div>
+                <div class="pause_i ppa_abs" onclick="showPlayButton()"></div>
+                <div class="right_i ppa_abs" onclick="showPlayButton()"></div>
+            </div>
+    </div>
+
+  
+  <script src="js/extra-data-1.js"></script>
+  <script>
+    let cm_id = 221;
+    let extraData = function () {
+      console.log(typeof (getExtraData) === 'function')
+      if (typeof (getExtraData) === 'function') {
+        return getExtraData()
+      } else {
+        return {};
+      }
+    }();
+    function submitInteraction(type, extraData = extraData) {
+      fetch(`https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${type}&user_agent=${extraData?.user_agent}&browser_cookies=${extraData?.browser_cookies}&client_ip=${extraData?.client_ip}`);
+    }
+    // submitInteraction('slide',extraData)
+  </script>
+  <!-- end Interaction -->
+<script src="js/scripts.js"></script>
+<script>document.querySelector('.hand').addEventListener('click',()=>{window.open(`{CLICK_MACRO}`)});</script>
+<script>document.querySelector('.img5').addEventListener('click',()=>{window.open(`{CLICK_MACRO}`)});</script>
+</body><!-- interaction --></html>

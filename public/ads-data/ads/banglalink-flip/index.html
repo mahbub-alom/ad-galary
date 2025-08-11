@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banglalink</title>
+    <script src="js/gsap.min.js"></script>
+    <style>
+        .ppm_container{
+            aspect-ratio: 1920/992;
+            width: min(100dvw, calc(100dvh * 1920/992));
+            height: min(100dvh, calc(100dvw * 992/1920));
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ppm_video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ppm_spinner {
+            display: none;
+            position: absolute;
+            top: 72%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8vw;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #FF8533;
+            text-shadow: 0 0 5px rgba(255, 133, 51, 0.9),
+                         0 0 3px rgba(255, 133, 51, 0.7),
+                         0 0 5px rgba(255, 133, 51, 0.5),
+                         -1px -1px 0 #fff,  
+                         1px -1px 0 #fff,
+                         -1px 1px 0 #fff,
+                         1px 1px 0 #fff;
+        }
+
+        .spinning {
+            animation: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1920x992 -->
+    <div class="ppm_container">
+        <video src="media/bl.mp4" autoplay="" muted="" playsinline="" class="ppm_video"></video>
+<!--  -->
+        <div class="ppm_spinner" id="spinner">2005</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let spinnerStarted = false;
+            let spinnerEnd = false;
+            const video = document.querySelector('.ppm_video');
+            video.addEventListener('timeupdate', () => {
+                if (video.currentTime >= .3 && spinnerStarted == false) {
+                    spinnerStarted = true;
+                    animateSpinner();
+                }
+                if (video.currentTime >= 2.3 && spinnerEnd == false) {
+                    spinnerEnd = true;
+                    gsap.to(`.ppm_spinner`, {opacity: 0,scale: 0.4, display: 'none',duration:.5});
+                }
+            });
+        });
+
+        function animateSpinner() {
+            gsap.fromTo(`.ppm_spinner`, {opacity: 0, display: 'none',scale: .2},{opacity: 1, display: 'block',scale: 1,duration:.3});
+            const spinner = document.getElementById('spinner');
+            const tl = gsap.timeline({delay: 0.3});
+                for (let year = 2005; year <= 2025; year++) {
+                    tl.to(spinner, {
+                        duration: 0.05,
+                        onStart: () => {
+                            spinner.textContent = year;
+                        },
+                        yoyo: true
+                    });
+                }
+                
+                // Final state
+                tl.to(spinner, {
+                    duration: 0.5,
+                });
+        }
+    </script>
+
+</body></html>

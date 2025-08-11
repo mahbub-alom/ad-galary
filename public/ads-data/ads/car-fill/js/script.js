@@ -1,0 +1,36 @@
+gsap.timeline()
+    .fromTo('.ppm_carBox', { display: 'none', x: '-300' }, { display: 'block', x: 0, duration: 1, ease: 'none' })
+    .to('.ppm_wheel1', { rotate: 480, duration: 1, ease: 'none' }, '<')
+    .to('.ppm_wheel2', { rotate: 480, duration: 1, ease: 'none' }, '<')
+    .fromTo('.ppm_fillerBox', { display: 'none', opacity: 0, x: '100%' }, {
+        display: 'block', opacity: 1, x: '0%', duration: 1, ease: 'none', onComplete: () => {
+            gsap.to('.ppm_fuel_pipe', { scale: 1.1, duration: .5, ease: 'none', repeat: -1, yoyo: true }, '<')
+            gsap.to('.ppm_handIcon', { scale: 1.1, duration: .5, ease: 'none', repeat: -1, yoyo: true }, '<')
+        }
+    }, '<.3')
+// .to('.ppm_tick', { rotate: 60, transformOrigin: '70% 85%', duration: 1, ease: 'none' },'<')
+
+
+document.querySelector('.ppm_fillerBox').addEventListener('click', () => {
+    gsap.killTweensOf('.ppm_fuel_pipe')
+    gsap.to('.ppm_handIcon', { opacity: 0,display:'none', duration: .2, ease: 'none' })
+    const mainTimeline = gsap.timeline()
+        .to('.ppm_tick', { rotate: 120, transformOrigin: '75% 65%', duration: 1, ease: 'none' })
+        .to('.ppm_fillerBox', { opacity: 0, duration: .5, ease: 'none' }, '>')
+        .to('.ppm_carBox', { x: '300', duration: 1, ease: 'none' }, '>')
+        .to('.ppm_wheel1', { rotate: 960, duration: 1, ease: 'none' }, '<')
+        .to('.ppm_wheel2', { rotate: 960, duration: 1, ease: 'none' }, '<')
+        .fromTo('.ppm_bg2', { display: 'none', opacity: 0 }, { display: 'block', opacity: 1, duration: 1, ease: 'none' }, '>')
+        .set('.ppm_carBox', { x: '-300', bottom: '0%' }, '>')
+        .set('.ppm_wheel1', { rotate: 0 }, '>')
+        .set('.ppm_wheel2', { rotate: 0 }, '>')
+        .to('.ppm_carBox', { x: '50', duration: 1.5, ease: 'none' }, '>')
+        .to('.ppm_wheel1', { rotate: 480, duration: 1.5, ease: 'none' }, '<')
+        .to('.ppm_wheel2', { rotate: 480, duration: 1.5, ease: 'none' }, '<')
+        .add(gsap.timeline({ repeat: -1 })
+            .fromTo('.ppm_copy1', { display: 'none', opacity: 0, scale: .5 }, { display: 'block', opacity: 1, scale: 1, duration: .8, ease: 'elastic.out(1,.3)' }, '<.5')
+            .to('.ppm_copy1', { opacity: 0, duration: .8, ease: 'none' }, '>.5')
+            .fromTo('.ppm_copy2', { display: 'none', opacity: 0, scale: .5 }, { display: 'block', opacity: 1, scale: 1, duration: .8, ease: 'elastic.out(1,.3)' }, '>')
+            .to('.ppm_copy2', { opacity: 0, duration: .8, ease: 'none' }, '>')
+        )
+})

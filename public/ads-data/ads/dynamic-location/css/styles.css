@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    user-select: none;
+    font-family: LiAdorNoirritVR;
+}
+
+.wrapper {
+    width: 300px;
+    height: 250px;
+    background-size: 300px 250px;
+    position: relative;
+    cursor: grab;
+    overflow: hidden;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.patch_box {
+    height: 250px;
+    width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.patch_countdown {
+    height: 40px;
+    width: 153px;
+    top: 88px;
+    left: 122px;
+    right: 0px;
+    font-size: 24px;
+    color: #eb6c0f;
+    font-weight: 700;
+    line-height: 40px;
+    z-index: 1;
+    margin: 0 auto;
+    display: none;
+}
+
+.patch_countdown .hour {
+    left: 18px;
+    right: 0;
+    top: 4px;
+    bottom: 0;
+    width: 39px;
+    height: 38px;
+}
+
+.patch_countdown .minute {
+    left: 67px;
+    right: 0;
+    top: 4px;
+    bottom: 0;
+    width: 38px;
+    height: 38px;
+}
+
+.patch_countdown .second {
+    left: 116px;
+    right: 0;
+    top: 4px;
+    bottom: 0;
+    width: 39px;
+    height: 38px;
+}
+
+.patch_title {
+    height: 250px;
+    width: 300px;
+    top: 0px;
+    text-align: center;
+    left: 0px;
+}
+
+.wrapper .product {
+    height: 63px;
+    width: 92px;
+}
+
+.patch_note {
+    height: 32px;
+    width: 116px;
+    left: 0px;
+    margin: 0 auto;
+    right: 0px;
+    z-index: 1;
+    bottom: 27px;
+    display: none;
+}
+
+.preview {
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.wrapper .product {
+    left: 8px;
+    bottom: 37px;
+}
+
+.productGif {
+    left: -8px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scaleX(1)
+    }
+
+    50% {
+        transform: scale3d(.95, .95, .95)
+    }
+
+    to {
+        transform: scaleX(1)
+    }
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.ppm_ramadanText {
+    position: absolute;
+    position: absolute;
+    width: 100px;
+    top: 53px;
+    left: 40px;
+}
+
+.ppm_product {
+    position: absolute;
+    width: 200px;
+    top: 90px;
+    left: 30px;
+    display: none;
+}
+
+.ppm_cta {
+    position: absolute;
+    width: 140px;
+    top: 162px;
+    left: 142px;
+}
+
+.ppm_title {
+    position: absolute;
+    font-family: LiAdorNoirritVR;
+    font-size: 16px;
+    width: 154px;
+    top: 51px;
+    color: #0074BD;
+    left: 137px;
+    text-align: center;
+    display: none;
+}
+
+.ppm_subtitle {
+    position: absolute;
+    font-family: LiAdorNoirritVR;
+    font-size: 14px;
+    width: 170px;
+    color: #0074BD;
+    top: 69px;
+    left: 128px;
+    text-align: center;
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ppm_container_wrapper {
+  width: 100%;
+  height: 50dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.ppm_container {
+  display: none;
+  /* width: 100%; */
+  /* max-width: 760px; */
+  height: min(50dvh, 100vw * (575/760));
+  aspect-ratio: 760/575;
+  /* background-color: #ff000066; */
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  /* background-image: url(./assets/prev.png); */
+  /* border: 1px solid #ccc; */
+}
+
+.ppm_tap {
+  position: absolute;
+  width: 6%;
+  min-width: 26px;
+  bottom: 72.2%;
+  left: 48.5%;
+  display: none;
+}
+
+.ppm_sim_container {
+  position: absolute;
+  width: 28%;
+  aspect-ratio: 200 / 68;
+  bottom: 8.2%;
+  left: 33.5%;
+  display: none;
+}
+
+.ppm_sim_shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.ppm_sim_enter {
+  position: absolute;
+  width: 39%;
+  bottom: 10%;
+  right: 9%;
+}
+
+.ppm_sim_sim {
+  position: absolute;
+  width: 37%;
+  bottom: 12%;
+  left: 11%;
+}
+
+.ppm_mnemonic {
+  position: absolute;
+  width: 47%;
+  bottom: 25%;
+  left: 25%;
+  display: none;
+}
+
+.ppm_sim_1 {
+  position: absolute;
+  width: 14.5%;
+  bottom: 51.5%;
+  left: 2.2%;
+}
+
+.ppm_sim_2 {
+  position: absolute;
+  width: 14.5%;
+  bottom: 68%;
+  left: 16.2%;
+}
+
+.ppm_sim_3 {
+  position: absolute;
+  width: 14.5%;
+  bottom: 80%;
+  left: 33%;
+}
+
+.ppm_sim_4 {
+  position: absolute;
+  width: 14.2%;
+  bottom: 80%;
+  left: 53.2%;
+}
+
+.ppm_sim_5 {
+  position: absolute;
+  width: 14.2%;
+  bottom: 67.8%;
+  left: 70.7%;
+}
+
+.ppm_sim_6 {
+  position: absolute;
+  width: 14%;
+  bottom: 51.27%;
+  left: 84.2%;
+}
+
+.numbered-sim {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50dvh;
+  /* background: rgba(0, 0, 0, 0.8); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 95%;
+  max-height: 45dvh;
+  aspect-ratio: 640 / 360;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper #player {
+  border-radius: 15px;
+}

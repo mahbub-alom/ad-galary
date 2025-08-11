@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ppm_container {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: #000;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url('../images/bg2.png');
+    background-size: cover;
+    background-position: center;
+}
+.ppm_bg_new{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+}
+.ppm_game_slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ppm_basket{
+    position: absolute;
+    width: 70px;
+    bottom: 5px;
+}
+
+.ppm_fruit{
+    position: absolute;
+    width: 40px;
+    left: 0;
+    top: 0;
+}
+
+.ppm_fruit1{
+    left: 10px;
+}
+
+.ppm_fruit2{
+    left: 80px;
+}
+
+.ppm_fruit3{
+    left: 235px;
+}
+
+.ppm_table{
+    width: 100%;
+    bottom: 6px;
+    position: absolute;
+}
+
+.ppm_rectangle{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.ppm_model{
+    position: absolute;
+    width: 49%;
+    top: 12%;
+    right: 6%;
+    display: none;
+}
+
+.ppm_box{
+    position: absolute;
+    width: 36%;
+    bottom: 9%;
+    left: 5%;
+    display: none;
+}
+
+.ppm_text{
+    position: absolute;
+    width: 42%;
+    top: 14%;
+    left: 4%;
+    display: none;
+}
+.ppm_fire{
+    position: absolute;
+    width: 20%;
+    top: 58%;
+    left: 28%;
+    display: none;
+    opacity: 0;
+}
+
+.ppm_gas{
+    position: absolute;
+    width: 15%;
+    bottom: 0%;
+    right: 6%;
+    display: none;
+}
+
+
+/* steam css */
+
+.ppm_steam_container {
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    opacity: 0;
+  }
+  .ppm_vapour {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 0px;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+  
+  .ppm_vapour span {
+    position: relative;
+    bottom: 0px;
+    display: block;
+    /*     margin: 0 2px 50px; */
+    min-width: 0.3em;
+    /* min-width: 2px; */
+    height: 20px;
+    background: #fff;
+    /* background: red; */
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(2px);
+    animation-delay: calc(var(--v) * -0.5s);
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0) scaleX(1);
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-20px) scaleX(5);
+    }
+    95% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-60px) scaleX(10);
+    }
+  }
