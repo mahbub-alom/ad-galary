@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.hidden{
+  display: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  user-select: none;
+}
+
+.hidden{
+    display: hidden;
+}
+.frame{
+    width: 300px;
+    height: 600px;
+    /* cursor: url('../images/bamboo.png'), auto; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+}
+body {
+  cursor: url('../images/bamboo.png') 14 140, auto; 
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  font-family: 'Amatic SC', cursive;
+  background: fixed;
+  /* cursor: url('../images/bamboo.png'), auto; */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 600px;
+  border: 2px solid black;
+  background-image: url('../images/bg1.jpg');
+  /* background-color: rgb(189, 139, 184); */
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  line-height: .8;
+  margin: 2rem;
+  margin-top: 20px;
+}
+
+.score1{
+  text-align: right;
+  margin-left: 2px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.score {
+  background:rgba(255,255,255,0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+  margin-top: -268px;
+  margin-left: 70px;
+  position: absolute;
+}
+
+button {
+  width: 178px;
+  height: 63px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  margin-top: 49rem;
+  z-index: 9999;
+  background-image: url('../images/start.png');
+}
+
+/* button:hover {
+  cursor: pointer;
+} */
+.bamboo{
+  background-image: url('../images/bamboo.png');
+  width: 28px;
+  height: 147px;
+  z-index: 9999;
+}
+.game {
+  opacity: 0;
+  z-index: -1;
+  margin-top: -600px;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: url('../images/bamboo.png'), auto;
+  /* cursor: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Ei-scissors_cursor.svg'), auto; */
+  background: url('../images/bg2.jpg');
+  border: 2px solid black;
+}
+
+
+.hole {
+  flex: 1 0 38.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url('../images/shape1.png');
+  /* background: url(https://raw.githubusercontent.com/wesbos/JavaScript30/master/30%20-%20Whack%20A%20Mole/dirt.svg?sanitize=true) bottom center no-repeat; */
+  background-size:contain;
+  content:'';
+  margin-top: 20px;
+  width: 129px;
+  height:129px;
+  position: absolute;
+  z-index: 2;
+  bottom:0px;
+}
+
+.mole {
+  background: url('../images/head.png');
+  position: absolute;
+  top: 100%;
+  width: 145px;
+  height: 181px;
+  transition:all 1s;
+  z-index: 3;
+}
+
+.Sadmole {
+  opacity: 0;
+  background: url('../images/head_sad.png');
+  position: absolute;
+  top: 90%;
+  width: 136px;
+  height: 181px;
+  transition:all 0.4s;
+  z-index: 2;
+}
+
+.hole.up .mole {
+  top:0;
+}
+
+.hole.up .Sadmole {
+  top:0;
+}
+
+
+/* .mallet {
+  position: absolute;
+  z-index: 4;
+  transition: all .08s linear;
+}
+
+.mallet.hit {
+  transform: rotate(-90deg);
+} */

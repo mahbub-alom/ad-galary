@@ -1,0 +1,177 @@
+:root {
+  --cross-btn-top: 32dvh;
+  --cross-btn-right: 0;
+  --container-width: 230px;
+}
+
+@media (min-width: 601px) and (min-height: 750px) {
+  :root {
+    --container-width: 340px;
+  }
+
+}
+
+.ppm_container {
+  /* background: #ff000066; */
+  bottom: 8dvh;
+  position: fixed;
+  right: 1%;
+  width: var(--container-width);
+  aspect-ratio: 20/38;
+}
+
+@media (min-width: 601px) {
+  .ppm_container {
+    bottom: 10dvh;
+  }
+}
+
+
+
+.ppm_product,
+.ppm_product2,
+.ppm_text_1,
+.ppm_text_2,
+.ppm_text_3,
+.ppm_video_shape {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  display: none;
+  opacity: 0;
+}
+
+.ppm_product {
+  width: 84%;
+  bottom: 20%;
+}
+
+.ppm_product2 {
+  width: 50%;
+  bottom: 5%;
+}
+
+.ppm_text_1 {
+  width: 55%;
+  bottom: 4%;
+}
+
+.ppm_text_2 {
+  width: 65%;
+  bottom: 70%;
+}
+
+.ppm_text_3 {
+  width: 55%;
+  bottom: 66%;
+}
+
+.ppm_video_shape {
+  width: 85%;
+  bottom: 30%;
+  aspect-ratio: 289/166;
+}
+
+.ppm_shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.ppm_closeBtn_takeover {
+  z-index: 9999;
+  position: absolute;
+  right: 2%;
+  top: 30%;
+  width: 26px;
+}
+
+.ppm_logo_linear {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  width: 18px;
+}
+
+
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+#ppm_video {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  object-fit: cover;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 2px solid #FFD635;
+}
+
+.ppm_video-controls {
+  bottom: 5%;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  left: 0;
+  z-index: 99;
+  width: 96%;
+}
+
+.ppm_sound {
+  float: right;
+  background: 0 0;
+  color: #FFD635;
+  border: none;
+  outline: 0;
+}
+
+.ppm_toggle {
+  background: 0 0;
+  color: #FFD635;
+  border: none;
+  outline: 0;
+}
+
+.material-icons {
+  border: 2px solid #FFD635;
+  border-radius: 50%;
+  background: white;
+  font-size: 20px;
+}
+
+.ppm_flying_elms {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+}
+
+.singleElm {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 15%;
+}
+
+.ppm_flying_elms {
+  display: none;
+}
+
+.ppm_oil_elm {
+  width: 10%;
+}

@@ -1022,31 +1022,85 @@
       "previewImage": "https://iili.io/FZhHOCP.png"
     },
     {
-      "name": "Weather Campaign",
-      "slug": "movies-weather",
+      "name": "840 video",
+      "slug": "movies-840-video",
       "brand": "Movies",
-      "category": "Weather",
-      "dimensions": "970x250",
-      "shortDescription": "Weather creative ad for Movies",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Prediction",
+      "dimensions": "300x250",
+      "shortDescription": "840 video creative ad for Movies",
+      "previewImage": "https://iili.io/FZhaPGS.png"
     },
     {
-      "name": "3D Campaign",
-      "slug": "nagad-3d",
+      "name": "840 Takeover",
+      "slug": "movies-840-takeover",
+      "brand": "Movies",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "840 video creative ad for Movies",
+      "previewImage": "https://iili.io/FZhlemG.png"
+    },
+    {
+      "name": "840 Whack",
+      "slug": "movies-840-whack",
+      "brand": "Movies",
+      "category": "Expandable",
+      "dimensions": "full takeover",
+      "shortDescription": "840 video creative ad for Movies",
+      "previewImage": "https://iili.io/FZh0Eve.png"
+    },
+    {
+      "name": "Floating Utsob",
+      "slug": "nagad-floating-utsob",
       "brand": "Nagad",
-      "category": "3D",
-      "dimensions": "970x90",
-      "shortDescription": "3D creative ad for Nagad",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating Nagad Utsob creative ad for Nagad",
+      "previewImage": "https://iili.io/FZNkpg1.png"
     },
     {
-      "name": "Animation Campaign",
-      "slug": "natura-animation",
+      "name": "Nagad Car Floating",
+      "slug": "nagad-car-floating",
+      "brand": "Nagad",
+      "category": "Floating",
+      "dimensions": "full takeover",
+      "shortDescription": "Nagad Car Floating creative ad for Nagad",
+      "previewImage": "https://iili.io/FZNEotn.png"
+    },
+    {
+      "name": "Land Interactive",
+      "slug": "nagad-land-interactive",
+      "brand": "Nagad",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "Floating Nagad Utsob creative ad for Nagad",
+      "previewImage": "https://iili.io/FZO3esf.png"
+    },
+    {
+      "name": "Floating Natura Grow",
+      "slug": "natura-floating-natura-grow",
       "brand": "Natura",
-      "category": "Animation",
-      "dimensions": "336x280",
-      "shortDescription": "Animation creative ad for Natura",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Floating",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating Natura Grow creative ad for Natura",
+      "previewImage": "https://iili.io/FZOsqzP.png"
+    },
+    {
+      "name": "Cursor",
+      "slug": "natura-cursor",
+      "brand": "Natura",
+      "category": "Cursor",
+      "dimensions": "Full Screen",
+      "shortDescription": "Cursor creative ad for Natura",
+      "previewImage": "https://iili.io/FZOQUzB.png"
+    },
+    {
+      "name": "Floating Natura",
+      "slug": "natura-floating-natura",
+      "brand": "Natura",
+      "category": "fullscreen",
+      "dimensions": "Full Screen",
+      "shortDescription": "Floating Natura creative ad for Natura",
+      "previewImage": "https://iili.io/FZOpnUX.png"
     },
     {
       "name": "Audio Campaign",
