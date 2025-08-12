@@ -1,0 +1,134 @@
+#pp_floating {
+    z-index: 9999999999999;
+}
+
+.ppm_container {
+    bottom: 10dvh;
+    position: fixed;
+    right: 1%;
+    width: 180px;
+    aspect-ratio: 200/250;
+    /* background-color: #f005; */
+    overflow: hidden;
+    z-index: 9999999999;
+    display: none;
+}
+
+.ppm_closeBtn_takeover {
+    z-index: 9999;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 20px;
+}
+
+.ppm_logo_linear {
+    z-index: 9999;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    width: 14px;
+}
+
+@media (min-width: 601px) and (min-height: 750px) {
+    .ppm_container {
+        bottom: 10dvh;
+        width: 200px;
+    }
+}
+
+.ppm_brush {
+    z-index: 99;
+    position: absolute;
+    right: 65%;
+    bottom: -7%;
+    width: 25%;
+    transform-origin: center top;
+}
+
+.ppm_color {
+    z-index: 9;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 23.5%;
+}
+
+.ppm_color1 {
+    right: 65%;
+    bottom: 10%;
+    --pp_clip: 100%;
+    clip-path: polygon(
+      0% var(--pp_clip),
+      100% var(--pp_clip),
+      100% 100%,
+      0% 100%
+    );
+}
+
+.ppm_color2 {
+    right: 12%;
+    bottom: 10%;
+    --pp_clip_2: 100%;
+    clip-path: polygon(
+      0% var(--pp_clip_2),
+      100% var(--pp_clip_2),
+      100% 100%,
+      0% 100%
+    );
+}
+
+.ppm_color3 {
+    right: 40%;
+    bottom: 10%;
+    transform: rotateZ(-40deg);
+    --pp_clip_3: 0%;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% var(--pp_clip_3),
+      0 var(--pp_clip_3)
+    );
+}
+
+.ppm_colorContainer{
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ppm_box_1{
+    z-index: 9999;
+    position: absolute;
+    right: 42%;
+    bottom: 6%;
+    width: 58%;
+    display: none;
+}
+.ppm_box_2{
+    z-index: 9999;
+    position: absolute;
+    right: 0%;
+    bottom: 5%;
+    width: 53%;
+    display: none;
+}
+.ppm_text{
+    z-index: 999;
+    position: absolute;
+    right: 12%;
+    bottom: 74%;
+    width: 74%;
+    display: none;
+}
+.ppm_text2{
+    z-index: 999;
+    position: absolute;
+    right: 3%;
+    bottom: 57%;
+    width: 92%;
+    display: none;
+}

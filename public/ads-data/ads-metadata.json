@@ -1103,22 +1103,22 @@
       "previewImage": "https://iili.io/FZOpnUX.png"
     },
     {
-      "name": "Audio Campaign",
-      "slug": "nippon-audio",
+      "name": "Floating Paint",
+      "slug": "nippon-floating-paint",
       "brand": "Nippon",
-      "category": "Audio",
-      "dimensions": "728x90",
-      "shortDescription": "Audio creative ad for Nippon",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Floating",
+      "dimensions": "Full Screen",
+      "shortDescription": "Floating Paint creative ad for Nippon",
+      "previewImage": "https://iili.io/FZk9zLx.png"
     },
     {
-      "name": "Carousel Campaign",
-      "slug": "panjeree-carousel",
+      "name": "Book Flip",
+      "slug": "panjeree-book-flip",
       "brand": "Panjeree",
-      "category": "Carousel",
-      "dimensions": "728x300",
-      "shortDescription": "Carousel creative ad for Panjeree",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Flip",
+      "dimensions": "300x250",
+      "shortDescription": "Book Flip creative ad for Panjeree",
+      "previewImage": "https://iili.io/FZka3Gf.png"
     },
     {
       "name": "ClickToCall Campaign",
