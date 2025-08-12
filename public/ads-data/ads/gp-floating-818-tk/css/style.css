@@ -1,0 +1,100 @@
+#pp_floating {
+    z-index: 9999999999999;
+}
+
+.ppm_container {
+    bottom: 10dvh;
+    position: fixed;
+    right: 0%;
+    width: 180px;
+    aspect-ratio: 485/597;
+     background-color: #f000; 
+    overflow: hidden;
+    z-index: 9999999999;
+    display: none;
+}
+
+.ppm_closeBtn_takeover {
+    z-index: 9999;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 20px;
+}
+
+.ppm_logo_linear {
+    z-index: 9999;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    width: 14px;
+}
+
+@media (min-width: 601px) and (min-height: 750px) {
+    .ppm_container {
+        bottom: 10dvh;
+        width: 220px;
+    }
+}
+
+.ppm_logo {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    width: 12%;
+}
+
+.ppm_copy {
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    width: 65%;
+    display: none;
+}
+
+.ppm_shape {
+    position: absolute;
+    top: 32%;
+    left: 12%;
+    width: 76%;
+    display: none;
+}
+
+.ppm_signboard {
+    position: absolute;
+    top: 74%;
+    left: 12%;
+    width: 75%;
+    display: none;
+}
+
+.ppm_mosha_container {
+    position: absolute;
+    top: 26%;
+    left: 2%;
+    width: 93%;
+    aspect-ratio: 454 / 408;
+    display: none;
+}
+
+.ppm_mosharof{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.ppm_35 {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    width: 26%;
+}
+
+.ppm_700 {
+    position: absolute;
+    top: 19%;
+    right: 0%;
+    width: 18%;
+}
+

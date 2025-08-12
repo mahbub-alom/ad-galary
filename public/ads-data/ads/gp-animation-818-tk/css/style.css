@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ppm_container {
+    width: 300px;
+    height: 250px;
+    /* background-color: #f005; */
+    position: relative;
+    margin: 0 auto;
+}
+
+.ppm_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ppm_logo {
+    width: 12%;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    display: none;
+}
+
+.ppm_cta {
+    width: 22%;
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}
+
+.ppm_copy {
+    position: absolute;
+    width: 39%;
+    top: 6%;
+    left: 6%;
+    display: none;
+}
+.ppm_banner {
+    position: absolute;
+    width: 50%;
+    bottom: -11%;
+    left: 18%;
+    display: none;
+}
+
+.model_with_two_data{
+    position: absolute;
+    width: 73%;
+    aspect-ratio: 438 / 398;
+    bottom: 0;
+    left: 15%;
+    display: none;
+}
+.ppm_model {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+}
+
+.ppm_copy_800 {
+    position: absolute;
+    width: 30%;
+    top: 24%;
+    left: 6%;
+}
+.ppm_copy_45 {
+    position: absolute;
+    width: 22%;
+    top: 12%;
+    right: 0%;
+}
+
+.ppm_innerContainer {
+    width: 290px;
+    height: 240px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    overflow: hidden;
+}
+
+
+
+
+/* Border Neon Effect */
+.card {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after,
+.card::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #5cadfa, #FFE449, #38f5fc, #ffffff, #47b7eb, #00C7FF, #ffe449, #8ccfdb, #73abf5);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+    -webkit-animation: 3s spin linear infinite;
+    backface-visibility: hidden;
+}
+
+.card::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}

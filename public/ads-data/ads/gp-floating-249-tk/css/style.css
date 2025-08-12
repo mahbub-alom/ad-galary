@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.ppf-container {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  perspective: 1000px;
+
+  z-index: 1;
+}
+
+.ppf-bg-image {
+  width: 96%;
+  height: 96%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ppf-offer-image {
+  width: 70%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  opacity: 0;
+}
+
+.ppf-text-image {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  /* transform: translate(-50%, -50%); */
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  opacity: 0;
+}
+
+.ppf-cta-image {
+  width: 20%;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  cursor: pointer;
+  animation: scalePulse 2s infinite ease-in-out;
+}
+
+.ppf-cta-image:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+@keyframes scalePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* scale up to 120% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* .ppf-container:before,
+.ppf-container:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    45deg,
+    #0078cf,
+    #0078cf,
+    #0078cf,
+    #0202f0,
+    #0202f0,
+    #0202f0,
+    #0078cf,
+    #0078cf,
+    #0078cf,
+    #0078cf
+  );
+  background-size: 200%;
+  width: calc(80% + 4px);
+  height: calc(80% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+} */
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.ppf-container::after,
+.ppf-container::before {
+  content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #0078cf, #0078cf, #ffffff, #0078cf, #ffffff, #0078cf, #ffffff, #0078cf, #0078cf);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+    -webkit-animation: 3s spin linear infinite;
+    backface-visibility: hidden;
+}
+
+.ppf-container::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
+
+.spinnerTrack {
+  position: absolute;
+  top: 68%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  overflow: hidden;
+  width: 48px;
+  z-index: 5;
+}
+
+.ppf-gb-number {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(0);
+  transition: filter 0.1s ease;
+}
