@@ -1,0 +1,181 @@
+:root {
+  --cross-btn-top:32dvh;
+  --cross-btn-right:0;
+  --container-width:270px;
+}
+
+@media (min-width: 601px) and (min-height: 750px) {
+  :root {
+    --container-width: 340px;
+  }
+
+}
+
+.ppm_container {
+  display: none;
+  /* background-color: #ff000066; */
+  bottom: 10dvh;
+  position: fixed;
+  right: 0%;
+  width: var(--container-width);
+  aspect-ratio: 597/1080;
+/*  overflow: hidden;*/
+}
+
+@media (min-width: 601px) {
+  .ppm_container {
+    bottom: 10dvh;
+  }
+}
+.ppm_bg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.ppm_video_shape{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  display: none;
+  opacity: 0;
+}
+.ppm_swiper{
+  width: 95%;
+  height: 95%;
+}
+.ppm_swiper_container{
+  position: absolute;
+  width: 60%;
+  /* background-color: #00ffff66; */
+  bottom: 13%;
+  left: 21%;
+  aspect-ratio: 190/170;
+}
+.ppm_video_shape{
+  width: 60.5%;
+  bottom: 45%;
+  left: 52%;
+  aspect-ratio: 1280/720;
+}
+.ppm_shape{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.swiper-button-prev {
+  left: 0px !important;
+  --swiper-navigation-size: 26px !important;
+  scale: 0.7; /* Reduce size to 70% - adjust value as needed */
+}
+.swiper-button-next{
+  right: 0px !important;
+  --swiper-navigation-size: 26px !important;
+  scale: 0.7; /* Reduce size to 70% - adjust value as needed */
+}
+
+/* Optional: Change the size by modifying the arrow icon itself */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px; /* Adjust size of the arrow icon */
+  color: #ED3237;
+  font-weight: 900;
+}
+.ppm_closeBtn_takeover {
+  z-index: 9999;
+  position:absolute;
+  right: 2%;
+  top: 35%;
+  width: 26px;
+}
+
+.ppm_text_1,.ppm_text_2,.ppm_text_3{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+#ppm_video {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  object-fit: cover;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.ppm_video-controls {
+  bottom: 5%;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  left: 0;
+  z-index: 99;
+  width: 96%;
+}
+
+.ppm_sound {
+  float: left;
+  background: 0 0;
+  color: #ED3237;
+  border: none;
+  outline: 0;
+}
+
+.ppm_toggle {
+  background: 0 0;
+  color: #ED3237;
+  border: none;
+  outline: 0;
+}
+.material-icons{
+  border: 2px solid #ED3237;
+  border-radius: 50%;
+  background: white;
+  font-size: 18px;
+}
+
+.ppm_flying1_elms,.ppm_flying2_elms,.ppm_flying3_elms{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+}
+
+.singleElm1,.singleElm2,.singleElm3{
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 20%;
+}
+.ppm_flying1_elms,.ppm_flying2_elms,.ppm_flying3_elms{
+  display: none;
+}
+
+.ppm_cta{
+  display: none;
+  position: absolute;
+  bottom: 7%;
+  width: 30%;
+  left: 37%;
+  cursor: pointer;
+}

@@ -959,40 +959,67 @@
       "previewImage": "https://iili.io/FZWnqXf.png"
     },
     {
-      "name": "Tilt Campaign",
-      "slug": "m&s-tilt",
+      "name": "Watch Shoppable Animation",
+      "slug": "mands-watch-shoppable-animation",
       "brand": "M&S",
-      "category": "Tilt",
-      "dimensions": "336x280",
-      "shortDescription": "Tilt creative ad for M&S",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Watch Shoppable Animation creative ad for M&S",
+      "previewImage": "https://iili.io/FZWWnCx.png"
     },
     {
-      "name": "Uncategorized Campaign",
-      "slug": "maggi-uncategorized",
+      "name": "Cricket Countdown",
+      "slug": "mands-cricket-countdown",
+      "brand": "M&S",
+      "category": "Countdown",
+      "dimensions": "300x250",
+      "shortDescription": "Cricket Countdown creative ad for M&S",
+      "previewImage": "https://iili.io/FZWXfSI.png"
+    },
+    {
+      "name": "Soup Floating",
+      "slug": "maggi-floating-soup",
       "brand": "Maggi",
-      "category": "Uncategorized",
-      "dimensions": "728x300",
-      "shortDescription": "Uncategorized creative ad for Maggi",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "fullscreen",
+      "dimensions": "takeover",
+      "shortDescription": "Floating Maggi Soup creative ad for Maggi",
+      "previewImage": "https://iili.io/FZXnaPR.png"
     },
     {
-      "name": "Video Campaign",
-      "slug": "meril-video",
+      "name": "Petroleum Jelly Floating",
+      "slug": "meril-petroleum-jelly-floating",
       "brand": "Meril",
-      "category": "Video",
-      "dimensions": "336x280",
-      "shortDescription": "Video creative ad for Meril",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Floating",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating Meril Petroleum Jelly creative ad for Meril",
+      "previewImage": "https://iili.io/FZXEJTb.png"
     },
     {
-      "name": "Voice Speech Campaign",
-      "slug": "mortein-voice-speech",
+      "name": "Talk to Expert",
+      "slug": "meril-talk-to-expert",
+      "brand": "Meril",
+      "category": "Morph",
+      "dimensions": "takeover",
+      "shortDescription": "Meril Talk to Expert creative ad for Meril",
+      "previewImage": "https://iili.io/FZXMiTg.png"
+    },
+    {
+      "name": "Slide Banners",
+      "slug": "meril-slide-banners",
+      "brand": "Meril",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Meril Slide Banners creative ad for Meril",
+      "previewImage": "https://iili.io/FZXjyI1.png"
+    },
+    {
+      "name": "Mortein Floating",
+      "slug": "mortein-floating",
       "brand": "Mortein",
       "category": "Voice Speech",
-      "dimensions": "300x250",
+      "dimensions": "full takeover",
       "shortDescription": "Voice Speech creative ad for Mortein",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "previewImage": "https://iili.io/FZhHOCP.png"
     },
     {
       "name": "Weather Campaign",
