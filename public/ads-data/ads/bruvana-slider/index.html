@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruvana Slider V6</title>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="ppm_container">
+    <div class="ppm_slide_1">
+      <video width="300" height="250" class="ppm_bg ppm_absolute ppm_video" loop="">
+        <source src="media/bruvana.mp4" type="video/mp4">
+      </video>
+      <div alt="" class="ppm_foreground ppm_absolute" draggable="false"></div>
+      <img src="images/slider.png" alt="" class="ppm_slider ppm_absolute" draggable="false">
+
+    </div>
+
+  </div>
+
+  <!-- js -->
+  <script src="js/gsap.min.js"></script>
+  <script src="js/Draggable.min.js"></script>
+  <script type="text/javascript">
+
+    // *******************************
+    // Add CampId here
+    let cm_id = 123;
+    let hostUrl = window.location.host
+    // *******************************
+
+
+    document.querySelector('.ppm_video').addEventListener('click', () => window.open(`{CLICK_MACRO}`))
+    topBannerDrag = Draggable.create('.ppm_slider', {
+      type: "x", edgeResistance: .99, bounds: {
+        top: 0, left: 0, width: 300, height: 250,
+      }, onDrag: function () {
+        if (this.x < -130) {
+          topBannerDrag[0].disable()
+          hideSlider()
+        }
+        console.log(this.x)
+        gsap.set('.ppm_foreground', { width: `${(284 + this.x)}px` })
+      }
+    })
+
+
+    function hideSlider() {
+      fetch(`https://rh.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${hostUrl}&type=1`)
+      gsap.to('.ppm_foreground', { x: -300 })
+      gsap.to('.ppm_slider', { x: -300, duration: .3 })
+      document.querySelector('.ppm_video').play()
+    }
+  </script>
+
+
+</body></html>

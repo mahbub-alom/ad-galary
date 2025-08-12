@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takeover: Purplepatch</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fff0;
+        width: 100dvw;
+        height: 100dvh;
+        background-size: cover;
+        position: relative;
+      }
+
+      .ppm_closeBtn_takeover{
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Takeover Code: Start From Here -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+    <div class="ppm_container">
+      <div class="ppm_dColorContainer">
+        <img src="images/dFull.png" alt="" class="ppm_dFull ppm_dColor">
+      </div>
+      <div class="ppm_mColorContainer">
+        <img src="images/mFull.png" alt="" class="ppm_mFull ppm_mColor">
+      </div>
+      <img src="images/brush.png" alt="" class="ppm_brush">
+      <div class="ppm_innerContainer">
+        <img src="images/product.png" alt="" class="ppm_product">
+        <img src="images/copy.png" alt="" class="ppm_copy">
+        <img src="images/1.png" alt="" class="ppm_text_1">
+        <img src="images/2.png" alt="" class="ppm_text_2">
+        <img src="images/3.png" alt="" class="ppm_text_3">
+        <img src="images/bergerlogo.png" alt="" class="ppm_bergerlogo">
+
+        <!-- video code -->
+        <div class="ppm_video_shape">
+          <img src="images/shape.png" class="ppm_shape" alt="">
+          <div id="ppm_video-player" class="video-wrapper">
+            <video id="ppm_video" src="media/vid.mp4" muted="true" playsinline=""></video>
+            <div class="ppm_video-controls">
+              <button id="ppm_sound" class="ppm_sound">
+                <i class="material-icons">volume_off</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="images/close_red.png" class="ppm_closeBtn_takeover" alt="" srcset="">
+      <!-- <img src="images/logo_blue_small.png" class="ppm_logo_linear" alt="" srcset="" draggable="false"> -->
+    </div>
+
+
+    <script>
+      var cm_id = 138;
+      function getExtraData() {
+        var t;
+        let e = (function t() {
+            var e = document.cookie.split(";");
+            if (window.location !== window.parent.location ? 0 : 1)
+              e = document.cookie.split(";");
+            else
+              try {
+                e = window.parent.document.cookie.split(";");
+              } catch (i) {
+                e = document.cookie.split(";");
+              }
+            for (var o = {}, n = 0; n < e.length; n++) {
+              var r = e[n].split("=");
+              o[(r[0] + "").trim()] = unescape(r.slice(1).join("="));
+            }
+            return o;
+          })(),
+          i =
+            ((t = new XMLHttpRequest()).open(
+              "GET",
+              "https://www.cloudflare.com/cdn-cgi/trace",
+              !1
+            ),
+            t.send(null),
+            (newData = t.responseText
+              .trim()
+              .split("\n")
+              .reduce(function (t, e) {
+                return (t[(e = e.split("="))[0]] = e[1]), t;
+              }, {})));
+        return { user_agent: i.uag, browser_cookies: e._ga, client_ip: i.ip };
+      }
+      let extraData = (console.log(!0), getExtraData());
+      function submitInteraction(t, e = e) {
+        fetch(
+          `https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${t}&user_agent=${e?.user_agent}&browser_cookies=${e?.browser_cookies}&client_ip=${e?.client_ip}`
+        );
+      }
+    </script>
+        <script src="js/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+    <ins class="advisor" data-cm-id="138" data-tg-id="137" data-bn-id="" data-click-tracker-url="https://bgd1.purplepatch.online/rtb/clicks" data-click-tag-class="data-click-tracker">
+      <span class="advisor-visible"></span>
+      <script src="js/av.js" type="text/javascript"></script>
+    </ins>
+
+    <!-- End Takeover Code-->
+  
+
+</body></html>

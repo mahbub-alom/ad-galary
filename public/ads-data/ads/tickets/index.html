@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Tickets</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="ppm_container">
+      <img src="images/call.jpg" alt="" class="call-to-book-image" id="callToBookImage" style="
+          position: absolute;
+          top: 4%;
+          right: 4%;
+          z-index: 99999;
+          width: 25%;
+        ">
+      <img src="images/bg.jpg" alt="" class="ppm_bg">
+      <label for="citySelect" class="ppm_city_label">GOING FROM:</label>
+      <select id="citySelect" class="ppm_city_select">
+        <option value="">Select City</option>
+        <!-- Options will be dynamically populated -->
+      </select>
+      <label for="citySelectTo" class="ppm_city_to_label">GOING TO:</label>
+      <select id="citySelectTo" class="ppm_city_selectTo">
+        <option value="">Select City</option>
+        <!-- Options will be dynamically populated -->
+      </select>
+
+      <label for="dateSelect" class="ppm_city_label" style="top: 181px">JOURNEY DATE:</label>
+      <input type="date" id="dateSelect" class="ppm_city_select" style="top: 192px; width: 126px; height: 17px">
+
+      <label for="dateSelectTo" class="ppm_city_to_label" style="top: 181px; opacity: 0.5">RETURN DATE:</label>
+      <input type="date" id="dateSelectTo" disabled="" placeholder="Select Date" class="ppm_city_selectTo" style="
+          top: 193px;
+          opacity: 0.5;
+          width: 113px;
+          height: 17px;
+          padding-left: 3px;
+        ">
+
+      <img src="images/cta.png" alt="" class="ppm_cta">
+    </div>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+  
+
+</body></html>

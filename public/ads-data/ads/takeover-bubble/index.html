@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takeover: Cocacola</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: url("images/mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100dvw;
+        height: 100dvh;
+        overflow: hidden;
+        background-color: #ffffff;
+      }
+
+      @media (min-width: 601px) {
+        body {
+          background: url("images/desktop.png");
+          background-color: #ffffff;
+        }
+      }
+
+      #confetti-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <button id="confetti-btn" onclick="launchConfetti()">Test Confetti</button> -->
+    <div class="ppm_container" id="ppm_container">
+      <div class="ppm_container_inner">
+        <img src="images/cap.png" alt="" class="ppm_ball_1">
+        <img src="images/1.png" alt="" class="ppm_ball_nemo">
+        <div class="gift-box">
+          <div class="box-body">
+            <img class="product-item product-cola" src="images/cola.png" alt="Coca-Cola">
+            <img class="product-item product-fridge" src="images/fridge.png" alt="Fridge">
+            <img class="product-item product-tv" src="images/tv.png" alt="TV">
+            <img class="product-item product-mobile" src="images/mobile_1.png" alt="Mobile">
+            <img class="product-item product-copy" src="images/copy.png" alt="Copy">
+            <div class="box-lid">
+              <div class="box-bowtie"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ppm_brokenGlass"></div>
+      <div class="ppm_bubbles_container" id="ppm_bubbles_container"></div>
+      <img src="images/close_red.png" class="ppm_closeBtn_takeover" alt="" draggable="false">
+      <img src="images/logo_blue_small.png" class="ppm_logo_linear" alt="" draggable="false">
+    </div>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+      // Confetti configuration
+      function launchConfetti() {
+        confetti({
+          particleCount: 500,
+          spread: 50,
+          origin: { y: 0.6, x: 0.5 }, // Center of the box
+          colors: [
+            "#ff0000",
+            "#ffa500",
+            "#ffff00",
+            "#008000",
+            "#0000ff",
+            "#4b0082",
+            "#ee82ee",
+          ],
+        });
+      }
+    </script>
+    <script src="js/script.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ppm_container {
+  position: fixed;
+  top: 0px;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 999999;
+  background-size: 100% 100%;
+  /* background-color: #0005; */
+  overflow: hidden;
+}
+
+.ppm_innerContainer {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  /* background-color: #f005; */
+  aspect-ratio: 2.1 / 1;
+  transform: translateY(-50%);
+}
+
+.ppm_logo_linear {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 16px;
+}
+
+.ppm_closeBtn_takeover {
+  position: absolute;
+  top: 0%;
+  right: 25px;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  .ppm_innerContainer {
+    aspect-ratio: 1/2.1;
+  }
+  .ppm_logo_linear {
+    width: 18px;
+  }
+  .ppm_closeBtn_takeover {
+    width: 22px;
+  right: 10px;
+  }
+}
+
+/* other styles */
+.ppm_dColorContainer,
+.ppm_mColorContainer {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.ppm_dColor,
+.ppm_mColor {
+  position: absolute;
+  height: 100%;
+  top: 0%;
+}
+
+.ppm_dFull {
+  width: 100%;
+  left: 0%;
+  /* border: 1px solid #fff; */
+  --pp_clip_1: 0%;
+  clip-path: polygon(0 0, 100% 0, 100% var(--pp_clip_1), 0 var(--pp_clip_1));
+}
+
+.ppm_dColor1 {
+  width: 30%;
+  left: 0%;
+  /* border: 1px solid #fff; */
+  --pp_clip_1: 0%;
+  clip-path: polygon(0 0, 100% 0, 100% var(--pp_clip_1), 0 var(--pp_clip_1));
+}
+
+.ppm_dColor2 {
+  width: 29%;
+  left: 24%;
+  /* border: 1px solid #fff; */
+  --pp_clip_2: 100%;
+  clip-path: polygon(
+    0% var(--pp_clip_2),
+    100% var(--pp_clip_2),
+    100% 100%,
+    0% 100%
+  );
+}
+
+.ppm_dColor3 {
+  width: 30%;
+  left: 48%;
+  /* border: 1px solid #fff; */
+  --pp_clip_3: 0%;
+  clip-path: polygon(0 0, 100% 0, 100% var(--pp_clip_3), 0 var(--pp_clip_3));
+}
+
+.ppm_dColor4 {
+  width: 30%;
+  left: 70%;
+  /* border: 1px solid #fff; */
+  --pp_clip_4: 100%;
+  clip-path: polygon(
+    0% var(--pp_clip_4),
+    100% var(--pp_clip_4),
+    100% 100%,
+    0% 100%
+  );
+}
+
+.ppm_brush {
+  position: absolute;
+  display: none;
+}
+
+.ppm_mFull {
+  width: 100%;
+  left: 0%;
+  /* border: 1px solid #fff; */
+  --pp_clip_5: 0%;
+  clip-path: polygon(0 0, 100% 0, 100% var(--pp_clip_5), 0 var(--pp_clip_5));
+}
+.ppm_mColor1 {
+  width: 55%;
+  left: 0%;
+  /* border: 1px solid #fff; */
+  --pp_clip_5: 0%;
+  clip-path: polygon(0 0, 100% 0, 100% var(--pp_clip_5), 0 var(--pp_clip_5));
+}
+
+.ppm_mColor2 {
+  width: 55%;
+  left: 45%;
+  /* border: 1px solid #fff; */
+  --pp_clip_6: 100%;
+  clip-path: polygon(
+    0% var(--pp_clip_6),
+    100% var(--pp_clip_6),
+    100% 100%,
+    0% 100%
+  );
+}
+
+/* video Styles */
+.ppm_video_shape {
+  position: absolute;
+  right: 12%;
+  display: none;
+  width: 34%;
+  bottom: 28%;
+  aspect-ratio: 1280/720;
+}
+.ppm_shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.ppm_product {
+  position: absolute;
+  bottom: -4%;
+  left: 10%;
+  width: 38%;
+  display: none;
+}
+.ppm_copy {
+  position: absolute;
+  top: 7%;
+  right: 18%;
+  width: 20%;
+  display: none;
+}
+.ppm_text_1 {
+  position: absolute;
+  bottom: 18%;
+  right: 17.5%;
+  width: 22%;
+  display: none;
+}
+.ppm_text_2 {
+  position: absolute;
+  bottom: 14%;
+  right: 17.5%;
+  width: 22%;
+  display: none;
+}
+.ppm_text_3 {
+  position: absolute;
+  bottom: 10%;
+  right: 17.5%;
+  width: 22%;
+  display: none;
+}
+
+.ppm_bergerlogo {
+  position: absolute;
+  top: 6%;
+  left: 21.2%;
+  width: 13%;
+  display: none;
+}
+
+/* core video styles */
+#ppm_video {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  object-fit: cover;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 13%;
+}
+
+.ppm_video-controls {
+  bottom: 5%;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  left: 0;
+  z-index: 99;
+  width: 96%;
+}
+
+.ppm_sound {
+  float: right;
+  background: 0 0;
+  color: #142553;
+  border: none;
+  outline: 0;
+}
+
+.ppm_toggle {
+  background: 0 0;
+  color: #142553;
+  border: none;
+  outline: 0;
+}
+
+.material-icons {
+  border: 2px solid #142553;
+  border-radius: 50%;
+  background: white;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .ppm_bergerlogo {
+    top: 9%;
+    left: 35%;
+    width: 30%;
+  }
+  .ppm_product {
+    bottom: 4%;
+    left: 22%;
+    width: 60%;
+  }
+  .ppm_copy {
+    top: 22%;
+    right: 19%;
+    width: 58%;
+  }
+  .ppm_video_shape {
+    right: 15%;
+    display: none;
+    width: 70%;
+    bottom: 43%;
+  }
+  .ppm_text_1 {
+    bottom: 38%;
+    right: 19.5%;
+    width: 60%;
+  }
+  .ppm_text_2 {
+    bottom: 36%;
+    right: 19.5%;
+    width: 60%;
+  }
+  .ppm_text_3 {
+    bottom: 33.5%;
+    right: 19.5%;
+    width: 60%;
+  }
+}

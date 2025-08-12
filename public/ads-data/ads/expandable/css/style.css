@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.carousel {
+  margin-top: 2px;
+  /* padding: px; */
+  perspective: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel > * {
+  flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.carousel figure div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
+  height: 250px;
+  overflow: hidden;
+}
+.carousel figure div:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+.carImage{
+position: absolute;
+bottom: 0;
+}
+.carImage1{
+position: absolute;
+bottom: 25px;
+left: 42px;
+}
+.carImage2{
+position: absolute;
+bottom: 40px;
+left: 0px;
+}
+.carImage3{
+position: absolute;
+bottom: 40px;
+left: 0px;
+}
+
+.crossBtn{
+  position: absolute;
+  top: 5px;
+  left: 120px;
+  z-index: 99;
+  font-weight: 600;
+  font-size: 22px;
+  /* border: 1px solid black; */
+  background-color: aliceblue;
+  border-radius: 22px;
+  width: 25px;
+  text-align: center;
+  height: 25px;
+  cursor: default;
+  display: none;
+  opacity: 0;
+}
+
+.ppm_tapIcon{
+  position: absolute;
+  top: -70px;
+  left: 80px;
+}
+

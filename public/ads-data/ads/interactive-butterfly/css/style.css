@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ppm_container {
+    width: 300px;
+    height: 250px;
+    background-color: #f005;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ppm_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ppm_logo {
+    width: 38px;
+    position: absolute;
+    top: 13px;
+    right: 14px;
+}
+
+.ppm_slide1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ppm_shape {
+    position: absolute;
+    width: 74%;
+    top: 8%;
+    left: 12%;
+}
+
+.ppm_mn {
+    position: absolute;
+    width: 46%;
+    top: 3%;
+    left: 26%;
+    display: none;
+}
+
+.ppm_cashback {
+    position: absolute;
+    width: 60%;
+    top: 34%;
+    left: 20%;
+    display: none;
+}
+
+.ppm_click {
+    position: absolute;
+    width: 28%;
+    bottom: 2%;
+    left: 36%;
+    display: none;
+    cursor: pointer;
+}
+
+.ppm_flippingSlide {
+    position: absolute;
+    width: 75%;
+    aspect-ratio: 445 / 432;
+    top: 7%;
+    left: 12%;
+    display: none;
+}
+
+.ppm_elm {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.ppm_elm_1 { display: block; }
+.ppm_elm_2 { display: none; }
+.ppm_elm_3 { display: none; }
+
+
+.ppm_swiper{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ppm_swiper_container{
+    position: absolute;
+    width: 170px;
+    /* background-color: #00ffff66; */
+    bottom: 0px;
+    left: 65px;
+    aspect-ratio: 190/35;
+    display: none;
+}
+
+.swiper-button-prev {
+  left: -5px !important;
+  --swiper-navigation-size: 26px !important;
+  scale: 0.5; /* Reduce size to 70% - adjust value as needed */
+  color: #D5357E;
+  font-weight: 900;
+}
+.swiper-button-next{
+  right: -5px !important;
+  --swiper-navigation-size: 26px !important;
+  scale: 0.5; /* Reduce size to 70% - adjust value as needed */
+  color: #D5357E;
+  font-weight: 900;
+}

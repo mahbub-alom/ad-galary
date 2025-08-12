@@ -325,112 +325,238 @@
       "previewImage": "https://iili.io/FQOhmil.png"
     },
     {
-      "name": "Draggable Campaign",
-      "slug": "bata-draggable",
+      "name": "Flip Animation",
+      "slug": "flip-animation",
       "brand": "Bata",
-      "category": "Draggable",
-      "dimensions": "300x600",
-      "shortDescription": "Draggable creative ad for Bata",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Animation",
+      "dimensions": "full takeover",
+      "shortDescription": "Flip Animation creative ad for Aarong",
+      "previewImage": "https://iili.io/FQUuBHv.png"
     },
     {
-      "name": "Dyanmic URL Campaign",
-      "slug": "bdtickets-dyanmic-url",
+      "name": "Zipper Animation",
+      "slug": "zipper-animation",
+      "brand": "Bata",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "Zipper Animation creative ad for Aarong",
+      "previewImage": "https://iili.io/FQUWK0v.png"
+    },
+    {
+      "name": "Tickets",
+      "slug": "tickets",
       "brand": "BdTickets",
       "category": "Dyanmic URL",
-      "dimensions": "300x600",
-      "shortDescription": "Dyanmic URL creative ad for BdTickets",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Expandable Campaign",
-      "slug": "bengal-meat-expandable",
-      "brand": "Bengal-Meat",
-      "category": "Expandable",
       "dimensions": "300x250",
-      "shortDescription": "Expandable creative ad for Bengal-Meat",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "shortDescription": "Tickets creative ad for BdTickets",
+      "previewImage": "https://iili.io/FQgOcAv.png"
     },
     {
-      "name": "Fireworks Campaign",
-      "slug": "berger-fireworks",
+      "name": "Countdown",
+      "slug": "countdown",
+      "brand": "Bengal-Meat",
+      "category": "Animation",
+      "dimensions": "300x600",
+      "shortDescription": "Countdown creative ad for Bengal-Meat",
+      "previewImage": "https://iili.io/FQgmyRj.png"
+    },
+    {
+      "name": "One Coat",
+      "slug": "one-coat",
       "brand": "Berger",
-      "category": "Fireworks",
-      "dimensions": "728x90",
-      "shortDescription": "Fireworks creative ad for Berger",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "One Coat creative ad for Berger",
+      "previewImage": "https://iili.io/FQrSuJ1.png"
     },
     {
-      "name": "Flip Campaign",
+      "name": "Eco Coat",
+      "slug": "eco-coat",
+      "brand": "Berger",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Eco Coat creative ad for Berger",
+      "previewImage": "https://iili.io/FQ49xB2.png"
+    },
+    {
+      "name": "Furnifab",
+      "slug": "furnifab",
+      "brand": "Berger",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "furnifab creative ad for Berger",
+      "previewImage": "https://iili.io/FQ4wyE7.png"
+    },
+    {
+      "name": "Footer Scroller Furnifab",
+      "slug": "footer-scroller-furnifab",
+      "brand": "Berger",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "footer scroller furnifab creative ad for Berger",
+      "previewImage": "https://iili.io/FQ4rOPf.png"
+    },
+    {
+      "name": "Paint Choosing",
+      "slug": "paint-choosing",
+      "brand": "Berger",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Paint Choosing creative ad for Berger",
+      "previewImage": "https://iili.io/FQ4bc3F.png"
+    },
+    {
+      "name": "Paint Selection",
+      "slug": "paint-selection",
+      "brand": "Berger",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Paint Selection creative ad for Berger",
+      "previewImage": "https://iili.io/FQ6dvlp.png"
+    },
+    {
+      "name": "Ball Drop",
       "slug": "bkash-flip",
       "brand": "Bkash",
-      "category": "Flip",
-      "dimensions": "300x250",
-      "shortDescription": "Flip creative ad for Bkash",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Floating Campaign",
-      "slug": "bruvana-floating",
-      "brand": "Bruvana",
       "category": "Floating",
-      "dimensions": "970x90",
-      "shortDescription": "Floating creative ad for Bruvana",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "full takeover",
+      "shortDescription": "Ball Drop creative ad for Bkash",
+      "previewImage": "https://iili.io/FQsYy6G.png"
     },
     {
-      "name": "Footer Scroll Campaign",
-      "slug": "butterfly-footer-scroll",
+      "name": "Animation",
+      "slug": "bkash-animation",
+      "brand": "Bkash",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation creative ad for Bkash",
+      "previewImage": "https://iili.io/FQsNl87.png"
+    },
+    {
+      "name": "Tap To Reveal",
+      "slug": "tap-to-reveal",
+      "brand": "Bkash",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Tap To Reveal creative ad for Bkash",
+      "previewImage": "https://iili.io/FQsNl87.png"
+    },
+    {
+      "name": "Shoppable",
+      "slug": "bruvana-shoppable",
+      "brand": "Bruvana",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "shoppable creative ad for Bruvana",
+      "previewImage": "https://iili.io/FQLJylf.png"
+    },
+    {
+      "name": "Slider",
+      "slug": "bruvana-slider",
+      "brand": "Bruvana",
+      "category": "Slider",
+      "dimensions": "300x250",
+      "shortDescription": "slider creative ad for Bruvana",
+      "previewImage": "https://iili.io/FQLdyLF.png"
+    },
+    {
+      "name": "Interactive Butterfly",
+      "slug": "interactive-butterfly",
       "brand": "Butterfly",
-      "category": "Footer Scroll",
-      "dimensions": "970x250",
-      "shortDescription": "Footer Scroll creative ad for Butterfly",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Interactive Butterfly creative ad for Butterfly",
+      "previewImage": "https://iili.io/FQQ2cV1.png"
     },
     {
-      "name": "Gamification Campaign",
-      "slug": "chaldal-gamification",
+      "name": "Animation Butterfly",
+      "slug": "animation-butterfly",
+      "brand": "Butterfly",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation Butterfly creative ad for Butterfly",
+      "previewImage": "https://iili.io/FQQ3QhN.png"
+    },
+    {
+      "name": "Expandable",
+      "slug": "expandable",
       "brand": "Chaldal",
       "category": "Gamification",
       "dimensions": "336x280",
-      "shortDescription": "Gamification creative ad for Chaldal",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "shortDescription": "Expandable creative ad for Chaldal",
+      "previewImage": "https://iili.io/FQQAv1f.png"
     },
     {
-      "name": "Hover Campaign",
-      "slug": "closeup-hover",
+      "name": "Takeover Fuuu",
+      "slug": "takeover-fuu",
       "brand": "Closeup",
-      "category": "Hover",
-      "dimensions": "728x90",
-      "shortDescription": "Hover creative ad for Closeup",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "takeover fuuu creative ad for Closeup",
+      "previewImage": "https://iili.io/FQQ1pkb.png"
     },
     {
-      "name": "Image Overlay Campaign",
-      "slug": "coke-image-overlay",
+      "name": "Draggable Offer",
+      "slug": "draggable-offer-coke",
       "brand": "Coke",
-      "category": "Image Overlay",
+      "category": "Draggable",
       "dimensions": "300x250",
-      "shortDescription": "Image Overlay creative ad for Coke",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "shortDescription": "Draggable Offer creative ad for Coke",
+      "previewImage": "https://iili.io/FQQmZbt.png"
     },
     {
-      "name": "Interactive Campaign",
-      "slug": "coke-studio-interactive",
+      "name": "Takeover Bubble",
+      "slug": "takeover-bubble",
+      "brand": "Coke",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Bubble creative ad for Coke",
+      "previewImage": "https://iili.io/FQQpDvV.png"
+    },
+    {
+      "name": "Footer Scroller",
+      "slug": "footer-scroller-coke",
+      "brand": "Coke",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Footer Scroller creative ad for Coke",
+      "previewImage": "https://iili.io/FQQytPs.png"
+    },
+    {
+      "name": "Takeover",
+      "slug": "coke-studio-takeover",
       "brand": "Coke Studio",
-      "category": "Interactive",
-      "dimensions": "970x90",
-      "shortDescription": "Interactive creative ad for Coke Studio",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover creative ad for Coke Studio",
+      "previewImage": "https://iili.io/FZ3nBBp.png"
     },
     {
-      "name": "Interscroller Campaign",
-      "slug": "dano-interscroller",
+      "name": "Animation Banner",
+      "slug": "dano-animation-banner",
       "brand": "Dano",
-      "category": "Interscroller",
-      "dimensions": "970x90",
-      "shortDescription": "Interscroller creative ad for Dano",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation Banner creative ad for Dano",
+      "previewImage": "https://iili.io/FZ3TIzg.png"
+    },
+    {
+      "name": "Animation Banner 2",
+      "slug": "dano-animation-banner-two",
+      "brand": "Dano",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation Banner creative ad for Dano",
+      "previewImage": "https://iili.io/FZ3T8hu.png"
+    },
+    {
+      "name": "Animation Banner 3",
+      "slug": "dano-animation-banner-three",
+      "brand": "Dano",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation Banner creative ad for Dano",
+      "previewImage": "https://iili.io/FZ3ufQs.png"
     },
     {
       "name": "Lead Generation Campaign",

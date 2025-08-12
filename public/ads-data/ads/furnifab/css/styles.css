@@ -1,0 +1,120 @@
+:root {
+  --vid-height: calc(90dvh*.56);
+  --video_controller:35px;
+  --coin-div-width: 30dvw;
+  --container-width:460px;
+  --container-height:calc(var(--container-width)/1.2)
+}
+@media (max-width: 601px) {
+  :root {
+    --vid-height: calc(56dvw);
+    --coin-div-width: 75dvw;
+    --container-width:90dvw;
+    --container-height:calc(var(--container-width)/1.2)
+  }
+}
+.ppm_container{
+  position: fixed;
+  width: var(--container-width);
+  height: var(--container-height);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ppm_container2{
+  position: fixed;
+  width: var(--container-width);
+  height: var(--container-height);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: #ff000066; */
+}
+
+.ppm_round{
+  width: 95%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.ppm_offer{
+  width: 110%;
+  position: absolute;
+  bottom: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ppm_swipe{
+  width: 15%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ppm_logo{
+  width: 55%;
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ppm_vid_div {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  width: 90dvh;
+  display: none;
+  opacity: 0;
+}
+@media (max-width: 601px) {
+  .ppm_vid_div {
+    width: 100dvw;
+  }
+}
+.ppm_video_takeover {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.ppm_closeBtn_linear {
+  position: absolute;
+  right: 1%;
+  width: 24px;
+}
+@media (max-width: 601px) {
+  .ppm_closeBtn_linear {
+      width: 20px;
+  }
+}
+.ppm_video-controls {
+  top: calc((var(--vid-height)/2) - var(--video_controller) );
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.ppm_sound {
+  float: right;
+  background: 0 0;
+  color: #fff;
+  border: none;
+  outline: 0;
+}
+
+.ppm_toggle {
+  background: 0 0;
+  color: #fff;
+  border: none;
+  outline: 0;
+}
+
+.ppm_closeBtn_linear{
+  top: calc(((var(--vid-height)/2) - 5px) * -1 );
+}
+
+.material-icons{
+  color: #FE02A7;
+}

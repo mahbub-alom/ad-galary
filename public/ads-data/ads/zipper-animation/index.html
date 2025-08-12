@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en" style="--open:10%;"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="ad.size" content="width=300,height=250">
+  <title>Bata Zipper Animation by PurplePatch</title>
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .eliment2 {
+      background: url('images/bg.jpg');
+      width: 300px;
+      height: 250px;
+      background-size: cover;
+    }
+
+
+    .slider2 a {
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .ctaButton {
+      height: 24px;
+      position: relative;
+      top: 214px;
+      left: 112px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pp_wrapper">
+    <div class="slider1">
+      <div id="left_panel"></div>
+      <div id="right_panel"></div>
+      <div class="updown" id="zip_tab"></div>
+    </div>
+    <div class="slider2 eliment2 hidden">
+      <img src="images/btn.png" alt="" srcset="" class="ctaButton">
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/purplepatch.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".slider2").click(function () {
+        window.open("{CLICK_MACRO}");
+      });
+    });
+  </script>
+
+
+</body></html>
