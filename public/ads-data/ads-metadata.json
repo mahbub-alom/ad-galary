@@ -587,40 +587,58 @@
     },
 
     {
-      "name": "Location Campaign",
-      "slug": "domino's-location",
+      "name": "Call To Action",
+      "slug": "call-to-action",
       "brand": "Domino's",
-      "category": "Location",
-      "dimensions": "728x300",
-      "shortDescription": "Location creative ad for Domino's",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "ClickToCall",
+      "dimensions": "300x250",
+      "shortDescription": "Call To Action creative ad for Domino's",
+      "previewImage": "https://iili.io/FZ3PKn2.png"
     },
     {
-      "name": "Morph Campaign",
-      "slug": "drinko-morph",
+      "name": "Cursor Movement",
+      "slug": "cursor-movement",
       "brand": "Drinko",
-      "category": "Morph",
-      "dimensions": "300x250",
-      "shortDescription": "Morph creative ad for Drinko",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Cursor",
+      "dimensions": "full takeover",
+      "shortDescription": "Cursor Movement ad for Drinko",
+      "previewImage": "https://iili.io/FZ3t4ix.png"
     },
     {
-      "name": "Motion Campaign",
-      "slug": "ebl-motion",
+      "name": "Zakat Calculator",
+      "slug": "zakat-calculator",
       "brand": "EBL",
-      "category": "Motion",
+      "category": "Lead Generation",
       "dimensions": "300x250",
-      "shortDescription": "Motion creative ad for EBL",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "shortDescription": "Zakat Calculator creative ad for EBL",
+      "previewImage": "https://iili.io/FZFd5V1.png"
     },
     {
-      "name": "Parallax Campaign",
-      "slug": "food-panda-parallax",
+      "name": "Wearables",
+      "slug": "wearables",
+      "brand": "EBL",
+      "category": "Draggable",
+      "dimensions": "300x250",
+      "shortDescription": "Wearables creative ad for EBL",
+      "previewImage": "https://iili.io/FZFdi0u.png"
+    },
+    {
+      "name": "Takeover",
+      "slug": "food-panda-takeover",
       "brand": "Food Panda",
       "category": "Parallax",
-      "dimensions": "336x280",
-      "shortDescription": "Parallax creative ad for Food Panda",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover creative ad for Food Panda",
+      "previewImage": "https://iili.io/FZFnOgI.png"
+    },
+    {
+      "name": "Floating Swipe",
+      "slug": "food-panda-floating",
+      "brand": "Food Panda",
+      "category": "Parallax",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating Swipe creative ad for Food Panda",
+      "previewImage": "https://iili.io/FZFntee.png"
     },
     {
       "name": "Prediction Campaign",

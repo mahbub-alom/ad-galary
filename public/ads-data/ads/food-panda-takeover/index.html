@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Panda</title>
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+
+  <style>
+    :root {
+      --background-bg: url('images/mobile.png');
+    }
+
+    @media (min-width: 601px) {
+      :root {
+        --background-bg: url('images/desktop.jpeg');
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      width: 100dvw;
+      height: 100dvh;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Takeover Code: Start From Here -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+  <div class="ppm_container">
+    <img src="images/bg.png" class="ppm_bg" alt="">
+    <img src="images/panda.png" class="ppm_panda" alt="">
+    <div class="ppm_pandaHandBox">
+      <img src="images/hand.png" class="ppm_handImg" alt="">
+    </div>
+    <img src="images/mobilePhone.png" class="ppm_mobilePhone" alt="">
+    <img src="images/pandapanda.png" class="ppm_pandapanda" alt="">
+  </div>
+
+
+
+  <div class="ppm_vid_div">
+    <video id="ppm_video_takeover" class="ppm_video_takeover" src="media/vid.mp4" muted="true"></video>
+    <div class="ppm_video-controls">
+      <button id="ppm_toggle" class="ppm_toggle">
+        <i class="material-icons">play_arrow</i>
+      </button>
+      <button id="ppm_sound" class="ppm_sound">
+        <i class="material-icons">volume_off</i>
+      </button>
+    </div>
+    <img src="images/close_red.png" class="ppm_closeBtn_linear" alt="" srcset="">
+  </div>
+  <script src="js/script.js"></script>
+  <script>
+    // let takeoverLandingUrl = `https://www.coca-cola.com/us/en/offerings/coke-studio`;
+    // document.querySelector('.ppm_vid_div').addEventListener('click', () => { window.open(`${takeoverLandingUrl}`) });
+  </script>
+  <!-- End Takeover Code-->
+
+
+</body></html>

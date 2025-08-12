@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EBL Zakat Calculator</title>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="ppm_container">
+    <img src="images/bg.jpg" alt="" class="ppm_bg ppm_absolute" draggable="false">
+
+    <div class="ppm_slide_1">
+      <img src="images/calculateKorunText.png" alt="" class="ppm_calculateKorunText ppm_absolute" draggable="false">
+    </div>
+    <div class="ppm_slide_2 ppm_hidden ppm_zeroOpacity">
+      <img src="images/sthabor.png" alt="" class="ppm_sthabor ppm_absolute" draggable="false">
+      <img src="images/osthabor.png" alt="" class="ppm_osthabor ppm_absolute" draggable="false">
+      <img src="images/calculateBtn.png" alt="" class="ppm_calculateBtn ppm_absolute" draggable="false">
+
+      <form action="#" class="ppm_absolute">
+        <input type="number" id="sthabor" name="sthabor" class="form_sthabor">
+        <input type="number" id="osthabor" name="osthabor" class="form_osthabor">
+
+
+      </form>
+      <div class="ppm_reference ppm_absolute">
+        <p> * রেফারেন্সঃ ইসলামিক ফাউন্ডেশন বাংলাদেশ </p>
+      </div>
+      <div class="sthabor_hover ppm_absolute"></div>
+      <div class="osthabor_hover ppm_absolute"></div>
+
+      <div class="osthabor_help ppm_absolute ppm_hidden">
+        <p> নগদ টাকা, সোনা-রুপা কিংবা মূল্যবান দ্রব্যাদি, ব্যক্তিগত বিনিয়োগ </p>
+      </div>
+
+      <div class="sthabor_help ppm_absolute ppm_hidden">
+        <p> বাড়ি কিংবা জমিজমা, গাড়ি কিংবা মোটরযান </p>
+      </div>
+
+    </div>
+
+    <div class="ppm_slide_3 ppm_hidden ppm_zeroOpacity ">
+      <img src="images/zakatAmount.png" alt="" class="ppm_zakatAmount ppm_absolute" draggable="false">
+      <div class="calculatedZakatAmount ppm_absolute"></div>
+      <img src="images/smsText.png" alt="" class="ppm_smsText ppm_absolute" draggable="false">
+      <img src="images/smsBox.png" alt="" class="ppm_smsBox ppm_absolute" draggable="false">
+      <form action="#" class="ppm_absolute">
+        <input type="number" id="mobile_no" name="mobile_no" class="mobile_no" onkeyup="checkMobileNumber()">
+      </form>
+      <img src="images/submitBtn.png" alt="" class="ppm_submitBtn ppm_absolute" draggable="false">
+    </div>
+    <div class="ppm_slide_4 ppm_hidden ppm_zeroOpacity">
+      <img src="images/bglast.jpg" alt="" class="ppm_bglast ppm_absolute" draggable="false">
+      <img src="images/finalText.png" alt="" class="ppm_finalText ppm_absolute" draggable="false">
+    </div>
+
+
+    <img src="images/ebllogo.png" alt="" class="ppm_logo ppm_absolute" draggable="false">
+    <!-- <img src="//ms.purplepatch.online/ramadan/zakat-calculator/ebl/s4.jpg" alt="" srcset="" class="ppm_check"> -->
+  </div>
+
+  <!-- js -->
+  <script src="js/gsap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/Draggable.min.js"></script> -->
+  <script src="js/script.js"></script>
+
+
+</body></html>
