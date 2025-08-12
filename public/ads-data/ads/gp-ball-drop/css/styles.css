@@ -1,0 +1,56 @@
+
+.ppm_container {
+  /* background: #ff000066; */
+  position: fixed;
+  right: 1%;
+  bottom: 0;
+  width: 180px;
+  /* height: 100dvh; */
+  aspect-ratio: 180/550;
+/*  overflow: hidden;*/
+  display: none;
+}
+.ppm_closeBtn_takeover {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 24px;
+}
+
+.ppm_logo_linear {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  width: 16px;
+}
+.ppm_ball_container {
+  position: absolute;
+  right: 0%;
+  bottom: 30%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: none;
+}
+.ppm_ball_1 {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+}
+.ppm_ball_2 {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  display: none;
+}
+
+.ppm_text{
+  position: absolute;
+  right: 25%;
+  bottom: 28%;
+  width: 50%;
+  display: none;
+}

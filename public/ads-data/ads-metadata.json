@@ -695,26 +695,46 @@
       "shortDescription": "Interactive creative ad for Godrej",
       "previewImage": "https://iili.io/FZoXl2a.png"
     },
-    {
-      "name": "Ramadan Campaign",
-      "slug": "gp-ramadan",
-      "brand": "GP",
-      "category": "Ramadan",
-      "dimensions": "336x280",
-      "shortDescription": "Ramadan creative ad for GP",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-
-
-    {
-      "name": "Selection Campaign",
-      "slug": "gold-kinen-selection",
+        {
+      "name": "Shop",
+      "slug": "gold-kinen-shop",
       "brand": "Gold Kinen",
       "category": "Selection",
-      "dimensions": "970x250",
-      "shortDescription": "Selection creative ad for Gold Kinen",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "300x250",
+      "shortDescription": "Shop creative ad for Gold Kinen",
+      "previewImage": "https://iili.io/FZzK4gj.png"
     },
+    {
+      "name": "Ball Drop",
+      "slug": "gp-ball-drop",
+      "brand": "GP",
+      "category": "Ramadan",
+      "dimensions": "full takeover",
+      "shortDescription": "Ball Drop creative ad for GP",
+      "previewImage": "https://iili.io/FZzgXGs.png"
+    },
+    {
+      "name": "Floating 219 Tk",
+      "slug": "gp-floating-219-tk",
+      "brand": "GP",
+      "category": "Ramadan",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating 219 Tk creative ad for GP",
+      "previewImage": "https://iili.io/FZzmBxj.png"
+    },
+    {
+      "name": "Floating 599 Tk",
+      "slug": "gp-floating-599-tk",
+      "brand": "GP",
+      "category": "Ramadan",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating 599 Tk creative ad for GP",
+      "previewImage": "https://iili.io/FZzp6vt.png"
+    },
+
+
+
+
     {
       "name": "Shake Campaign",
       "slug": "harpic-shake",

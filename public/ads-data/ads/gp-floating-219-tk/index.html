@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating: GP</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff0;
+      background-size: 100% 100%;
+      width: 100dvw;
+      height: 100dvh;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start floating -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css">
+  <div class="ppm_container">
+    <div class="ppm_slide_2">
+      <img src="images/chat.png" class="ppm_icon_1 ppm_icon" alt="">
+      <img src="images/fb.png" class="ppm_icon_2 ppm_icon" alt="">
+      <img src="images/insta.png" class="ppm_icon_3 ppm_icon" alt="">
+      <img src="images/tube.png" class="ppm_icon_4 ppm_icon" alt="">
+      <img src="images/tick.png" class="ppm_icon_5 ppm_icon" alt="">
+      <img src="images/snap.png" class="ppm_icon_6 ppm_icon" alt="">
+      <img src="images/game.png" class="ppm_icon_7 ppm_icon" alt="">
+    </div>
+    
+    <div class="ppm_slide_1">
+      <img src="images/shape1.png" class="ppm_shape1" alt="">
+      <img src="images/model.png" class="ppm_model" alt="">
+      <img src="images/shape2.png" class="ppm_shape2" alt="">
+      <img src="images/cta.png" class="ppm_cta" alt="">
+      <img src="images/text1.png" class="ppm_text" alt="">
+    </div>
+
+    <div class="ppm_slide_3">
+      <img src="images/bg.png" class="ppm_bg" alt="">
+      <img src="./assets/logo.png" class="ppm_logo" alt="">
+      <img src="images/20gb.png" class="ppm_20gb" alt="">
+      <img src="images/250min.png" class="ppm_250min" alt="">
+      <img src="./assets/Mn.png" class="ppm_mn" alt="">
+      <img src="images/219tk.png" class="ppm_219taka" alt="">
+    </div>
+
+
+    <!-- <img src="./assets/demo_2.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;opacity: .5;" alt=""> -->
+    <img src="images/close_red.png" class="ppm_closeBtn_takeover" alt="" srcset="">
+    <!-- <img src="images/logo_blue_small.png" class="ppm_logo_linear" alt="" srcset="" draggable="false"> -->
+  </div>
+  <script>
+        let cm_id = 2106;
+    function getExtraData(){var t;let e=function t(){var e=document.cookie.split(";");if(window.location!==window.parent.location?0:1)e=document.cookie.split(";");else try{e=window.parent.document.cookie.split(";")}catch(i){e=document.cookie.split(";")}for(var o={},n=0;n<e.length;n++){var r=e[n].split("=");o[(r[0]+"").trim()]=unescape(r.slice(1).join("="))}return o}(),i=((t=new XMLHttpRequest).open("GET","https://www.cloudflare.com/cdn-cgi/trace",!1),t.send(null),newData=t.responseText.trim().split("\n").reduce(function(t,e){return t[(e=e.split("="))[0]]=e[1],t},{}));return{user_agent:i.uag,browser_cookies:e._ga,client_ip:i.ip}}let extraData=(console.log(!0),getExtraData());function submitInteraction(t,e=e){fetch(`https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${t}&user_agent=${e?.user_agent}&browser_cookies=${e?.browser_cookies}&client_ip=${e?.client_ip}`)}
+  </script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end floating -->
+
+
+</body></html>
