@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: AdPageProps): Promise<Metadata> {
-  const ad = await getAdBySlug(params.slug);
+  const ad = await getAdBySlug(params?.slug);
 
 
   if (!ad) {

@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godrej</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GSAP Library -->
+    <script src="js/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="ad-container">
+      <div class="bg">
+        <img src="images/bg1.png" alt="Godrej" class="bg-image" id="bg1">
+        <img src="images/bg2.png" alt="Godrej" class="bg-image" id="bg2" style="opacity: 0">
+      </div>
+      <div class="product-container">
+        <img src="images/product.png" alt="Godrej" class="product-image">
+      </div>
+      <div class="product-clicker">
+        <p class="product-clicker-text">ক্লিক করুন</p>
+        <img src="images/click.png" alt="Godrej" class="product-clicker-cursor">
+      </div>
+      <div class="spray-container">
+        <img src="images/spray.png" alt="Godrej" class="spray-image">
+      </div>
+      <div class="flower-container">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+        <img src="images/flower.png" alt="Godrej" class="flower-image">
+      </div>
+      <div class="text-container">
+        <img src="images/copy.png" alt="Godrej" class="text-image">
+      </div>
+      <div class="steam-container">
+        <img src="images/steam.gif" alt="Godrej" class="steam-image">
+      </div>
+      <div class="steam-container2">
+        <img src="images/steam.gif" alt="Godrej" class="steam-image">
+      </div>
+      <div class="steam-container3">
+        <img src="images/steam.gif" alt="Godrej" class="steam-image">
+      </div>
+      <!-- <div class="ppm_steam_container">
+        <div class="ppm_vapour">
+          <span style="--v: 1"></span>
+          <span style="--v: 2"></span>
+          <span style="--v: 5"></span>
+          <span style="--v: 4"></span>
+          <span style="--v: 6"></span>
+          <span style="--v: 19"></span>
+          <span style="--v: 7"></span>
+          <span style="--v: 8"></span>
+          <span style="--v: 9"></span>
+          <span style="--v: 10"></span>
+          <span style="--v: 11"></span>
+          <span style="--v: 18"></span>
+        </div>
+      </div>
+
+      <div class="ppm_steam_container2">
+        <div class="ppm_vapour">
+          <span style="--v: 1"></span>
+          <span style="--v: 2"></span>
+          <span style="--v: 5"></span>
+          <span style="--v: 4"></span>
+          <span style="--v: 6"></span>
+          <span style="--v: 19"></span>
+          <span style="--v: 7"></span>
+          <span style="--v: 8"></span>
+          <span style="--v: 9"></span>
+          <span style="--v: 10"></span>
+          <span style="--v: 11"></span>
+          <span style="--v: 18"></span>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Animation Script -->
+    <script>
+          let cm_id = 240;
+          function getExtraData(){var t;let e=function t(){var e=document.cookie.split(";");if(window.location!==window.parent.location?0:1)e=document.cookie.split(";");else try{e=window.parent.document.cookie.split(";")}catch(i){e=document.cookie.split(";")}for(var o={},n=0;n<e.length;n++){var r=e[n].split("=");o[(r[0]+"").trim()]=unescape(r.slice(1).join("="))}return o}(),i=((t=new XMLHttpRequest).open("GET","https://www.cloudflare.com/cdn-cgi/trace",!1),t.send(null),newData=t.responseText.trim().split("\n").reduce(function(t,e){return t[(e=e.split("="))[0]]=e[1],t},{}));return{user_agent:i.uag,browser_cookies:e._ga,client_ip:i.ip}}let extraData=(console.log(!0),getExtraData());function submitInteraction(t,e=e){fetch(`https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${t}&user_agent=${e?.user_agent}&browser_cookies=${e?.browser_cookies}&client_ip=${e?.client_ip}`)}
+      // document.addEventListener("DOMContentLoaded", function () {
+        // Initial setup
+        gsap.set(".product-container", { x: 300 });
+        gsap.set(".flower-image", { opacity: 0, scale: 0 });
+        gsap.set(".text-container", { y: -100, opacity: 0 });
+        // gsap.set(".spray-container", {
+        //   scale: -2,
+        //   opacity: 0,
+        //   x: 150,
+        // });
+        // gsap.set(".spray-image", { opacity: 0 });
+        gsap.set(".product-clicker", { x: 300, scale: 1 }); // Set initial scale for product-clicker
+
+        // Create a timeline for the main animation sequence
+        const mainTl = gsap.timeline(); // Start immediately
+
+        // 1. Product comes from right side to the viewport
+        mainTl.to(".product-container", {
+          x: 0,
+          duration: 1,
+          ease: "power2.out",
+        });
+
+        mainTl.to(".product-clicker", {
+          x: 0,
+          duration: 1,
+          ease: "power2.out",
+
+          onComplete: function () {
+            // Start the product-clicker animation
+            mainTl.pause();
+          },
+        });
+
+        // Create a timeline for the product-clicker animation
+        const clickerTl = gsap.timeline({ repeat: -1, yoyo: true });
+
+        // Add scale animation to product-clicker
+        clickerTl.to(".product-clicker", {
+          scale: 1.1,
+          duration: 0.8,
+          ease: "power1.inOut",
+        });
+
+        // 2. Spray scales up and fades in
+        mainTl.to(
+          ".spray-image",
+          {
+            opacity: 1,
+          },
+          ">-0.2"
+        );
+        mainTl.to(
+          ".spray-container",
+          {
+            scale: 2,
+            opacity: 1,
+            x: -50,
+            duration: 4,
+            ease: "elastic.out(2, 2)",
+          },
+          "-=0.2"
+        );
+
+        // Hide only steam containers
+        mainTl.to(
+          [".steam-container", ".steam-container2", ".steam-container3"],
+          {
+            autoAlpha: 0,
+            duration: 0.5,
+            ease: "power2.inOut",
+          },
+          "<+0.5"
+        );
+
+        mainTl.to(
+          ".spray-image",
+          {
+            opacity: 0,
+          },
+          "-=0.7"
+        );
+
+        // 3. Infinite number of flowers flow from there - start earlier
+        mainTl.to(
+          ".flower-image",
+          {
+            opacity: 1,
+            scale: 1,
+            duration: 0.5,
+            stagger: 0.03,
+            ease: "back.out(1.7)",
+          },
+          "-=3.5"
+        );
+
+        // Create flower animation
+        function animateFlowers() {
+          const flowers = document.querySelectorAll(".flower-image");
+          const flowerTimelines = [];
+
+          flowers.forEach((flower, index) => {
+            // Random delay for each flower
+            const delay = Math.random() * 1;
+
+            // Create a unique timeline for each flower
+            const flowerTl = gsap.timeline({
+              repeat: -1,
+              repeatDelay: Math.random() * 1 + 0.5,
+              paused: true, // Start paused
+            });
+
+            flowerTl.to(flower, {
+              x: gsap.utils.random(-380, 90),
+              y: gsap.utils.random(-150, -50),
+              rotation: gsap.utils.random(-360, 360),
+              scale: gsap.utils.random(0.5, 1.5),
+              duration: gsap.utils.random(1.5, 3),
+              ease: "power1.out",
+              delay: delay,
+            });
+
+            flowerTl.to(
+              flower,
+              {
+                opacity: 0,
+                duration: 0.5,
+                ease: "power1.in",
+              },
+              "-=0.5"
+            );
+
+            flowerTl.set(flower, {
+              x: 0,
+              y: 0,
+              rotation: 0,
+              scale: 0,
+              opacity: 1,
+            });
+
+            flowerTl.to(flower, {
+              scale: 1,
+              duration: 0.5,
+              ease: "back.out(1.7)",
+            });
+
+            flowerTimelines.push(flowerTl);
+          });
+
+          return flowerTimelines;
+        }
+
+        const flowerTimelines = animateFlowers();
+
+        mainTl.add(function () {
+          // Start all flower timelines
+          flowerTimelines.forEach((tl) => tl.play());
+        }, "<");
+
+        // 4. Background changes to bg2.png smoothly
+        mainTl.to(
+          "#bg2",
+          {
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.inOut",
+          },
+          ">"
+        );
+
+        // 5. Text comes from top to the viewport
+        mainTl.to(
+          ".text-container",
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "back.out(1.7)",
+          },
+          ">-.4"
+        );
+
+        // Add click event listeners to product-clicker and product-container
+        document
+          .querySelector(".product-clicker")
+          .addEventListener("click", startAnimation);
+        document
+          .querySelector(".product-container")
+          .addEventListener("click", startAnimation);
+
+        // document
+        //   .querySelector(".product-clicker-text")
+        //   .addEventListener("click", startAnimation);
+
+        // document
+        //   .querySelector(".product-clicker-cursor")
+        //   .addEventListener("click", startAnimation);
+
+        function startAnimation() {
+          // Stop the clicker animation
+          clickerTl.kill();
+
+          submitInteraction('bottle_clicked',extraData);
+
+          // Hide the product-clicker
+          gsap.to(".product-clicker", {
+            scale: 0,
+            opacity: 0,
+            duration: 0.5,
+            ease: "back.in(1.7)",
+            onComplete: function () {
+              // Start the main animation timeline
+              mainTl.play();
+                        document.querySelector(".ad-container").addEventListener("click",function(){
+            window.open('{CLICK_MACRO}', '_blank');
+          })
+            },
+          });
+        }
+      // });
+    </script>
+  
+
+</body></html>

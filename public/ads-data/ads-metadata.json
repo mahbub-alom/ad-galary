@@ -641,13 +641,59 @@
       "previewImage": "https://iili.io/FZFntee.png"
     },
     {
-      "name": "Prediction Campaign",
-      "slug": "fresh-prediction",
+      "name": "Interactive Animation",
+      "slug": "fresh-interactive-animation",
       "brand": "Fresh",
-      "category": "Prediction",
-      "dimensions": "728x90",
-      "shortDescription": "Prediction creative ad for Fresh",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Interactive Animation creative ad for Fresh",
+      "previewImage": "https://iili.io/FZK6TrP.png"
+    },
+    {
+      "name": "Facebook Follow Page",
+      "slug": "fresh-facebook-follow-page",
+      "brand": "Fresh",
+      "category": "Social",
+      "dimensions": "300x250",
+      "shortDescription": "Facebook Follow Page creative ad for Fresh",
+      "previewImage": "https://iili.io/FZKPo9n.png"
+    },
+
+        {
+      "name": "Battery Parcentage",
+      "slug": "battery-parcentage",
+      "brand": "GlucoMaxD",
+      "category": "Dyanmic URL",
+      "dimensions": "300x250",
+      "shortDescription": "Battery Parcentage ad for GlucoMaxD",
+      "previewImage": "https://iili.io/FZqYYpj.png"
+    },
+        {
+      "name": "Interactive Aer",
+      "slug": "godrej-interactive-aer",
+      "brand": "Godrej",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "Interactive Aer creative ad for Godrej",
+      "previewImage": "https://iili.io/FZoVsV9.png"
+    },
+        {
+      "name": "Interactive Utsob",
+      "slug": "godrej-interactive-utsob",
+      "brand": "Godrej",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "Interactive Utsob creative ad for Godrej",
+      "previewImage": "https://iili.io/FZoWP5v.png"
+    },
+        {
+      "name": "Interactive",
+      "slug": "godrej-interactive",
+      "brand": "Godrej",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Interactive creative ad for Godrej",
+      "previewImage": "https://iili.io/FZoXl2a.png"
     },
     {
       "name": "Ramadan Campaign",
@@ -658,24 +704,8 @@
       "shortDescription": "Ramadan creative ad for GP",
       "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
-    {
-      "name": "Rotation Campaign",
-      "slug": "glucomaxd-rotation",
-      "brand": "GlucoMaxD",
-      "category": "Rotation",
-      "dimensions": "970x90",
-      "shortDescription": "Rotation creative ad for GlucoMaxD",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Scratch Campaign",
-      "slug": "godrej-scratch",
-      "brand": "Godrej",
-      "category": "Scratch",
-      "dimensions": "336x280",
-      "shortDescription": "Scratch creative ad for Godrej",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
+
+
     {
       "name": "Selection Campaign",
       "slug": "gold-kinen-selection",

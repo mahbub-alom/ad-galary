@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Da+2:wght@400..800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+      height: 250px;
+    width: 300px;
+}
+
+.ad-container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.ppm_container {
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the whole image is visible */
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-container {
+  position: absolute;
+  bottom: 0;
+  right: -36%;
+  z-index: 999;
+  width: 60%;
+}
+
+.product-image {
+  width: 40%;
+}
+
+.flower-container {
+  position: absolute;
+  top: 58%;
+  right: 20%;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.flower-image {
+  width: 10px;
+  height: 10px;
+  object-fit: contain; /* Ensures the whole image is visible */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.text-container {
+  position: absolute;
+  top: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.text-image {
+  width: 60%;
+}
+
+.spray-container {
+  position: absolute;
+  top: 48%;
+  right: 19%;
+  z-index: 3;
+  transform: rotate(180deg);
+  transform-origin: center center;
+  width: 100px;
+  opacity: 0;
+}
+
+.spray-image {
+  width: 100%;
+  opacity: 0;
+}
+
+.steam-container {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  opacity: 1;
+  z-index: 100;
+  width: 50%;
+}
+
+.steam-container2 {
+  position: absolute;
+  left: 34%;
+  top: 30%;
+  opacity: 1;
+  z-index: 100;
+  width: 50%;
+}
+
+.steam-container3 {
+  position: absolute;
+  left: -10%;
+  top: 40%;
+  opacity: 1;
+  z-index: 100;
+  width: 50%;
+}
+
+.steam-image {
+  width: 100%;
+  opacity: 0.4;
+}
+
+/* steam css */
+
+.ppm_steam_container {
+  position: absolute;
+  left: 190px;
+  top: 170px;
+  opacity: 1;
+  z-index: 100;
+}
+
+.ppm_steam_container2 {
+  position: absolute;
+  left: 60px;
+  top: 190px;
+  opacity: 1;
+  z-index: 100;
+}
+
+.ppm_vapour {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  padding: 0;
+  justify-content: center;
+  animation: animate-vapour 6s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.ppm_vapour span {
+  position: relative;
+  bottom: 0;
+  display: block;
+  min-width: 0.2em;
+  height: 150px; /* Increased height */
+  background: #00702089;
+  border-radius: 50%;
+  animation: animate 8s ease-in-out infinite;
+  opacity: 0;
+  filter: blur(5px);
+  animation-delay: calc(var(--v) * -0.5s);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) scaleX(0.3);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+    transform: translateY(-20px) scaleX(0.5);
+  }
+  40% {
+    opacity: 0.7;
+    transform: translateY(-50px) scaleX(0.7);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translateY(-90px) scaleX(0.9);
+  }
+  80% {
+    opacity: 0.6;
+    transform: translateY(-100px) scaleX(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-120px) scaleX(0.9);
+  }
+}
+
+@keyframes animate-vapour {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-50px) scaleX(20);
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scaleX(40);
+    opacity: 1;
+  }
+}
+
+.product-clicker {
+  position: absolute;
+  bottom: 50%;
+  left: 70%;
+  z-index: 9999;
+  transform-origin: center center;
+  cursor: pointer;
+}
+
+.product-clicker-text {
+  width: max-content;
+  font-size: 8px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Hind Siliguri", sans-serif;
+  transform-origin: center center;
+  background-color: #262977;
+  padding: 2px 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.product-clicker-cursor {
+  width: 20px;
+  height: 20px;
+  object-fit: contain; /* Ensures the whole image is visible */
+  position: absolute;
+  top: 90%;
+  right: 29%;
+  z-index: 9999;
+  cursor: pointer;
+}

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.ad-container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the whole image is visible */
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-container {
+  position: absolute;
+  bottom: 10%;
+  right: 4%;
+  z-index: 999;
+  width: 15%;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.flower-container {
+  position: absolute;
+  top: 54%;
+  right: 20%;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.flower-image {
+  width: 10px;
+  height: 10px;
+  object-fit: contain; /* Ensures the whole image is visible */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.text-container {
+  position: absolute;
+  top: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.text-image {
+  width: 50%;
+}
+
+.spray-container {
+  position: absolute;
+  top: 32%;
+  right: 19%;
+  z-index: 10000;
+  transform: rotate(180deg);
+  width: 100px;
+}
+
+.spray-image {
+  width: 100%;
+}
+
+.product-clicker {
+  position: absolute;
+  top: 78%;
+  right: 2%;
+  z-index: 100000;
+  width: 12%;
+}
+
+.clicker-image {
+  width: 100%;
+}
+
+.all-aer-container {
+  position: absolute;
+  top: 67%;
+  right: 33%;
+  z-index: 3;
+}
+
+.shape-image {
+  width: 70%;
+}
+
+.all-aer-images {
+  position: absolute;
+  bottom: 13%;
+  left: 8%;
+  width: 50%;
+}
+
+/* steam css */
+
+.ppm_steam_container {
+  position: absolute;
+  left: 190px;
+  top: 170px;
+  opacity: 1;
+  z-index: 100;
+}
+
+.ppm_steam_container2 {
+  position: absolute;
+  left: 60px;
+  top: 190px;
+  opacity: 1;
+  z-index: 100;
+}
+
+.ppm_vapour {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  padding: 0;
+  justify-content: center;
+  animation: animate-vapour 6s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.ppm_vapour span {
+  position: relative;
+  bottom: 0;
+  display: block;
+  min-width: 0.2em;
+  height: 150px; /* Increased height */
+  background: #00702089;
+  border-radius: 50%;
+  animation: animate 8s ease-in-out infinite;
+  opacity: 0;
+  filter: blur(5px);
+  animation-delay: calc(var(--v) * -0.5s);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) scaleX(0.3);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+    transform: translateY(-20px) scaleX(0.5);
+  }
+  40% {
+    opacity: 0.7;
+    transform: translateY(-50px) scaleX(0.7);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translateY(-90px) scaleX(0.9);
+  }
+  80% {
+    opacity: 0.6;
+    transform: translateY(-100px) scaleX(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-120px) scaleX(0.9);
+  }
+}
+
+@keyframes animate-vapour {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-50px) scaleX(20);
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scaleX(40);
+    opacity: 1;
+  }
+}
+
+.steam-container {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  opacity: 1;
+  z-index: 10000;
+  width: 50%;
+}
+
+.steam-container2 {
+  position: absolute;
+  left: 34%;
+  top: 15%;
+  opacity: 1;
+  z-index: 10000;
+  width: 50%;
+}
+
+.steam-container3 {
+  position: absolute;
+  left: -10%;
+  top: 40%;
+  opacity: 1;
+  z-index: 10000;
+  width: 50%;
+}
+
+.steam-image {
+  width: 100%;
+}
+
+.cta-container {
+  position: absolute;
+  top: 92%;
+  right: 4%;
+  z-index: 1000000;
+}
+
+.cta-text {
+  font-family: "Hind Siliguri";
+  font-size: 12px;
+  color: "#3f4287";
+}
