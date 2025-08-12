@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+
+  overflow: hidden;
+  user-select: none;
+}
+
+.ppm_container {
+  width: 300px;
+  height: 250px;
+  /* background-color: black; */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  height: 250px;
+  width: 300px;
+}
+
+
+/* ppm_slide_1 */
+.ppm_bg {
+  top: 0px;
+  left: 0px;
+}
+.ppm_bg1 {
+  top: 0px;
+  left: 0px;
+}
+.ppm_bg2 {
+  top: 0px;
+  left: 0px;
+}
+.ppm_orderBtn {
+  top: 150px;
+  left: 96px;
+}
+
+.ppm_mic {
+  bottom: 94px;
+  left: 122px;
+  border-radius: 80px;
+  /* background: red; */
+}
+
+.ppm_slide_2 {
+  top: 0px;
+  left: 0px;
+  background: url('../images/AarongInfoForm.jpg');
+  background-size: cover;
+  height: 250px;
+  width: 300px;
+}
+
+.ppm_arrow_indicator {
+  bottom: -48px;
+  left: 90px;
+}
+
+.cheese_vid {
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+}
+
+.ppm_top {
+  top: 0px;
+  left: 30px;
+}
+
+
+/* ppm_slide_2 */
+.ppm_bg2 {
+  top: 0px;
+  left: 0px;
+}
+
+.ppm_cheese_all {
+  top: -250px;
+  left: 0px;
+}
+
+/*  */
+.labelClass {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.inputField {
+  width: 100%;
+  height: 27px;
+  margin-top: 5px;
+}
+
+.google_form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.submitForm {
+  height: 30px;
+  background: #FEF100;
+  color: #00ADEF;
+  padding: 5px 10px;
+  width: 77px;
+  font-size: 17px;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: center;
+  /* border: 1px solid #213323aa; */
+  border-radius: 15px;
+  font-weight: 700;
+  bottom: 44px;
+  position: absolute;
+  left: 112px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.ppm_thankYou {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url('../images/AarongThankYouBG.jpg');
+  height: 250px;
+  width: 300px;
+}
+.ppm_all_cheese{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 250px;
+  width: 300px;
+}
+#name {
+  position: absolute;
+  top: 95px;
+  width: 210px;
+  left: 67px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: #00ADEF;
+  color: white;
+  outline: none;
+}
+
+#mobile {
+  position: absolute;
+  top: 127px;
+  width: 153px;
+  left: 124px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: #00ADEF;
+  color: white;
+  outline: none;
+}
+
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}
+
+.bg_red {
+  background-color: red;
+}

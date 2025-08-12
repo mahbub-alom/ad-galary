@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Drag & Drop - Platter 1</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui_1.css">
+</head>
+<body>
+   <div class="ppa_wrapper">
+        <div class="ppa_slide1 abs">
+            <div class="text abs"></div>
+                <div class="ingrediants abs">
+                    <div class="rice abs draggable "></div>
+                    <div class="legpis abs draggable "></div>
+                    <div class="mayo abs draggable "></div>
+                    <div class="wings abs draggable "></div>
+                    <div class="pav abs draggable "></div>
+                    <div class="drink abs draggable "></div>
+                </div>
+
+                <div class="aftedrag abs">
+                    <div class="d_rice abs ppa_hidden  "></div>
+                    <div class="d_legpis abs ppa_hidden  "></div>
+                    <div class="d_mayo abs ppa_hidden  "></div>
+                    <div class="d_wings abs ppa_hidden  "></div>
+                    <div class="d_pav abs ppa_hidden  "></div>
+                    <div class="d_drink abs ppa_hidden  "></div>
+                </div>
+        </div>
+
+        <div class="ppa_slide2 abs ppa_hidden">
+            <a class="cta abs ppa_hidden" href="#"></a>
+            <div class="price abs ppa_hidden"></div>
+            <div class="save abs ppa_hidden"></div>
+        </div>
+   </div>
+     <!-- interaction -->
+  <script src="js/extra-data-1.js"></script>
+  <script>
+    let cm_id = 221;
+    let extraData = function () {
+      console.log(typeof (getExtraData) === 'function')
+      if (typeof (getExtraData) === 'function') {
+        return getExtraData()
+      } else {
+        return {};
+      }
+    }();
+    function submitInteraction(type, extraData = extraData) {
+      fetch(`https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${type}&user_agent=${extraData?.user_agent}&browser_cookies=${extraData?.browser_cookies}&client_ip=${extraData?.client_ip}`);
+    }
+    // submitInteraction('slide',extraData)
+  </script>
+  <!-- end Interaction -->
+
+<script src="js/gsap.min_1.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ThrowPropsPlugin.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>document.querySelector('.cta').addEventListener('click',()=>{window.open(`{CLICK_MACRO}`)});</script>
+</body></html>

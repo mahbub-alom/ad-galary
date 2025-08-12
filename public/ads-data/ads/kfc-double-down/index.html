@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KFC Double Down V2</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="ppm_container">
+    <div class="ppm_slide_1 ">
+      <video src="media/2.mp4" class="cheese_vid ppm_absolute" muted=""></video>
+
+      <img src="images/1.jpg" alt="" class="ppm_bg1 ppm_absolute" draggable="false">
+      <img src="images/1.1.gif" alt="" class="ppm_bg ppm_absolute" draggable="false">
+      <img src="images/mic.png" alt="" class="ppm_mic ppm_hidden ppm_absolute" draggable="false">
+      <img src="images/swipe.png" alt="" class="ppm_top ppm_hidden ppm_absolute" draggable="false">
+    </div>
+
+    <div class="ppm_slide_3 ppm_hidden">
+      <img src="images/3.jpg" alt="" class="ppm_bg2 ppm_absolute" draggable="false">
+      <img src="images/3.1.png" alt="" class="ppm_orderBtn ppm_absolute" draggable="false">
+
+    </div>
+    <div class="ppm_slide_2 ppm_hidden">
+      <div class="google_form">
+        <input type="text" class="inputField" name="name" id="name"><br>
+        <input type="number" class="inputField" name="mobile" id="mobile"><br>
+        <label for="name" class="labelClass ppm_hidden">Email</label><br>
+        <input type="email" class="inputField ppm_hidden" name="email" id="email" placeholder="Enter Email"><br>
+        <div class="submitForm">Submit</div>
+      </div>
+    </div>
+    <div class="ppm_thankYou ppm_hidden">
+      <img src="images/cheeseBlocks.png" alt="" class="ppm_all_cheese ppm_absolute" draggable="false">
+    </div>
+
+
+  </div>
+
+  <!-- js -->
+  <script> let cm_id = 141; </script>
+    <script>
+    document.addEventListener('contextmenu', (e) => {e.preventDefault();});
+    document.addEventListener('keydown', event => {if ((event.ctrlKey || event.metaKey) && (event.shiftKey) && (event.key === 'I' || event.key === 'J') || event.keyCode === 123) {event.preventDefault()}});
+  </script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/Draggable.min.js"></script>
+  <script src="js/scriptM.js"></script>
+  <script>document.querySelector('.ppm_orderBtn').addEventListener('click',()=>{window.open(`{CLICK_MACRO}`)});</script>
+
+
+</body></html>

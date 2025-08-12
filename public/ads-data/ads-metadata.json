@@ -876,41 +876,87 @@
       "shortDescription": "Animation Pad creative ad for Joya",
       "previewImage": "https://iili.io/FZle7Ll.png"
     },
-    {
-      "name": "Special Campaign",
-      "slug": "kfc-special",
-      "brand": "KFC",
-      "category": "Special",
-      "dimensions": "970x90",
-      "shortDescription": "Special creative ad for KFC",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Swipe Campaign",
-      "slug": "kamasutra-swipe",
+     {
+      "name": "Floating",
+      "slug": "kamasutra-floating",
       "brand": "Kamasutra",
-      "category": "Swipe",
+      "category": "fullscreen",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating creative ad for Kamasutra",
+      "previewImage": "https://iili.io/FZMIi91.png"
+    },
+     {
+      "name": "Footer Scroller",
+      "slug": "kamasutra-footer-scroller",
+      "brand": "Kamasutra",
+      "category": "fullscreen",
+      "dimensions": "full takeover",
+      "shortDescription": "Footer Scroller creative ad for Kamasutra",
+      "previewImage": "https://iili.io/FZMTNlp.png"
+    },
+    {
+      "name": "Double Down",
+      "slug": "kfc-double-down",
+      "brand": "KFC",
+      "category": "Voice Speech",
       "dimensions": "300x250",
-      "shortDescription": "Swipe creative ad for Kamasutra",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "shortDescription": "Double Down creative ad for KFC",
+      "previewImage": "https://iili.io/FZM8qlf.png"
     },
     {
-      "name": "Takeover Campaign",
-      "slug": "lg-takeover",
+      "name": "Draggable Platter",
+      "slug": "kfc-draggable-platter",
+      "brand": "KFC",
+      "category": "Draggable",
+      "dimensions": "300x250",
+      "shortDescription": "Draggable Platter creative ad for KFC",
+      "previewImage": "https://iili.io/FZMSOrb.png"
+    },
+   
+    {
+      "name": "Rotation Draggable Cube",
+      "slug": "lg-rotation-draggable-cube",
       "brand": "LG",
-      "category": "Takeover",
-      "dimensions": "728x90",
-      "shortDescription": "Takeover creative ad for LG",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Rotation",
+      "dimensions": "300x250",
+      "shortDescription": "Rotation Draggable Cube creative ad for LG",
+      "previewImage": "https://iili.io/FZVKZsS.png"
     },
     {
-      "name": "Tap Campaign",
-      "slug": "lion-tap",
+      "name": "Mama Dish Washer Takeover",
+      "slug": "lion-mama-dish-washer-takeover",
       "brand": "Lion",
-      "category": "Tap",
-      "dimensions": "970x90",
-      "shortDescription": "Tap creative ad for Lion",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "fullscreen",
+      "dimensions": "full takeover",
+      "shortDescription": "Mama Dish Washer Takeover creative ad for Lion",
+      "previewImage": "https://iili.io/FZVWaxj.png"
+    },
+    {
+      "name": "Systema Toothbrush Animation",
+      "slug": "lion-systema-toothbrush-animation",
+      "brand": "Lion",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Systema Toothbrush Animation creative ad for Lion",
+      "previewImage": "https://iili.io/FZVDrvI.png"
+    },
+    {
+      "name": "Systema Slider",
+      "slug": "lion-systema-slider",
+      "brand": "Lion",
+      "category": "slider",
+      "dimensions": "300x250",
+      "shortDescription": "Systema Slider creative ad for Lion",
+      "previewImage": "https://iili.io/FZWJjcb.png"
+    },
+    {
+      "name": "Mama Dish Washer Takeover",
+      "slug": "lion-mama-dish-wash",
+      "brand": "Lion",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Mama Dish Wash creative ad for Lion",
+      "previewImage": "https://iili.io/FZWnqXf.png"
     },
     {
       "name": "Tilt Campaign",

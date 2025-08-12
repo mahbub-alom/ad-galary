@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+ 
+}
+.abs{
+  position: absolute;
+}
+.ppa_hidden{
+  display: none;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  color: #111;
+}
+.ppa_wrapper{
+  position: relative;
+  width: 300px;
+  height: 250px;
+  /* border: 2px solid black; */
+  /* background: url('./ramadan_assets/BG1.png'); */
+  /* background: url('./assets3/bgblank.jpg'); */
+  overflow: hidden;
+}
+.ppa_slide1{
+  width: 300px;
+  height: 250px;
+  background: url('../images/kfc1bg.png');
+  /* background: url('./ramadan_assets/prev1.png'); */
+  overflow: hidden;
+}
+
+.ppa_slide2{
+  width: 300px;
+  height: 250px;
+  background: url('../images/1last_slide_bg_last.png');
+  overflow: hidden;
+}
+.draggable {
+  position: absolute;
+  /* cursor: none; */
+}
+.bun{
+  width: 169px;
+  height: 67px;
+  left: 116px;
+  top: 174px;
+  /* background: url('./assets/1Burgar.png'); */
+  animation: fallFromTop 1s ease forwards;
+  z-index: 2;
+}
+.buntop{
+  width: 173px;
+  height: 51px;
+  left: 116px;
+  top: 106px;
+  /* background: url('./assets/9Burgar.png'); */
+  z-index: 2;
+  opacity: 0;
+}
+.copy{
+  width: 163px;
+  height: 82px;
+  left: 68px;
+  top: 5px;
+  /* background: url('./assets/title.png'); */
+  z-index: 2;
+  opacity: 0;
+  scale: .7;
+}
+
+.text{
+  background-image: url('../images/copy1.png');
+  width: 197px;
+  height: 34px;
+  left: 247px;
+  top: 212px;
+  opacity: 0;
+}
+.cta{
+  width: 84px;
+  height: 20px;
+  left: 11px;
+  top: 217px;
+  background: url('../images/addtocart.png');
+}
+
+.price{
+  width: 78px;
+  height: 23px;
+  left: 13px;
+  top: 184px;
+  background: url('../images/price.png');
+}
+
+.save{
+  width: 51px;
+  height: 50px;
+  left: 26px;
+  top: 129px;
+  background: url('../images/save.png');
+}
+.hat{
+  width: 155px;
+  height: 73px;
+  left: 68px;
+  top: -200px;
+  /* background: url('./assets/goruBalok.png'); */
+  z-index: 2;
+  opacity: 0;
+}
+.fullburger{
+  width: 181px;
+  height: 122px;
+  left: 116px;
+  top: 98px;
+  /* background: url('./assets/8Burgar.png'); */
+  z-index: 2;
+  scale: .8;
+  opacity: 0;
+}
+
+.bun_mayo{
+  width: 169px;
+  height: 65px;
+  left: 116px;
+  top: 174px;
+  /* background: url('./assets/2Burgar.png'); */
+  z-index: 2;
+  opacity: 0;
+}
+.bun_patty{
+  width: 184px;
+  height: 95px;
+  left: 111px;
+  top: 148px;
+  /* background: url('./assets/3Burgar.png'); */
+  z-index: 2;
+  opacity: 0;
+}
+.bun_cheese{
+  width: 183px;
+  height: 95px;
+  left: 111px;
+  top: 144px;
+  /* background: url('./assets/4Burgar.png'); */
+  z-index: 2;
+  opacity: 0;
+}
+.bun_lettuce{
+  width: 194px;
+  height: 108px;
+  left: 102px;
+  top: 133px;
+  /* background: url('./assets/5Burgar.png'); */
+  z-index: 2;
+  opacity: 0;
+}
+.bun_veg{
+  width: 194px;
+  height: 122px;
+  left: 104px;
+  top: 120px;
+  /* background: url('./assets/7Burgar.png'); */
+  z-index: 2;
+  opacity: 0;
+}
+.bun_toppings{
+  width: 192px;
+  height: 110px;
+  left: 104px;
+  top: 120px;
+  /* background: url('./assets/6Burgar.png'); */
+  z-index: 2;
+  opacity: 0;
+}
+.shadow{
+  width: 169px;
+  height: 67px;
+  left: 84px;
+  top: 204px;
+  /* background: url('./assets/shadow.png'); */
+  z-index: 1;
+  opacity: 0;
+  overflow: hidden;
+}
+.mayo{
+  width: 65px;
+  height: 23px;
+  left: 11px;
+  top: 131px;
+  background: url('../images/Mayo.png') ;
+}
+.legpis{
+  width: 65px;
+  height: 51px;
+  left: 12px;
+  top: 153px;
+  background: url('../images/H%26C.png');
+}
+
+.wings{
+  width: 76px;
+  height: 46px;
+  left: 7px;
+  top: 76px;
+  background: url('https://ms.purplepatch.online/2024/ramadan-march/kfc_platter1/ramadan_assets/Wings\ &\ Strips.png');
+}
+.rice{
+  width: 74px;
+  height: 46px;
+  left: 10px;
+  top: 205px;
+  background: url('../images/Rice.png');
+}
+.pav{
+  width: 35px;
+  height: 28px;
+  left: 17px;
+  top: 51px;
+  background: url('../images/PAV.png');
+}
+
+.drink{
+  width: 14px;
+  height: 43px;
+  left: 27px;
+  top: 3px;
+  background: url('../images/7up.png');
+}
+
+.toppings{
+  width: 46px;
+  height: 32px;
+  left: 18px;
+  top: 8px;
+  scale: .9;
+  /* background: url('./assets2/bbqdips.png'); */
+}
+
+.d_rice{
+  width: 65px;
+  height: 68px;
+  left: 113px;
+  top: 140px;
+  background: url('../images/Rice2.png');
+}
+
+.d_legpis{
+  width: 87px;
+  height: 100px;
+  left: 139px;
+  top: 94px;
+  background: url('../images/H%26C2.png');
+}
+
+.d_mayo{
+  width: 56px;
+  height: 65px;
+  left: 191px;
+  top: 89px;
+  background: url('../images/mayo2.png');
+}
+
+.d_wings{
+  width: 52px;
+  height: 66px;
+  left: 238px;
+  top: 84px;
+  background: url('../images/Wings2.png');
+}
+
+.d_pav{
+  width: 48px;
+  height: 49px;
+  left: 203px;
+  top: 54px;
+  background: url('../images/PAV2.png');
+}
+
+.d_drink{
+  width: 35px;
+  height: 63px;
+  left: 243px;
+  top: 45px;
+  background: url('../images/7up2.png');
+}
+
+@keyframes fallFromTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
