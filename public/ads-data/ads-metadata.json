@@ -559,14 +559,33 @@
       "previewImage": "https://iili.io/FZ3ufQs.png"
     },
     {
-      "name": "Lead Generation Campaign",
-      "slug": "daraz-lead-generation",
+      "name": "Morph Animation",
+      "slug": "daraz-morph-animation",
       "brand": "Daraz",
       "category": "Lead Generation",
-      "dimensions": "970x250",
-      "shortDescription": "Lead Generation creative ad for Daraz",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "full takeover",
+      "shortDescription": "Morph Animation creative ad for Daraz",
+      "previewImage": "https://iili.io/FZ30u9f.png"
     },
+    {
+      "name": "Takeover Delivery",
+      "slug": "daraz-takeover-delivery",
+      "brand": "Daraz",
+      "category": "Lead Generation",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Delivery creative ad for Daraz",
+      "previewImage": "https://iili.io/FZ31XJs.png"
+    },
+    {
+      "name": "Takeover Delivery v2",
+      "slug": "daraz-takeover-delivery-v2",
+      "brand": "Daraz",
+      "category": "Lead Generation",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Delivery v2 creative ad for Daraz",
+      "previewImage": "https://iili.io/FZ3V0ps.png"
+    },
+
     {
       "name": "Location Campaign",
       "slug": "domino's-location",
