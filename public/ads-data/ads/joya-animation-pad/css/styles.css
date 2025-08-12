@@ -1,0 +1,74 @@
+
+.ppm_container {
+    width: 300px;
+    height: 250px;
+    background-color: #0005;
+    position: relative;
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.ppm_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ppm_pads {
+    position: absolute;
+    top: 18%;
+    left: 18.8%;
+    width: 73%;
+    display: none;
+}
+.ppm_product {
+    position: absolute;
+    top: 39%;
+    left: 18.8%;
+    width: 48%;
+    display: none;
+}
+
+.ppm_copy1 {
+    position: absolute;
+    top: 9%;
+    left: 26.8%;
+    width: 40.5%;
+    display: none;
+}
+
+.ppm_copy2 {
+    position: absolute;
+    top: 24%;
+    left: 34.8%;
+    width: 33.5%;
+    display: none;
+}
+
+.ppm_copy3 {
+    position: absolute;
+    top: 23%;
+    left: 61.8%;
+    width: 12.5%;
+    display: none;
+}
+
+.ppm_flying1_elms,.ppm_flying2_elms,.ppm_flying3_elms{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+  }
+  
+  .singleElm1,.singleElm2,.singleElm3{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 20%;
+  }
+  .ppm_flying1_elms,.ppm_flying2_elms,.ppm_flying3_elms{
+    display: none;
+  }

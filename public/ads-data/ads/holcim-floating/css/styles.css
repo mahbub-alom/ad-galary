@@ -1,0 +1,89 @@
+:root {
+  --uncapText-width: 65dvw;
+  --tap-hand-width: 40px;
+  --single-bottle-box-width: 18dvw;
+  --video_width: 240px;
+  --video_height: auto;
+  --cross-btn-top:32dvh;
+  --cross-btn-right:0;
+
+  --container-width:300px;
+}
+
+@media (min-width: 601px) {
+  :root {
+    --uncapText-width: 20dvw;
+    --tap-hand-width: 40px;
+    --single-bottle-box-width: 5dvw;
+    --video_width: 300px;
+    --video_height: auto;
+    --cross-btn-top:32dvh;
+    --cross-btn-right:0;
+
+    --container-width:400px;
+  }
+
+}
+
+.ppm_container{
+  bottom: 20dvh;
+  position: fixed;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: var(--container-width);
+  height: 0px;
+}
+@media (min-width: 601px) {
+  .ppm_container{
+    bottom: 10dvh;
+  }
+}
+
+.ppm_cementBag{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display:none;
+}
+.ppm_breakingGif{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.ppm_image1{
+  width: 50%;
+  position: absolute;
+  bottom: 120px;
+  left: 29%;
+  display: none;
+}
+.ppm_image2{
+  width: 50%;
+  position: absolute;
+  bottom: 120px;
+  left: 29%;
+  display: none;
+}
+
+.ppm_closeBtn_takeover {
+  z-index: 9999;
+  position: fixed;
+  right: var(--cross-btn-right);
+  bottom: var(--cross-btn-top);
+  width: 24px;
+}
+
+
+
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}

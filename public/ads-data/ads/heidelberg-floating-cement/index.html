@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating: Hiedelberg</title>
+  <style>
+    :root {
+      --background-bg: url('images/mobile.png');
+    }
+
+    @media (min-width: 601px) {
+      :root {
+        --background-bg: url('images/desktop.png');
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff0;
+      width: 100dvw;
+      height: 100dvh;
+      background-size: 100% 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <link rel="stylesheet" href="css/styles.css">
+  <div class="ppm_container">
+    <img src="images/1.png" alt="" class="ppm_image1">
+    <img src="images/2.png" alt="" class="ppm_image2">
+    <img src="images/3.png" alt="" class="ppm_image3">
+    <img src="images/copy.png" alt="" class="ppm_copy">
+    <img src="images/logo.png" alt="" class="ppm_logo">
+    <img src="images/product.png" alt="" class="ppm_cementBag">
+    <img src="images/cta.png" alt="" class="ppm_cta">
+  </div>
+
+  <img src="images/closebtn.png" class="ppm_closeBtn_takeover" alt="" srcset="">
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    let cm_id = 991;
+    function getExtraData(){var t;let e=function t(){var e=document.cookie.split(";");if(window.location!==window.parent.location?0:1)e=document.cookie.split(";");else try{e=window.parent.document.cookie.split(";")}catch(i){e=document.cookie.split(";")}for(var o={},n=0;n<e.length;n++){var r=e[n].split("=");o[(r[0]+"").trim()]=unescape(r.slice(1).join("="))}return o}(),i=((t=new XMLHttpRequest).open("GET","https://www.cloudflare.com/cdn-cgi/trace",!1),t.send(null),newData=t.responseText.trim().split("\n").reduce(function(t,e){return t[(e=e.split("="))[0]]=e[1],t},{}));return{user_agent:i.uag,browser_cookies:e._ga,client_ip:i.ip}}let extraData=(console.log(!0),getExtraData());function submitInteraction(t,e=e){fetch(`https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${t}&user_agent=${e?.user_agent}&browser_cookies=${e?.browser_cookies}&client_ip=${e?.client_ip}`)}
+    document.querySelector('.ppm_container').addEventListener('click', (e) => {
+      window.open('https://www.facebook.com/ScanCementBD','_blank');
+      submitInteraction('clicked',extraData);
+    })
+  </script>
+
+
+</body></html>

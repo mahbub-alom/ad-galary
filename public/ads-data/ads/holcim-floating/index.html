@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holcim</title>
+  <style>
+    :root {
+      --background-bg: url('images/mobile.png');
+    }
+
+    @media (min-width: 601px) {
+      :root {
+        --background-bg: url('images/desktop.png');
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background-bg);
+      width: 100dvw;
+      height: 100dvh;
+      background-size: 100% 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <link rel="stylesheet" href="css/styles.css">
+  <div class="ppm_container">
+    <img src="images/animation_earthquake.gif" alt="" class="ppm_breakingGif">
+    <img src="images/b.png" alt="" class="ppm_image1">
+    <img src="images/c.png" alt="" class="ppm_image2">
+    <img src="images/bostaBig.png" alt="" class="ppm_cementBag">
+  </div>
+
+  <img src="images/closebtn.png" class="ppm_closeBtn_takeover" alt="" srcset="">
+  <script src="js/gsap.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body></html>

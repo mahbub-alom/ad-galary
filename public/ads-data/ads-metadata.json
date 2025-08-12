@@ -795,54 +795,86 @@
       "shortDescription": "Animation 798 Tk creative ad for GP",
       "previewImage": "https://iili.io/FZ7nY4R.png"
     },
-
-
-
-
     {
-      "name": "Shake Campaign",
-      "slug": "harpic-shake",
+      "name": "Floating",
+      "slug": "harpic-floating",
       "brand": "Harpic",
       "category": "Shake",
-      "dimensions": "728x300",
-      "shortDescription": "Shake creative ad for Harpic",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "takeover",
+      "shortDescription": "Floating creative ad for Harpic",
+      "previewImage": "https://iili.io/FZa8KmJ.png"
     },
     {
-      "name": "Shooting Campaign",
-      "slug": "heidelberg-shooting",
+      "name": "Image Overlay",
+      "slug": "harpic-image-overlay",
+      "brand": "Harpic",
+      "category": "Image Overlay",
+      "dimensions": "full takeover",
+      "shortDescription": "Image overlay creative ad for Harpic",
+      "previewImage": "https://iili.io/FZa8t2t.png"
+    },
+    {
+      "name": "Floating Cement",
+      "slug": "heidelberg-floating-cement",
+      "brand": "Heidelberg",
+      "category": "Lead Generation",
+      "dimensions": "728x300",
+      "shortDescription": "Floating Cement creative ad for Heidelberg",
+      "previewImage": "https://iili.io/FZcSkLx.png"
+    },
+    {
+      "name": "Animation Cement",
+      "slug": "heidelberg-animation-cement",
       "brand": "Heidelberg",
       "category": "Shooting",
-      "dimensions": "728x300",
-      "shortDescription": "Shooting creative ad for Heidelberg",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Shoppable Campaign",
-      "slug": "holcim-shoppable",
-      "brand": "Holcim",
-      "category": "Shoppable",
-      "dimensions": "336x280",
-      "shortDescription": "Shoppable creative ad for Holcim",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Slider Campaign",
-      "slug": "ice-cool-slider",
-      "brand": "Ice Cool",
-      "category": "Slider",
       "dimensions": "300x250",
-      "shortDescription": "Slider creative ad for Ice Cool",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "shortDescription": "Animation Cement creative ad for Heidelberg",
+      "previewImage": "https://iili.io/FZcgESS.png"
     },
     {
-      "name": "Social Campaign",
-      "slug": "joya-social",
+      "name": "Floating",
+      "slug": "holcim-floating",
+      "brand": "Holcim",
+      "category": "Floating",
+      "dimensions": "full takeover",
+      "shortDescription": "Holcim Floating creative ad for Holcim",
+      "previewImage": "https://iili.io/FZcyROG.png"
+    },
+    {
+      "name": "Weather",
+      "slug": "ice-cool-weather",
+      "brand": "Ice Cool",
+      "category": "Location",
+      "dimensions": "300x250",
+      "shortDescription": "Ice Cool Weather creative ad for Ice Cool",
+      "previewImage": "https://iili.io/FZlquEb.png"
+    },
+    {
+      "name": "Floating Pad",
+      "slug": "joya-floating-pad",
       "brand": "Joya",
       "category": "Social",
       "dimensions": "970x90",
-      "shortDescription": "Social creative ad for Joya",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "shortDescription": "Floating Pad creative ad for Joya",
+      "previewImage": "https://iili.io/FZlOJt4.png"
+    },
+    {
+      "name": "Animation Pad",
+      "slug": "joya-animation-pad",
+      "brand": "Joya",
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation Pad creative ad for Joya",
+      "previewImage": "https://iili.io/FZlOiJe.png"
+    },
+    {
+      "name": "Animation Pad",
+      "slug": "joya-animation-pad-2",
+      "brand": "Joya",
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation Pad creative ad for Joya",
+      "previewImage": "https://iili.io/FZle7Ll.png"
     },
     {
       "name": "Special Campaign",
