@@ -1,0 +1,113 @@
+.ppm_container {
+  position: fixed;
+  width: 100%;
+  right: 0px;
+  bottom: 10dvh;
+  aspect-ratio: 2165/2633;
+  max-width: 250px;
+  overflow: hidden;
+  background: #cccccc66;
+}
+
+.ppm_logo_linear {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 12px;
+}
+
+.ppm_closeBtn_takeover {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 18px;
+}
+
+.ppm_video {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 600px) and (min-height: 750px) {
+  .ppm_container {
+    max-width: 300px;
+  }
+
+  .ppm_logo_linear {
+    width: 14px;
+  }
+
+  .ppm_closeBtn_takeover {
+    width: 22px;
+  }
+}
+
+.ppm_bg {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.ppm_logo {
+  position: absolute;
+  top: 14%;
+  left: 15%;
+  width: 22%;
+}
+
+.ppm_cta {
+  position: absolute;
+  bottom: 14%;
+  left: 9%;
+  width: 31%;
+  display: none;
+}
+
+.ppm_mobile {
+  position: absolute;
+  bottom: 6%;
+  right: 3%;
+  width: 48%;
+  display: none;
+}
+
+.ppm_troly {
+  position: absolute;
+  bottom: 27.4%;
+  right: 0%;
+  width: 100%;
+  display: none;
+}
+
+.ppm_product_container {
+  position: absolute;
+  bottom: 33%;
+  left: 0%;
+  width: 92.5%;
+  height: 29%;
+  clip: rect(auto, auto, 1000px, 0);  /* This allows vertical overflow but clips horizontal */
+  /* background: #00000066; */
+}
+
+.ppm_product_track {
+  display: none;
+  gap: 20px;
+  position: absolute;
+  bottom: 5%;
+}
+
+
+.ppm_product {
+  flex-shrink: 0;
+}
+
+
+.ppm_product {
+  aspect-ratio: 467/622;
+  width: 18%;
+}

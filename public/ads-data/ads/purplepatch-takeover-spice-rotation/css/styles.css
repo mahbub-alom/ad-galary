@@ -1,0 +1,101 @@
+:root {
+  --cross-btn-top: 32dvh;
+  --cross-btn-right: 0;
+  --container-width: 230px;
+}
+
+
+.ppm_container {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 900/900;
+  width: min(100dvw, 100dvh);
+  height: min(100dvw, 100dvh);
+  overflow: hidden;
+  /* background: #cccccc66; */
+}
+
+.ppm_logo_linear{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 14px;
+}
+
+.ppm_closeBtn_takeover{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 18px;
+}
+/* @media (min-width: 300px) {
+  .ppm_container {
+    max-width: 330px;
+  }
+  .ppm_logo_linear{
+    width: 16px;
+  }
+
+  .ppm_closeBtn_takeover{
+    width: 22px;
+  }
+} */
+
+
+.ppm_packet{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  z-index: 100;
+  display: none;
+}
+.ppm_meat{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  display: none;
+}
+.ppm_cook_btn{
+  position: absolute;
+  top: 88%;
+  left: 40%;
+  width: 20%;
+  display: none;
+}
+.ppm_buy_now_btn{
+  position: absolute;
+  top: 88%;
+  left: 40%;
+  width: 20%;
+  display: none;
+}
+
+.ppm_elements_square{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  /* transform: translate(-50%, -50%); */
+  aspect-ratio: 1/1;
+  width: 80%;
+  height: auto;
+  /* display: none; */
+  /* background: #cccccc66; */
+}
+
+.ppm_element{
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  width: 16%;
+  aspect-ratio: 1/1;
+  height: auto;
+  opacity: 0;
+  z-index: 100;
+}

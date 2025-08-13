@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box; 
+		}
+.ppm_container{
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+}
+.ppm_video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+	</style>
+</head>
+
+<body>
+<div class="ppm_container">
+	<video src="media/vid.mp4" autoplay="" loop="" muted="" playsinline="" class="ppm_video"></video>
+</div>
+<script>
+	document.querySelector('.ppm_container').addEventListener('click', function(){
+		window.open('https://purplepatch.online', '_blank');
+	})
+</script>
+
+
+</body></html>

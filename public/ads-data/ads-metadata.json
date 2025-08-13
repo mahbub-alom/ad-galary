@@ -1223,23 +1223,193 @@
       "previewImage": "https://iili.io/FtB6hMB.png"
     },
     {
-      "name": "Draggable Campaign",
-      "slug": "purplepatch-draggable",
+      "name": "takeover: LP gas cook",
+      "slug": "purplepatch-lpgas-cook",
       "brand": "PurplePatch",
-      "category": "Draggable",
-      "dimensions": "970x250",
-      "shortDescription": "Draggable creative ad for PurplePatch",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Lp gas Cook creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtTaecB.png"
     },
     {
-      "name": "Dyanmic URL Campaign",
-      "slug": "pusti-dyanmic-url",
-      "brand": "Pusti",
-      "category": "Dyanmic URL",
-      "dimensions": "728x300",
-      "shortDescription": "Dyanmic URL creative ad for Pusti",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "name": "LP gas: Animation",
+      "slug": "purplepatch-lpgas-animation",
+      "brand": "PurplePatch",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "Lp gas Animation creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtTgMrl.png"
     },
+    {
+      "name": "Floating: Spice",
+      "slug": "purplepatch-floating-spice",
+      "brand": "PurplePatch",
+      "category": "Draggable",
+      "dimensions": "300x600",
+      "shortDescription": "Floating Spice creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtTZIB1.png"
+    },
+
+    {
+      "name": "Takeover: Pusti",
+      "slug": "purplepatch-takeover-pusti",
+      "brand": "PurplePatch",
+      "category": "Animation",
+      "dimensions": "300x600",
+      "shortDescription": "takeover pusti creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtuzmXV.png"
+    },
+    {
+      "name": "Animation: PP Crackers",
+      "slug": "purplepatch-animation-crackers",
+      "brand": "PurplePatch",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation: PP Crackers creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtuTZoQ.png"
+    },
+    {
+      "name": "Takeover: PP Tea",
+      "slug": "purplepatch-takeover-tea",
+      "brand": "PurplePatch",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover: PP Tea creative ad for PurplePatch",
+      "previewImage": "https://iili.io/Ftuucg9.png"
+    },
+
+        {
+      "name": "Demo: Overlay Timezone",
+      "slug": "purplepatch-demo-overlay-timezone",
+      "brand": "PurplePatch",
+      "category": "Image Overlay",
+      "dimensions": "full takeover",
+      "shortDescription": "Overlay Timezone creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtAg3dl.png"
+    },
+        {
+      "name": "Floating: Milk Product",
+      "slug": "purplepatch-floating-milk-product",
+      "brand": "PurplePatch",
+      "category": "Takeover",
+      "dimensions": "300x600",
+      "shortDescription": "Floating Milk Product creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtArMMu.png"
+    },
+        {
+      "name": "Takeover: Milk Product",
+      "slug": "purplepatch-takeover-milk-product-two",
+      "brand": "PurplePatch",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover: Milk product creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtA4mzP.png"
+    },
+        {
+      "name": "Takeover: Spice Rotation",
+      "slug": "purplepatch-takeover-spice-rotation",
+      "brand": "PurplePatch",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover: Spice Rotation creative ad for PurplePatch",
+      "previewImage": "https://iili.io/FtRnJDl.png"
+    },
+    {
+      "name": "Carousel Deck",
+      "slug": "pusti-carousel-deck",
+      "brand": "Pusti",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "Carousel Deck creative ad for Pusti",
+      "previewImage": "https://iili.io/FtRgOiu.png"
+    },
+    {
+      "name": "Food Rail",
+      "slug": "pusti-food-rail",
+      "brand": "Pusti",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Food Rail creative ad for Pusti",
+      "previewImage": "https://iili.io/FtRifC7.png"
+    },
+    {
+      "name": "Interactive Animation",
+      "slug": "pusti-interactive-animation",
+      "brand": "Pusti",
+      "category": "Interactive",
+      "dimensions": "300x250",
+      "shortDescription": "Interactive Animation creative ad for Pusti",
+      "previewImage": "https://iili.io/FtRZ8g9.png"
+    },
+
+
+    {
+      "name": "Curtain Animation",
+      "slug": "pusti-curtain-animation",
+      "brand": "Pusti",
+      "category": "Animation",
+      "dimensions": "",
+      "shortDescription": "Curtain Animation creative ad for Pusti",
+      "previewImage": "https://iili.io/Ft52jPs.png"
+    },
+    {
+      "name": "Vertical Carousel",
+      "slug": "pusti-vertical-carousel",
+      "brand": "Pusti",
+      "category": "Carousel",
+      "dimensions": "300x250",
+      "shortDescription": "Pusti Vertical Carousel creative ad for Pusti",
+      "previewImage": "https://iili.io/Ft5aqFf.png"
+    },
+    {
+      "name": "Rotation Combo",
+      "slug": "pusti-rotation-combo",
+      "brand": "Pusti",
+      "category": "Rotation",
+      "dimensions": "300x250",
+      "shortDescription": "Pusti Rotation Combo creative ad for Pusti",
+      "previewImage": "https://iili.io/Ft5abVe.png"  
+    },
+
+
+    {
+      "name": "Carousel Slide",
+      "slug": "pusti-carousel-slide",
+      "brand": "Pusti",
+      "category": "horizontal",
+      "dimensions": "300x250",
+      "shortDescription": "Pusti Carousel Slide creative ad for Pusti",
+      "previewImage": "https://iili.io/Ft7Izv9.png"  
+    },
+    {
+      "name": "Broken Glass",
+      "slug": "pusti-broken-glass",
+      "brand": "Pusti",
+      "category": "Broken",
+      "dimensions": "300x250",
+      "shortDescription": "Pusti Broken Glass creative ad for Pusti",
+      "previewImage": "https://iili.io/Ft7aC5Q.png"  
+    },
+    {
+      "name": "Parallax Rotate",
+      "slug": "pusti-parallax-rotate",
+      "brand": "Pusti",
+      "category": "Rotation",
+      "dimensions": "300x250",
+      "shortDescription": "Parallax Rotate creative ad for Pusti",
+      "previewImage": "https://iili.io/Ft7hxiQ.png"  
+    },
+    {
+      "name": "Food Rail",
+      "slug": "pusti-food-rail-two",
+      "brand": "Pusti",
+      "category": "Carousel",
+      "dimensions": "",
+      "shortDescription": "Food Rail creative ad for Pusti",
+      "previewImage": "https://iili.io/FtRifC7.png"  
+    },
+
+
     {
       "name": "Expandable Campaign",
       "slug": "rfl-expandable",
@@ -1601,6 +1771,7 @@
     "3D",
     "Animation",
     "Audio",
+    "Broken",
     "Carousel",
     "Calculator",
     "ClickToCall",
@@ -1612,10 +1783,12 @@
     "Expandable",
     "Fireworks",
     "Flip",
+
     "Floating",
     "Footer Scroll",
     "Gamification",
     "Hover",
+    "horizontal",
     "Image Overlay",
     "Interactive",
     "Interscroller",

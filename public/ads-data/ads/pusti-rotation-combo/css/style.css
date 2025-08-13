@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ppm_container {
+    width: 300px;
+    height: 250px;
+    background-color: #f005;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ppm_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.ppm_first_slide{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+.ppm_second_slide{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: none;
+}
+
+.ppm_copy{
+    position: absolute;
+    top: 6%;
+    left: 24%;
+    width: 50%;
+}
+
+.ppm_plus{
+    position: absolute;
+    top: 62%;
+    left: 46%;
+    width: 7%;
+    display: none;
+}
+
+.ppm_polao{
+    position: absolute;
+    top: 28%;
+    left: -1%;
+    width: 46%;
+    display: none;
+}
+
+.ppm_rotatingBox{
+    position: absolute;
+    bottom: 10%;
+    /* bottom: 110%; */
+
+    right: 0%;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    /* background-color: #f005; */
+    transform: translateX(50%);
+    display: none;
+}
+
+.ppm_shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+.ppm_handIcon{
+    position: absolute;
+    top: 72%;
+    left: 63%;
+    width: 7%;
+    z-index: 9;
+    display: none;
+}
+.ppm_bowl_container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;/
+    /* background-color: #a005; */
+    /* transform: rotate(300deg) */
+}
+
+.ppm_bowl{
+    position: absolute;
+    width: 33%;
+    aspect-ratio: 1/1;
+    transform-origin: center;
+}
+
+.ppm_bowl1{
+    bottom: 74%;
+    right: 9%;
+    transform: translate(50%, 50%);
+}
+
+.ppm_bowl2{
+    bottom: 25%;
+    right: 8.4%;
+    transform: translate(50%, 50%);
+}
+
+.ppm_bowl3{
+    bottom: 2%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.ppm_bowl4{
+    bottom: 25%;
+    right: 90%;
+    transform: translate(50%, 50%);
+}
+
+.ppm_bowl5{
+    bottom: 73%;
+    right: 90.6%;
+    transform: translate(50%, 50%);
+
+}
+
+.ppm_bowl6{
+    bottom: 100%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+
+
+
+.ppm_pplogo{
+    position: absolute;
+    top: 2%;
+    left: 44%;
+    width: 14%;
+    display: none;
+}
+
+.ppm_sku{
+    position: absolute;
+    bottom: 10%;
+    left: 21%;
+    width: 65%;
+    display: none;
+}
+
+.ppm_text1{
+    position: absolute;
+    top: 4%;
+    left: 24%;
+    width: 54%;
+    display: none;
+}
+
+.ppm_text2{
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    width: 47%;
+    display: none;
+}
+
+.ppm_cta{
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+    width: 32%;
+    display: none;
+}

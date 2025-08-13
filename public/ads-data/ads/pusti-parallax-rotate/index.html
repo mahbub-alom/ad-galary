@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Chinigura Chaal</title>
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/all.min.css">
+  </head>
+
+  <body style="overflow: hidden">
+    <div id="adArea" class="rct" style="margin: auto; left: 0; right: 0" onclick="window.open('{CLICK_MACRO}')">
+      <section class="container" style="cursor: pointer">
+        <div class="center">
+          <div class="front-face">
+            <div class="contents front">
+              <img id="new" src="images/rice.png" alt="">
+            </div>
+          </div>
+          <div class="back-face">
+            <div class="contents back">
+              <img src="images/rice.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      let ff = document.querySelector(".front-face");
+      let bf = document.querySelector(".back-face");
+      function showShop2() {
+        bf.style.transform = "rotateY(180deg)";
+        ff.style.transform = "rotateY(0deg)";
+      }
+
+      function showShop1() {
+        bf.style.transform = "rotateY(0deg)";
+        ff.style.transform = "rotateY(-180deg)";
+      }
+
+      function start() {
+        showShop2();
+        setInterval(showShop2, 4000);
+
+        setTimeout(() => {
+          showShop1();
+          setInterval(showShop1, 4000);
+        }, 2000);
+      }
+
+      start();
+    </script>
+  
+
+</body></html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Patch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="ppm_container">
+    <img src="images/bg.png" class="ppm_bg" alt="">
+    <img src="images/logo.png" class="ppm_logo" alt="">
+    <div class="ppm_flippingSlide">
+      <img src="images/fridge.png" class="ppm_elm_1 ppm_elm" alt="">
+      <img src="images/tv.png" class="ppm_elm_2 ppm_elm" alt="">
+      <img src="images/ac.png" class="ppm_elm_3 ppm_elm" alt="">
+
+    </div>
+    <div class="ppm_slide1">
+      <img src="images/shape.png" class="ppm_shape" alt="">
+      <img src="images/mn.png" class="ppm_mn" alt="">
+      <img src="images/cashback.png" class="ppm_cashback" alt="">
+      <img src="images/click.png" class="ppm_click" alt="">
+    </div>
+
+    <!-- <img src="https://ms.purplepatch.online/2025/pusti/interactive/v1/assets/demo.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.5;"> -->
+  </div>
+  <script src="js/gsap.min.js"></script>
+     <script>
+      var cm_id = 143;
+      function getExtraData() {
+        var t;
+        let e = (function t() {
+            var e = document.cookie.split(";");
+            if (window.location !== window.parent.location ? 0 : 1)
+              e = document.cookie.split(";");
+            else
+              try {
+                e = window.parent.document.cookie.split(";");
+              } catch (i) {
+                e = document.cookie.split(";");
+              }
+            for (var o = {}, n = 0; n < e.length; n++) {
+              var r = e[n].split("=");
+              o[(r[0] + "").trim()] = unescape(r.slice(1).join("="));
+            }
+            return o;
+          })(),
+          i =
+            ((t = new XMLHttpRequest()).open(
+              "GET",
+              "https://www.cloudflare.com/cdn-cgi/trace",
+              !1
+            ),
+            t.send(null),
+            (newData = t.responseText
+              .trim()
+              .split("\n")
+              .reduce(function (t, e) {
+                return (t[(e = e.split("="))[0]] = e[1]), t;
+              }, {})));
+        return { user_agent: i.uag, browser_cookies: e._ga, client_ip: i.ip };
+      }
+      let extraData = (console.log(!0), getExtraData());
+      function submitInteraction(t, e = e) {
+        fetch(
+          `https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${t}&user_agent=${e?.user_agent}&browser_cookies=${e?.browser_cookies}&client_ip=${e?.client_ip}`
+        );
+      }
+    </script>
+  <!-- <script src="https://ms.purplepatch.online/2025/pusti/interactive/v1/script.js"></script> -->
+  <script type="text/javascript">
+    let firstClicked =false;
+gsap.timeline()
+  .fromTo('.ppm_mn', { y: '-100', display: 'none', opacity: 0 }, { y: 0, display: 'block', opacity: 1, duration: 1, ease: 'power2.inOut', onComplete: mnAnimation })
+  .fromTo('.ppm_cashback', { scale: .3, display: 'none', opacity: 0 }, { scale: 1, display: 'block', opacity: 1, duration: 1, ease: 'power2.inOut', onComplete: logoAnimation }, "<.2")
+  .fromTo('.ppm_click', { y: '100', display: 'none', opacity: 0 }, { y: 0, display: 'block', opacity: 1, duration: 1, ease: 'power2.inOut', onComplete: clickAnimation }, '<.2')
+
+
+function mnAnimation() { gsap.to('.ppm_mn', { scale: 1.1, duration: .6, repeat: -1, yoyo: true }) }
+function clickAnimation() { gsap.to('.ppm_click', { scale: 1.1, duration: .6, repeat: -1, yoyo: true }) }
+
+
+function handleClick() {
+  if(firstClicked) {
+    window.open('{CLICK_MACRO}', '_blank');
+    return;
+  };
+  submitInteraction("first_clicked", extraData);
+  firstClicked = true;
+  gsap.timeline()
+    .to('.ppm_click', { y: '30px', duration: .6, ease: 'power2.inOut', opacity: 0, display: 'none',onComplete:()=>{
+      // gsap.fromTo('.ppm_swiper_container', { y:100,display: 'none',opacity:0 }, {y:0, display: 'block', opacity:1, duration: .6, ease: 'power2.inOut' })
+    } })
+    .to('.ppm_shape', { duration: .6, ease: 'power2.inOut', opacity: 0, display: 'none' }, '<')
+    .fromTo('.ppm_flippingSlide', { display: 'none', opacity: 0 }, { display: 'block', opacity: 1, duration: .6, ease: 'power2.inOut', onComplete: flipElements }, '>')
+  gsap.timeline()
+    .to('.ppm_mn', { width: '24%', top: '7%', left: '4%', scale: 1, duration: 1, ease: 'power2.inOut' })
+    .to('.ppm_cashback', { width: '30%', top: '2%', left: '35%', duration: 1, ease: 'power2.inOut',display:'none' }, '<.1')
+}
+
+document.querySelector('.ppm_container').addEventListener('click', handleClick)
+
+function logoAnimation() {
+  gsap.fromTo('.ppm_logo', { rotationY: 0, opacity: 0, scale: 0.5 }, { rotationY: 360, opacity: 1, scale: 1, duration: 1, ease: "back.out(1.7)", repeat: -1, repeatDelay: 2 }, '<.2');
+}
+
+
+function flipElements() {
+  gsap.timeline({ repeat: -1, delay: 1,repeatDelay:2 })
+    .set('.ppm_elm_1', { display: 'block',opacity:1, rotationY: 0 })
+    .set('.ppm_elm_2', { display: 'none',opacity:0, rotationY: -180 })
+    .set('.ppm_elm_3', { display: 'none',opacity:0, rotationY: -180 })
+
+    .to('.ppm_elm_1', { rotationY: 180,opacity:0,display:'none', duration: 0.8, ease: "power2.inOut" },'>')
+    .to('.ppm_elm_2', { rotationY: 0, duration: 0.8, opacity:1,display:'block', ease: "power2.inOut" },'<')
+    .to('.ppm_elm_2', { rotationY: 180, duration: 0.8,opacity:0,display:'none', ease: "power2.inOut",onComplete:()=>{
+      gsap.set('.ppm_elm_1', { display: 'none',opacity:0, rotationY: -180 },'>')
+
+    } },'>2')
+    .to('.ppm_elm_3', { rotationY: 0, duration: 0.8, opacity:1,display:'block', ease: "power2.inOut" },'<')
+    .to('.ppm_elm_3', { rotationY: 180, duration: 0.8,opacity:0,display:'none', ease: "power2.inOut" },'>2')
+    .to('.ppm_elm_1', { rotationY: 0, duration: 0.8, opacity:1,display:'block', ease: "power2.inOut" },'<')
+}
+
+  </script>
+
+
+</body></html>

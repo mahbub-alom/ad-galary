@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head>
+  <title>Carousel By Purple Patch</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript">
+    var clickTag = "#";
+  </script>
+  <style>
+    .ppm_cta {
+      position: absolute;
+      bottom: 3%;
+      left: 36%;
+      width: 28%;
+      cursor: pointer;
+      z-index: 99999;
+    }
+    #wowslider-container1{
+      position: relative;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+  </style>
+</head>
+
+<body style="cursor: pointer; margin: 0 auto">
+  <div id="wowslider-container1">
+    <div class="ws_images">
+      <ul>
+        <li>
+          <a href="{CLICK_MACRO}" target="_blank"><img src="images/1.png" alt="Bogo" title="Bogo" id="wows1_0"></a>
+        </li>
+        <li>
+          <a href="{CLICK_MACRO}" target="_blank"><img src="images/3.png" alt="hourly" title="hourly" id="wows1_1"></a>
+        </li>
+        <li>
+          <a href="{CLICK_MACRO}" target="_blank"><img src="images/4.png" alt="Iftar" title="Iftar" id="wows1_2"></a>
+        </li>
+        <li>
+          <a href="{CLICK_MACRO}" target="_blank"><img src="images/5.png" alt="Lifestyle" title="Lifestyle" id="wows1_3"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ws_shadow"></div>
+    <img src="images/cta.png" alt="" class="ppm_cta">
+  </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/script2.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+    document.querySelector('.ppm_cta').addEventListener('click', function (e) {
+      e.stopPropagation();
+      window.open('{CLICK_MACRO}', '_blank');
+    });
+  </script>
+
+
+</body></html>

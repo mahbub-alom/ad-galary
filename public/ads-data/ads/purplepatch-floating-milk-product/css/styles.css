@@ -1,0 +1,101 @@
+.ppm_container {
+  bottom: 10dvh;
+  position: fixed;
+  right: 1%;
+  width: 250px;
+  aspect-ratio: 355/553;
+  /* overflow: hidden; */
+  /* background: #ff000066; */
+}
+
+.ppm_closeBtn_takeover {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 24px;
+}
+
+.ppm_logo_linear {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  width: 16px;
+}
+
+@media (min-width: 601px) and (min-height: 750px) {
+  .ppm_container {
+    bottom: 15dvh;
+    width: 340px;
+  }
+}
+
+
+
+.ppm_firni {
+  position: absolute;
+  width: 70%;
+  left: 17%;
+  bottom: 44%;
+  display: none;
+}
+
+.ppm_copy {
+  position: absolute;
+  width: 88%;
+  left: 8%;
+  bottom: 25%;
+  display: none;
+}
+
+.ppm_cta1 {
+  position: absolute;
+  width: 54%;
+  left: 25%;
+  bottom: 9%;
+  display: none;
+}
+
+
+
+
+.ppm_logo {
+  position: absolute;
+  width: 43%;
+  left: 27%;
+  bottom: 77%;
+  display: none;
+}
+
+.ppm_splash {
+  position: absolute;
+  width: 63%;
+  left: 24%;
+  bottom: 45%;
+  display: none;
+}
+
+.ppm_pack {
+  position: absolute;
+  width: 26%;
+  left: 27%;
+  bottom: 21%;
+  display: none;
+}
+
+.ppm_glass {
+  position: absolute;
+  width: 29%;
+  left: 49%;
+  bottom: 20%;
+  display: none;
+}
+
+.ppm_cta2 {
+  position: absolute;
+  width: 54%;
+  left: 24%;
+  bottom: 6%;
+  display: none;
+}
