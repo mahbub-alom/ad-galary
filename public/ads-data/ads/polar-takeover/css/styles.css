@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ppm_container {
+  position: fixed;
+  top: 0px;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 999999;
+  background-size: 100% 100%;
+  /* background-color: #0005; */
+  overflow: hidden;
+}
+
+.ppm_innerContainer {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  /* background-color: #f005; */
+  aspect-ratio: 2.1 / 1;
+  transform: translateY(-50%);
+}
+
+.ppm_miniElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  aspect-ratio: 1/1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ppm_logo_linear {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 16px;
+}
+
+.ppm_closeBtn_takeover {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 20px;
+}
+
+.ppm_left {
+  position: absolute;
+}
+
+.ppm_right {
+  position: absolute;
+}
+
+
+.ppm_apple {
+  position: absolute;
+  top: 4%;
+  left: 30%;
+  width: 27%;
+  display: none;
+}
+
+.ppm_strobery {
+  position: absolute;
+  top: 4%;
+  right: 28%;
+  width: 26%;
+  display: none;
+}
+
+.ppm_bottom_part {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 40%;
+  aspect-ratio: 812/476;
+  display: none;
+}
+
+.ppm_elipses{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #f005; */
+}
+
+.ppm_green{
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  width: 50%;
+}
+
+.ppm_strawberry{
+  position: absolute;
+  bottom: 0;
+  right: 17%;
+  width: 30%;
+}
+
+.ppm_copy{
+  position: absolute;
+  bottom: 42%;
+  left: 2%;
+  width: 55%;
+}
+
+.ppm_text{
+  position: absolute;
+  bottom: 25%;
+  left: 7%;
+  width: 45%;
+}
+.ppm_left1 {  width: 55%;}
+.ppm_left2 {  width: 25%;}
+.ppm_left3 {  width: 55%;}
+.ppm_left4 {  width: 25%;}
+.ppm_left5 {  width: 55%;}
+
+.ppm_right1 {  width: 70%;}
+.ppm_right2 {  width: 25%;}
+.ppm_right3 {  width: 55%;}
+.ppm_right4 {  width: 25%;}
+.ppm_right5 {  width: 70%;}
+
+@media (max-width: 768px) {
+  .ppm_innerContainer {
+    aspect-ratio: 1/2.1;
+  }
+
+  .ppm_logo_linear {
+    width: 18px;
+  }
+
+  .ppm_closeBtn_takeover {
+    width: 22px;
+  }
+
+.ppm_miniElement{
+  width: 40%;
+}
+
+  .ppm_bottom_part {
+    left: 15%;
+    width: 70%;
+  }
+
+  .ppm_apple {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    width: 44%;
+    display: none;
+  }
+  
+  .ppm_strobery {
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    width: 44%;
+    display: none;
+  }
+}
+
+
+
+
+

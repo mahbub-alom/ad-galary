@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.abs{
+    position: absolute;
+}
+
+.container{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.bg{
+    width: 300px;
+    height: 250px;
+}
+
+.logo{
+    width: 68px;
+    height: 61px;
+    left: 225px;
+    top: 9px;
+}
+
+.glow{
+    width: 295px;
+    height: 273px;
+    left: 3px;
+    top: -39px;
+    animation: fadeOut 2s ease-in-out forwards;
+}
+
+.model{
+    width: 211px;
+    height: 219px;
+    left: 33px;
+    top: 29px;
+}
+
+.wave1{
+    width: 300px;
+    height: 48px;
+    left: 0px;
+    top: 202px;
+}
+
+.bottle{
+    width: 72px;
+    height: 132px;
+    left: 200px;
+    top: 155px;
+    /* animation: bottleEntrance 2s ease forwards; */
+   
+}
+
+
+.wave2{
+    width: 300px;
+    height: 91px;
+    left: 0px;
+    top: 160px;
+}
+
+.wave3{
+    width: 117px;
+    height: 46px;
+    left: 183px;
+    top: 207px;
+}
+
+.copy{
+    width: 114px;
+    height: 110px;
+    left: 2px;
+    top: 4px;
+    animation: fadeOut 2s ease-in-out forwards;
+}
+
+.bottleEntrance{
+    animation: bottleEntrance  2s ease forwards;
+}
+
+@keyframes bottleEntrance {
+    0% {
+        transform: translateY(-154px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }

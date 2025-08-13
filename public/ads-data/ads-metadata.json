@@ -1121,31 +1121,88 @@
       "previewImage": "https://iili.io/FZka3Gf.png"
     },
     {
-      "name": "ClickToCall Campaign",
-      "slug": "parachute-clicktocall",
+      "name": "Floating Secrets",
+      "slug": "parachute-floating-secrets",
       "brand": "Parachute",
-      "category": "ClickToCall",
-      "dimensions": "728x90",
-      "shortDescription": "ClickToCall creative ad for Parachute",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "300x250",
+      "shortDescription": "Floating Secrets creative ad for Parachute",
+      "previewImage": "https://iili.io/FtdYaHX.png"
     },
     {
-      "name": "Contest Campaign",
-      "slug": "polar-contest",
+      "name": "Floating Secrets",
+      "slug": "parachute-floating-secrets-two",
+      "brand": "Parachute",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating Secrets creative ad for Parachute",
+      "previewImage": "https://iili.io/Ftd0vkP.png"
+    },
+    {
+      "name": "Floating Secrets",
+      "slug": "parachute-floating-secrets-three",
+      "brand": "Parachute",
+      "category": "Motion",
+      "dimensions": "mouse over",
+      "shortDescription": "Floating Secrets creative ad for Parachute",
+      "previewImage": "https://iili.io/Ftdhse4.png"
+    },
+        {
+      "name": "Flip Animaton",
+      "slug": "parachute-flip-animation",
+      "brand": "Parachute",
+      "category": "Takeover",
+      "dimensions": "side Screen",
+      "shortDescription": " Flip Animaton creative ad for Parachute",
+      "previewImage": "https://iili.io/Ft2R0hv.png"
+    },
+ 
+
+    {
+      "name": "Takeover",
+      "slug": "polar-takeover",
       "brand": "Polar",
-      "category": "Contest",
-      "dimensions": "970x250",
-      "shortDescription": "Contest creative ad for Polar",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "Full Screen",
+      "shortDescription": "takeover creative ad for Polar",
+      "previewImage": "https://iili.io/FtfsIvs.png"
+    },
+
+    {
+      "name": "Floating",
+      "slug": "polar-floating",
+      "brand": "Polar",
+      "category": "Floating",
+      "dimensions": "300x250",
+      "shortDescription": "floating creative ad for Polar",
+      "previewImage": "https://iili.io/FtqFGqX.png"
     },
     {
-      "name": "Countdown Campaign",
-      "slug": "pran-countdown",
+      "name": "Carousel Card",
+      "slug": "pran-carousel-card",
+      "brand": "Pran",
+      "category": "Takeover",
+      "dimensions": "Side Screen",
+      "shortDescription": "Carousel Card creative ad for Pran",
+      "previewImage": "https://iili.io/FtqZrhJ.png"
+    },
+    {
+      "name": "Countdown Matha",
+      "slug": "pran-countdown-matha",
       "brand": "Pran",
       "category": "Countdown",
-      "dimensions": "970x90",
-      "shortDescription": "Countdown creative ad for Pran",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "300x250",
+      "shortDescription": "countdown Matha creative ad for Pran",
+      "previewImage": "https://iili.io/FtqD0Ne.png"
+    },
+    {
+      "name": "Pran Matha",
+      "slug": "pran-matha",
+      "brand": "Pran",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Pran Matha creative ad for Pran",
+      "previewImage": "https://iili.io/Ftqbaqv.png"
     },
     {
       "name": "Cursor Campaign",
