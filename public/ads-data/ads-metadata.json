@@ -1408,8 +1408,15 @@
       "shortDescription": "Food Rail creative ad for Pusti",
       "previewImage": "https://iili.io/FtRifC7.png"  
     },
-
-
+        {
+      "name": "Rabbithole Carousel",
+      "slug": "rabbithole-carousel",
+      "brand": "Rabbithole",
+      "category": "Carousel",
+      "dimensions": "300x250",
+      "shortDescription": "Rabbithole Carousel creative ad for Rabbithole",
+      "previewImage": "https://iili.io/FtaEFRa.png"
+    },
     {
       "name": "Expandable Campaign",
       "slug": "rfl-expandable",
@@ -1419,15 +1426,7 @@
       "shortDescription": "Expandable creative ad for RFL",
       "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
-    {
-      "name": "Fireworks Campaign",
-      "slug": "rabbithole-fireworks",
-      "brand": "Rabbithole",
-      "category": "Fireworks",
-      "dimensions": "970x250",
-      "shortDescription": "Fireworks creative ad for Rabbithole",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
+
     {
       "name": "Flip Campaign",
       "slug": "radhuni-flip",
