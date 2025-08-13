@@ -1205,13 +1205,22 @@
       "previewImage": "https://iili.io/Ftqbaqv.png"
     },
     {
-      "name": "Cursor Campaign",
-      "slug": "prime-bank-cursor",
+      "name": "Loan Calculator",
+      "slug": "prime-bank-loan-calculator",
       "brand": "Prime Bank",
-      "category": "Cursor",
-      "dimensions": "970x90",
-      "shortDescription": "Cursor creative ad for Prime Bank",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Calculator",
+      "dimensions": "300x250",
+      "shortDescription": " Loan Calculator creative ad for Prime Bank",
+      "previewImage": "https://iili.io/FtB4UE7.png"
+    },
+    {
+      "name": "Prime Bank Zakat Calculator",
+      "slug": "prime-bank-zakat-calculator",
+      "brand": "Prime Bank",
+      "category": "Calculator",
+      "dimensions": "300x250",
+      "shortDescription": " Zakat Calculator creative ad for Prime Bank",
+      "previewImage": "https://iili.io/FtB6hMB.png"
     },
     {
       "name": "Draggable Campaign",
@@ -1593,6 +1602,7 @@
     "Animation",
     "Audio",
     "Carousel",
+    "Calculator",
     "ClickToCall",
     "Contest",
     "Countdown",

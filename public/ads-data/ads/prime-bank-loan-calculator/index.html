@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Bank Loan Calculator</title>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="ppm_container">
+    <img src="images/bg.jpg" alt="" class="ppm_bg ppm_absolute" draggable="false">
+    
+    <div class="ppm_slide_1">
+      <img src="images/loan_amount.png" alt="" class="ppm_loan_amount ppm_absolute" draggable="false">
+      <img src="images/interestRate.png" alt="" class="ppm_interestRate ppm_absolute" draggable="false">
+      <img src="images/loanperiod.png" alt="" class="ppm_loan_period ppm_absolute" draggable="false">
+      <input type="number" id="loan_amount" name="loan_amount" class="ppm_loan_amount_input">
+      <input type="number" id="interest_rate" name="interest_rate" class="ppm_interestRate_input">
+      <input type="number" id="loan_period" name="loan_period" class="ppm_loan_period_input"> 
+      
+      <img src="images/Calculate.png" alt="" class="ppm_calculate ppm_absolute" draggable="false">
+      <img src="images/reset.png" alt="" class="ppm_reset ppm_absolute" draggable="false">
+    
+    </div>
+
+    <div class="ppm_slide_2 ppm_zeroOpacity ppm_hidden">
+      <img src="images/monthlyInstalment.png" alt="" class="ppm_monthly_instalment ppm_absolute" draggable="false">
+      <span class="ppm_monthly_instalment_value ppm_absolute"></span>
+      <img src="images/getloan.png" alt="" class="ppm_get_loan ppm_absolute" draggable="false">
+    </div>
+    <!-- <img src="./img/demo1.jpg" alt="" srcset="" class="ppm_check"> -->
+  </div>
+
+  <!-- js -->
+  <script src="js/gsap.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body></html>
