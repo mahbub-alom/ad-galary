@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Ad } from '@/types/ad';
 import AdCard from './AdCard';
 import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -13,6 +13,7 @@ interface AdGridProps {
 }
 
 const ITEMS_PER_PAGE = 10;
+const MAX_VISIBLE_PAGES = 9;
 
 export default function AdGrid({ ads, loading, error }: AdGridProps) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -23,21 +24,28 @@ export default function AdGrid({ ads, loading, error }: AdGridProps) {
   const currentAds = ads.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   const handlePageChange = (page: number) => {
-    if (page === currentPage) return;
-
+    if (page < 1 || page > totalPages || page === currentPage) return;
     setSkeletonLoading(true);
     setTimeout(() => {
       setCurrentPage(page);
       setSkeletonLoading(false);
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 500); 
+    }, 500);
   };
 
-  if (loading) {
-    return (
-      <SkeletonGrid />
-    );
-  }
+  const getPageNumbers = () => {
+    const chunkIndex = Math.floor((currentPage - 1) / MAX_VISIBLE_PAGES);
+    const startPage = chunkIndex * MAX_VISIBLE_PAGES + 1;
+    const endPage = Math.min(startPage + MAX_VISIBLE_PAGES - 1, totalPages);
+
+    let pages = [];
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(i);
+    }
+    return pages;
+  };
+
+  if (loading) return <SkeletonGrid />;
 
   if (error) {
     return (
@@ -81,22 +89,19 @@ export default function AdGrid({ ads, loading, error }: AdGridProps) {
         </button>
 
         {/* Numbered Buttons */}
-        {Array.from({ length: totalPages }).map((_, index) => {
-          const pageNumber = index + 1;
-          return (
-            <button
-              key={pageNumber}
-              onClick={() => handlePageChange(pageNumber)}
-              className={`px-4 py-2 rounded border ${
-                currentPage === pageNumber
-                  ? 'bg-[#2596be] text-white border-[#0F828C]'
-                  : 'bg-white text-gray-800 border-gray-300 hover:bg-gray-100'
-              } transition`}
-            >
-              {pageNumber}
-            </button>
-          );
-        })}
+        {getPageNumbers().map((pageNumber) => (
+          <button
+            key={pageNumber}
+            onClick={() => handlePageChange(pageNumber)}
+            className={`px-4 py-2 rounded border ${
+              currentPage === pageNumber
+                ? 'bg-[#2596be] text-white border-[#0F828C]'
+                : 'bg-white text-gray-800 border-gray-300 hover:bg-gray-100'
+            } transition`}
+          >
+            {pageNumber}
+          </button>
+        ))}
 
         {/* Next Button */}
         <button

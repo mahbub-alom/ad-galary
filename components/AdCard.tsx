@@ -12,7 +12,7 @@ interface AdCardProps {
 export default function AdCard({ ad }: AdCardProps) {
   return (
     <div className="group relative bg-white shadow-sm hover:shadow-md border rounded-lg overflow-hidden transition-all duration-300">
-      <Link href={`/ads/${ad.slug}`}>
+      <Link href={`/ads/${ad.slug}`} target="_blank">
         {/* Ad Preview */}
         <div className="relative bg-gray-100 aspect-video overflow-hidden">
           <Image
@@ -26,7 +26,7 @@ export default function AdCard({ ad }: AdCardProps) {
           {/* Hover Overlay */}
           <div className="absolute inset-0 flex justify-center items-center bg-white/30 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300">
             <Link
-              href={`/ads/${ad.slug}`}
+              href={`/ads/${ad.slug}`} target="_blank"
               className="flex items-center space-x-2 bg-white hover:bg-gray-100 px-6 py-2 rounded-full font-medium text-gray-900 transition-colors"
             >
               <Eye className="w-4 h-4" />
