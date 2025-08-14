@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ppm_container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: none;
+}
+
+.ppm_closeBtn_takeover {
+  position: absolute;
+  width: 21px;
+  right: 0;
+  bottom: 52%;
+  aspect-ratio: 1/1;
+}
+
+.ppm_logo_linear {
+  position: absolute;
+  width: 18px;
+  right: 0;
+  bottom: 0;
+}
+
+.ppm_camp {
+  position: absolute;
+  aspect-ratio: 1058 / 516;
+  width: 70%;
+  left: 17%;
+  bottom: 45%;
+  display: none;
+}
+
+.ppm_text {
+  position: absolute;
+
+  width: 60%;
+  aspect-ratio: 649 / 165;
+  left: 20%;
+  bottom: 32%;
+  display: none;
+}
+
+.ppm_logo {
+  position: absolute;
+  aspect-ratio: 702 / 302;
+  bottom: 40%;
+  width: 66%;
+  left: 18%;
+  display: none;
+}
+
+.ppm_text2 {
+  position: absolute;
+  aspect-ratio: 649 / 165;
+
+  width: 36%;
+  right: 7%;
+  bottom: 9%;
+  display: none;
+}
+
+.ppm_camp2 {
+  position: absolute;
+  aspect-ratio: 1058 / 516;
+  width: 41%;
+  right: 3.5%;
+  bottom: 18%;
+  display: none;
+}
+
+.ppm_text3 {
+  position: absolute;
+  aspect-ratio: 649 / 165;
+  width: 40%;
+  right: 5%;
+  bottom: 43%;
+  display: none;
+}
+
+
+@media (min-width: 600px) {
+  .ppm_closeBtn_takeover {
+    bottom: 72%;
+  }
+
+  .ppm_camp {
+    width: 36%;
+    left: 32%;
+    bottom: 45%;
+  }
+
+  .ppm_text {
+    width: 24%;
+    aspect-ratio: 649 / 165;
+    left: 38%;
+    bottom: 30%;
+  }
+
+  .ppm_logo {
+    width: 36%;
+    left: 32%;
+  }
+
+  .ppm_text3 {
+    width: 18%;
+    right: 5%;
+    bottom: 60%;
+  }
+
+  .ppm_camp2 {
+  width: 20%;
+  right: 3.5%;
+  bottom: 18%;
+  }
+
+  .ppm_text2 {
+  width: 13%;
+  right: 7%;
+  bottom: 9%;
+  }
+
+}

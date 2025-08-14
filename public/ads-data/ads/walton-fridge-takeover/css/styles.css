@@ -1,0 +1,248 @@
+.ppm_container_takeover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  --background-color-alpha: 0;
+  background-color: rgba(0, 0, 0, var(--background-color-alpha));
+  z-index: 9999999999999999;
+  /* z-index: 999999999999; */
+}
+
+#pp_floating{
+  z-index: 9999999999999999;
+}
+.ppm_fridge {
+  position: absolute;
+  height: 60dvh;
+  aspect-ratio: 404/555;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10dvh;
+  --brightness-level: 1;
+  filter: brightness(var(--brightness-level));
+  z-index: 9999999999999999;
+}
+
+.ppm_fridge_close {
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  /* opacity: 0; */
+  z-index: 9999999999999999;
+}
+
+.ppm_fridge_open {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  z-index: 9999999999999999;
+}
+
+.ppm_fridge_glow {
+  width: 100%;
+  position: absolute;
+  bottom: 42%;
+  left: 8%;
+  opacity: 0;
+  /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.7))); */
+  mask-image: linear-gradient(350deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+  z-index: 9999999999999999;
+}
+
+.ppm_mnemonic {
+  position: absolute;
+  height: 30dvh;
+  aspect-ratio: 404 / 555;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 65dvh;
+  z-index: 9999999999999999;
+}
+
+.ppm_mnemonic_text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  z-index: 9999999999999999;
+}
+
+.ppm_lightBulb {
+  position: absolute;
+  height: 30dvh;
+  aspect-ratio: 152 / 321;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 65dvh;
+  z-index: 9999999999999999;
+}
+
+.ppm_lightImg {
+  width: 100%;
+  position: absolute;
+  /* bottom: 0;
+  opacity: 0; */
+  z-index: 9999999999999999;
+}
+
+.ppm_secondPage {
+  position: absolute;
+  width: 95%;
+  height: auto;
+  aspect-ratio: 598 / 610;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999999999999;
+}
+
+.ppm_walton_logo {
+  width: 40% !important;
+  position: relative;
+  /* top: 10%; */
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ppm_loadsheddingText {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999999999999999;
+}
+
+.ppm_text160 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  z-index: 9999999999999999;
+}
+
+.ppm_copy {
+  position: absolute;
+  height: 50dvh;
+  aspect-ratio: 404 / 300;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 3dvh;
+  z-index: 9999999999999999;
+}
+
+.ppm_copy_text {
+  width: 68% !important;
+  position: relative;
+  /* bottom: 0; */
+  opacity: 0;
+  left: 16%;
+}
+
+.ppm_bottom_image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100dvw !important;
+  aspect-ratio: 430/110;
+  z-index: 9999999999999999;
+}
+
+.ppm_bottom_image_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  display: none;
+  z-index: 9999999999999999;
+}
+
+.ppm_bottom_image_textBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  display: block;
+  z-index: 9999999999999999;
+}
+
+.ppm_close_btn_linear {
+  position: absolute;
+  right: 2px;
+  top: 30%;
+  width: 20px !important;
+  opacity: 0;
+  z-index: 9999999999999999;
+}
+.ppm_logo_linear {
+  position: absolute;
+  right: 0px;
+  bottom: 0%;
+  width: 20px !important;
+  opacity: 0;
+  display: none;
+  z-index: 9999999999999999;
+}
+
+
+@media (min-width: 500px) {
+  .ppm_fridge {
+    height: 75dvh !important;
+    bottom: 0dvh;
+  }
+  .ppm_close_btn_linear {
+    width: 28px !important;
+  }
+  .ppm_logo_linear {
+    width: 28px !important;
+    display: block;
+  }
+  .ppm_bottom_image {
+    aspect-ratio: 1920/229;
+  }
+  .ppm_secondPage {
+    height: 90dvh !important;
+    width: auto;
+  }
+
+  .ppm_copy_text {
+    width: 100% !important;
+    position: relative;
+    bottom: 0;
+    opacity: 0;
+    left: auto;
+  }
+
+  .ppm_bottom_image_text {
+    display: block;
+  }
+  .ppm_bottom_image_textBottom {
+    display: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  .ppm_fridge {
+    height: 70dvh !important;
+    bottom: 0dvh;
+  }
+}
+
+div#pp_takeover {
+  z-index: 99999999999999999 !important;
+}
+
+/*#ad_2473{
+    z-index: 99999999999999 !important;
+}*/

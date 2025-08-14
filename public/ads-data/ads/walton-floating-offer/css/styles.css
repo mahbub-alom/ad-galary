@@ -1,0 +1,75 @@
+:root {
+  --cross-btn-top:32dvh;
+  --cross-btn-right:0;
+
+  --container-width:170px;
+}
+
+@media (min-width: 601px) {
+  :root {
+
+    --cross-btn-top:32dvh;
+    --cross-btn-right:0;
+
+    --container-width:350px;
+  }
+
+}
+
+.ppm_container{
+  bottom: 35dvh;
+  position: fixed;
+  right: 70%;
+  transform: translate(50%, -50%);
+  width: var(--container-width);
+  height: 0px;
+}
+@media (min-width: 601px) {
+  .ppm_container{
+    bottom: 20dvh;
+    right: 50%;
+  }
+}
+.ppm_product {
+  width: 150%;
+  position: absolute;
+  bottom: 0px;
+  display: none;
+  left: -25%;
+}
+.ppm_model_mim {
+  width: 80%;
+  position: absolute;
+  bottom: 0px;
+  display: none;
+  left: 95%;
+}
+
+
+.ppm_cementBag{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display:none;
+}
+.ppm_closeBtn_takeover {
+  z-index: 9999;
+  position: fixed;
+  right: var(--cross-btn-right);
+  bottom: var(--cross-btn-top);
+  width: 24px;
+}
+
+
+
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}

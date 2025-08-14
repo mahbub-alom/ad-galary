@@ -1,0 +1,172 @@
+:root {
+  --background-bg-fridge: url('../images/sku2.png');
+  --background-bg-logo: url('../images/logo_full.png');
+  --background-bg: url('../images/bg.png');
+}
+
+
+.ppm_container {
+  position: fixed;
+  top: 0px;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 999999;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.ppm_bg_takeover {
+  width: 100%;
+  height: 100%;
+}
+
+.ppm_left {
+  position: absolute;
+  left: 0;
+  width: 50dvw;
+  height: 100dvh;
+  background-image: var(--background-bg);
+  background-position: left;
+  background-size: 200% 100%;
+  display: none;
+}
+
+.ppm_right {
+  position: absolute;
+  right: 0;
+  width: 50dvw;
+  height: 100dvh;
+  background-image: var(--background-bg);
+  background-position: right;
+  background-size: 200% 100%;
+  display: none;
+}
+
+.ppm_left_fridge {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: var(--background-bg-fridge);
+  background-position: left;
+  background-size: 200% 100%;
+  display: none;
+}
+
+.ppm_right_fridge {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: var(--background-bg-fridge);
+  background-position: right;
+  background-size: 200% 100%;
+  display: none;
+}
+
+.ppm_extra_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 2.1/1;
+}
+
+.ppm_singleFridge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 2.1/1;
+}
+
+.ppm_milion {
+  position: absolute;
+  top: 9%;
+  left: 36%;
+  width: 28%;
+  aspect-ratio: 785 / 299;
+  display: none;
+}
+
+.ppm_text1 {
+  position: absolute;
+  top: 9%;
+  left: 17%;
+  width: 20%;
+  display: none;
+}
+
+.ppm_text2 {
+  position: absolute;
+  top: 83%;
+  left: 16%;
+  width: 22%;
+  display: none;
+}
+
+.ppm_video {
+  position: absolute;
+  top: 24%;
+  right: 5%;
+  width: 46%;
+  border-radius: 15px;
+  /* height: 100%; */
+  border: 2px solid black;
+  display: none;
+}
+
+
+.ppm_closeBtn_linear {
+  position: absolute;
+  right: 1%;
+  bottom: 15dvh;
+}
+.ppm_closeBtn_linear_upper {
+  position: absolute;
+  right: 1%;
+  top: 2dvh;
+  z-index: 9999999999;
+}
+
+.ppm_logo_blue {
+  position: absolute;
+  left: 1%;
+  bottom: 15dvh;
+  width: 24px;
+}
+
+
+@media (max-width: 768px) {
+  .ppm_extra_container {
+    aspect-ratio: 1/2.1;
+  }
+
+  .ppm_singleFridge {
+    top: 17%;
+    left: -5%;
+    width: 110%;
+  }
+
+  .ppm_text1 {
+    top: 10%;
+    left: 25%;
+    width: 50%;
+  }
+
+  .ppm_text2 {
+    top: 43%;
+    left: 25%;
+    width: 50%;
+  }
+
+  .ppm_video {
+    top: 55%;
+    right: 15%;
+    width: 70%;
+  }
+  
+  
+  
+}
+

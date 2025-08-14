@@ -1870,14 +1870,100 @@
       "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      "name": "Cursor Campaign",
-      "slug": "walton-cursor",
+      "name": "Takeover Fridge",
+      "slug": "walton-takeover-fridge",
       "brand": "Walton",
-      "category": "Cursor",
-      "dimensions": "300x250",
-      "shortDescription": "Cursor creative ad for Walton",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Fridge creative ad for Walton",
+      "previewImage": "https://iili.io/FD2Ehmu.png"
     },
+    {
+      "name": "Floating Shoppable",
+      "slug": "walton-floating-shoppable",
+      "brand": "Walton",
+      "category": "Floating",
+      "dimensions": "336x280",
+      "shortDescription": "Floating Shoppable creative ad for Walton",
+      "previewImage": "https://iili.io/FD2GNyX.png"
+    },
+    {
+      "name": "Takeover Ac",
+      "slug": "walton-takeover-ac",
+      "brand": "Walton",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Ac creative ad for Walton",
+      "previewImage": "https://iili.io/FD2MSOF.png"
+    },
+
+
+    {
+      "name": "Takeover Again Millionaire",
+      "slug": "walton-Takeover-again-millionaire",
+      "brand": "Walton",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Again Millionaire creative ad for Walton",
+      "previewImage": "https://iili.io/FD3F58X.png"
+    },
+    {
+      "name": "Takeover Millionaire",
+      "slug": "walton-takeover-millionaire",
+      "brand": "Walton",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Millionaire creative ad for Walton",
+      "previewImage": "https://iili.io/FD3fhhb.png"
+    },
+    {
+      "name": "Takeover AC",
+      "slug": "walton-takeover-ac-two",
+      "brand": "Walton",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover AC creative ad for Walton",
+      "previewImage": "https://iili.io/FD3BJOF.png"
+    },
+
+   {
+      "name": "Takeover Washing Machine",
+      "slug": "walton-takeover-washing-machine",
+      "brand": "Walton",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Washing Machine creative ad for Walton",
+      "previewImage": "https://iili.io/FD3S5Ab.png"
+    },
+   {
+      "name": "Fridge Takeover",
+      "slug": "walton-fridge-takeover",
+      "brand": "Walton",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Fridge Takeover creative ad for Walton",
+      "previewImage": "https://iili.io/FD3Uw7e.png"
+    },
+   {
+      "name": "Floating Offer",
+      "slug": "walton-floating-offer",
+      "brand": "Walton",
+      "category": "Floating",
+      "dimensions": "side Screen",
+      "shortDescription": "Floating Offer creative ad for Walton",
+      "previewImage": "https://iili.io/FD3gl3P.png"
+    },
+   {
+      "name": "Ac Takeover",
+      "slug": "walton-ac-takeover",
+      "brand": "Walton",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Ac Takeover creative ad for Walton",
+      "previewImage": "https://iili.io/FD3r3S1.png"
+    },
+
+
     {
       "name": "Carousel",
       "slug": "x-ceramics-carousel",

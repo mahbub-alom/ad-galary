@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takeover: Walton</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('images/mobile.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100dvw;
+            height: 100dvh;
+            overflow: hidden;
+        }
+
+        @media (min-width: 601px) {
+            body {
+                background: url('images/desktop.jpeg');
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <link rel="stylesheet" href="css/styles.css">
+    <div class="ppm_container" id="ppm_container">
+        <div class="ppm_container_inner">
+            <img src="images/1.png" alt="" class="ppm_ball_1">
+            <img src="images/2.png" alt="" class="ppm_ball_2">
+            <img src="images/3.png" alt="" class="ppm_ball_3">
+        </div>
+        
+        
+        <div class="ppm_brokenGlass"></div>
+        <div class="ppm_lowerBottom">
+            <img src="images/shape.png" alt="" class="ppm_shape">
+            <img src="images/fridge.png" alt="" class="ppm_fridge">
+            <img src="images/text.png" alt="" class="ppm_text">
+            <img src="images/text2.png" alt="" class="ppm_text2">
+            <img src="images/text3.png" alt="" class="ppm_text3">
+
+
+            <!-- <img src="./assets/demoBg.png" style="position: absolute;bottom: 0;left: 0;width: 100%; opacity: .5;" alt=""> -->
+        </div>
+        <img src="images/close_red.png" class="ppm_closeBtn_takeover" alt="" draggable="false">
+        <img src="images/logo_blue_small.png" class="ppm_logo_linear" alt="" draggable="false">
+    </div>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+</body></html>

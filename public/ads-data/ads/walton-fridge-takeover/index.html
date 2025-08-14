@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walton: Fridge v6</title>
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+  <style>
+    :root {
+      --background-img: url('images/newsMobile.png');
+    }
+    @media (min-width: 500px) {
+      :root {
+        --background-img: url('images/newsDesk_desktop.png');
+      }
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background-img);
+      width: 100dvw;
+      height: 100dvh;
+      background-size: cover;
+      box-sizing: border-box;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Takeover Code: Start From Here -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+  <div class="ppm_container_takeover">
+    <div class="ppm_fridge">
+      <img src="images/deep1.png" class="ppm_fridge_close" alt="" srcset="" draggable="false">
+    </div>
+    <div class="ppm_lightBulb">
+      <img src="images/light.png" class="ppm_lightImg" alt="" srcset="" draggable="false">
+    </div>
+    <div class="ppm_secondPage">
+      <img src="images/biddyut.png" class="ppm_loadsheddingText" alt="" srcset="" draggable="false">
+      <img src="images/text_160.png" class="ppm_text160" alt="" srcset="" draggable="false">
+    </div>
+
+    <div class="ppm_mnemonic">
+      <img src="images/mnemonic.png" class="ppm_mnemonic_text" alt="" srcset="" draggable="false">
+    </div>
+    <div class="ppm_copy">
+      <img src="images/logoWhite.png" class="ppm_walton_logo" alt="" srcset="" draggable="false">
+      <img src="images/mnemonic160.png" class="ppm_copy_text" alt="" srcset="" draggable="false">
+    </div>
+
+  </div>
+  <div class="ppm_bottom_image">
+    <img src="images/mnemonic_1.png" class="ppm_bottom_image_text bottomImage" alt="" srcset="" draggable="false">
+    <img src="images/walton_bottom.png" class="ppm_bottom_image_textBottom bottomImage" alt="" srcset="" draggable="false">
+        <img src="images/closebtn.png" class="ppm_close_btn_linear" alt="" srcset="" draggable="false">
+    <img src="images/logo_blue_small.png" class="ppm_logo_linear" alt="" srcset="" draggable="false">
+  </div>
+  <script src="js/script.js"></script>
+  <script>
+    let takeoverLandingUrl = `#`;
+    document.querySelector('.ppm_container_takeover').addEventListener('click', () => { window.open(`${takeoverLandingUrl}`) });
+    document.querySelector('.ppm_bottom_image').addEventListener('click', () => { window.open(`${takeoverLandingUrl}`) });
+  </script>
+  <!-- End Takeover Code-->
+
+
+</body></html>

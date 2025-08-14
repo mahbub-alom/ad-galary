@@ -1,0 +1,155 @@
+:root {
+  --vid-height: 100dvw;
+  --video_controller: 35px;
+  --coin-div-width: 70dvw;
+  --background-img: url('../images/newsMobile.png');
+  --logo-width: 55dvw;
+}
+
+@media (min-width: 500px) {
+  :root {
+    --vid-height: 90dvh;
+    --coin-div-width: 25dvw;
+    --background-img: url('../images/newsDesk_desktop.png');
+    --logo-width: 20dvw;
+  }
+}
+
+/* @media (max-width: 500px) and (min-height: 700px) {
+  :root {
+    --vid-height: 25dvh;
+  }
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-img);
+  width: 100dvw;
+  height: 100dvh;
+  background-size: cover;
+}
+
+/* .ppm_container {
+  position: fixed;
+  top: 0px;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 999999;
+  background-size: 100% 100%;
+  overflow: hidden;
+} */
+
+
+.ppm_boishakh_holo {
+  width: 100dvw;
+  bottom: -2%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0%);
+  position: fixed;
+  display: none;
+  opacity: 0;
+}
+
+.ppm_shanta_img {
+  width: 100%;
+  bottom: 0;
+}
+
+.ppm_shanta_logo {
+  width: var(--logo-width);
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  display: none;
+  opacity: 0;
+}
+
+.ppm_shanta_logo_img {
+  width: 100%;
+  bottom: 0;
+}
+
+.ppm_vid_div {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  width: 100dvw;
+  height: auto;
+  display: none;
+  opacity: 0;
+}
+
+.ppm_hand {
+  right: 26%;
+  /* transform: translateX(-50%); */
+  position: fixed;
+  width: 36px;
+  height: auto;
+  bottom: 5dvh;
+  opacity: 0;
+  display: none;
+}
+
+
+.ppm_video_takeover {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.ppm_closeBtn_linear {
+  position: absolute;
+  right: 1%;
+}
+
+.ppm_video-controls {
+  top: calc((var(--vid-height)/2) - var(--video_controller));
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.ppm_sound {
+  float: right;
+  background: 0 0;
+  color: #fff;
+  border: none;
+  outline: 0;
+}
+
+.ppm_toggle {
+  background: 0 0;
+  color: #fff;
+  border: none;
+  outline: 0;
+}
+
+.ppm_closeBtn_linear {
+  top: calc(((var(--vid-height)/2) - 5px) * -1);
+  width: 25px;
+}
+
+@media (min-width: 500px) {
+  .ppm_vid_div {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    width: 90dvh;
+    display: none;
+    opacity: 0;
+  }
+
+  .ppm_closeBtn_linear {
+    width: 30px;
+  }
+
+  .ppm_hand {
+    width: 50px;
+    height: auto;
+    bottom: 20dvh;
+  }
+}
