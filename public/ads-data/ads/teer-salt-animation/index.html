@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Created By Purple Patch</title>
+  <script>
+    var clickUrl = `https://www.othoba.com/teer-premium-iodized-salt-1kg-206113`;
+  </script>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    .ppm_container {
+      width: 300px;
+      height: 250px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .ppm_demo_gif,
+    .ppm_demo_gif_last {
+      width: 300px;
+      height: 250px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .ppm_demo_gif {
+      display: block;
+    }
+
+    .ppm_demo_gif_last {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ppm_container">
+    <img src="images/teerSalt1.gif" class="ppm_demo_gif" alt="">
+    <img src="images/teerSalt2.gif" class="ppm_demo_gif_last" alt="">
+  </div>
+  <script>
+    document.querySelector('.ppm_demo_gif').addEventListener('click', () => {
+      document.querySelector('.ppm_demo_gif_last').style.display = 'block';
+    });
+    document.querySelector('.ppm_demo_gif_last').addEventListener('click', () => window.open(clickUrl));
+  </script>
+
+
+</body></html>

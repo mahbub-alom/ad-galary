@@ -1,0 +1,101 @@
+:root {
+  --ad-container-width: 300px;
+  --ad-container-height: 250px;
+  --ad-background-color: #00011100;
+}
+
+
+.ppm_container {
+  background-color: var(--ad-background-color);
+  position: fixed;
+  /* overflow: hidden; */
+  top: calc((100dvh - 250px)/2);
+  transform: translateX(300px);
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+  right: 0;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+}
+.ppm_closeBtn {
+  bottom: 219px;
+  z-index: 99;
+  right: 3px;
+}
+
+/* ppm_slide_1 */
+.ppm_mainBg {
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+}
+.bg_blur{
+  filter: blur(3px);
+}
+.ppm_text {
+  top: 28px;
+  right: 103px;
+}
+.ppm_callBtn {
+  width: 92px;
+  bottom: 5px;
+  right: 107px;
+}
+.ppm_text1 {
+  top: 14px;
+  right: 70px;
+}
+.ppm_sorry {
+  display: none;
+  top: -43px;
+  right: 63px;
+  width: 178px;
+}
+.ppm_tap_bottle {
+  top: 48px;
+  right: 30px;
+}
+.ppm_mic {
+  top: 118px;
+  right: 120px;
+  border-radius: 50%;
+}
+.ppm_mic_wrong {
+  top: 118px;
+  right: 120px;
+}
+
+.bg_red{
+  outline: 2px solid red;
+}
+.bg_green{
+  outline: 2px solid green;
+}
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}

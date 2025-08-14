@@ -1702,108 +1702,163 @@
       "shortDescription": "Countdown creative ad for SMC",
       "previewImage": "https://iili.io/FD9UBGn.png"
     }, 
-
- 
-
-
     {
-      "name": "Ramadan Campaign",
-      "slug": "sundora-ramadan",
-      "brand": "Sundora",
-      "category": "Ramadan",
-      "dimensions": "728x90",
-      "shortDescription": "Ramadan creative ad for Sundora",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Rotation Campaign",
-      "slug": "sunquick-rotation",
+      "name": "Letterbox",
+      "slug": "sunquick-letterbox",
       "brand": "Sunquick",
-      "category": "Rotation",
-      "dimensions": "728x90",
-      "shortDescription": "Rotation creative ad for Sunquick",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Floating",
+      "dimensions": "300x250",
+      "shortDescription": "Letterbox creative ad for Sunquick",
+      "previewImage": "https://iili.io/FDHoFNs.png"
     },
     {
-      "name": "Scratch Campaign",
-      "slug": "sunshine-scratch",
-      "brand": "Sunshine",
-      "category": "Scratch",
-      "dimensions": "336x280",
-      "shortDescription": "Scratch creative ad for Sunshine",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Selection Campaign",
-      "slug": "supercrete-selection",
-      "brand": "SuperCrete",
-      "category": "Selection",
-      "dimensions": "970x90",
-      "shortDescription": "Selection creative ad for SuperCrete",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Shake Campaign",
-      "slug": "surf-excel-shake",
-      "brand": "Surf-Excel",
-      "category": "Shake",
-      "dimensions": "728x90",
-      "shortDescription": "Shake creative ad for Surf-Excel",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "3D Campaign",
-      "slug": "systema-3d",
-      "brand": "Systema",
+      "name": "Interactive 3D Animation",
+      "slug": "sunquick-interactive-3D-animation",
+      "brand": "Sunquick",
       "category": "3D",
-      "dimensions": "300x600",
-      "shortDescription": "3D creative ad for Systema",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "300x250",
+      "shortDescription": "Interactive 3D Animation creative ad for Sunquick",
+      "previewImage": "https://iili.io/FDHRXYQ.png"
     },
     {
-      "name": "Animation Campaign",
-      "slug": "taaza-animation",
-      "brand": "Taaza",
+      "name": "Floating",
+      "slug": "sunquick-floating",
+      "brand": "Sunquick",
+      "category": "Floating",
+      "dimensions": "full takeover",
+      "shortDescription": "Floating creative ad for Sunquick",
+      "previewImage": "https://iili.io/FDHaps9.png"
+    },
+    {
+      "name": "Animation Banner",
+      "slug": "sunquick-animation-banner",
+      "brand": "Sunquick",
       "category": "Animation",
-      "dimensions": "728x90",
-      "shortDescription": "Animation creative ad for Taaza",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "300x250",
+      "shortDescription": "Animation Banner creative ad for Sunquick",
+      "previewImage": "https://iili.io/FDHGXiN.png"
+    },
+
+
+    {
+      "name": "Animation Banner",
+      "slug": "sunshine-animation-banner",
+      "brand": "Sunshine",
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation Banner creative ad for Sunshine",
+      "previewImage": "https://iili.io/FDHZuaI.png"
+    },
+
+    {
+      "name": "Floating Speech Recognition",
+      "slug": "surf-floating-speech-recognition",
+      "brand": "Surf-Excel",
+      "category": "Voice Speech",
+      "dimensions": "300x250",
+      "shortDescription": "Floating Speech Recognition creative ad for Surf-Excel",
+      "previewImage": "https://iili.io/FDJBPGp.png"
+    },
+
+    {
+      "name": "Toothbrush",
+      "slug": "systema-toothbrush",
+      "brand": "Systema",
+      "category": "Tap",
+      "dimensions": "300x250",
+      "shortDescription": "Toothbrush creative ad for Systema",
+      "previewImage": "https://iili.io/FDJl9x2.png"
+    },
+
+    {
+      "name": "Weather With Location",
+      "slug": "taaza-weather-with-location",
+      "brand": "Taaza",
+      "category": "weather",
+      "dimensions": "300x250",
+      "shortDescription": "Weather With Location creative ad for Taaza",
+      "previewImage": "https://iili.io/FDJwfte.png"
     },
     {
-      "name": "Audio Campaign",
-      "slug": "teer-audio",
+      "name": "Parallax 3d Rotation",
+      "slug": "teer-parallax-3d-rotation",
       "brand": "Teer",
-      "category": "Audio",
-      "dimensions": "336x280",
-      "shortDescription": "Audio creative ad for Teer",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Rotation",
+      "dimensions": "300x250",
+      "shortDescription": "Parallax 3d Rotation creative ad for Teer",
+      "previewImage": "https://iili.io/FDd2ysS.png"
     },
     {
-      "name": "Carousel Campaign",
-      "slug": "timezone-carousel",
-      "brand": "Timezone",
-      "category": "Carousel",
-      "dimensions": "728x300",
-      "shortDescription": "Carousel creative ad for Timezone",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "name": "Parallax Tilt Animation",
+      "slug": "teer-parallax-tilt-animation",
+      "brand": "Teer",
+      "category": "tilt",
+      "dimensions": "300x250",
+      "shortDescription": "Parallax Tilt Animation creative ad for Teer",
+      "previewImage": "https://iili.io/FDd2ysS.png"
     },
     {
-      "name": "ClickToCall Campaign",
-      "slug": "toffee-clicktocall",
+      "name": "Salt Animation",
+      "slug": "teer-salt-animation",
+      "brand": "Teer",
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Salt Animation creative ad for Teer",
+      "previewImage": "https://iili.io/FDdoc0l.png"
+    },
+    {
+      "name": "Teer Animation Banner",
+      "slug": "teer-animation-banner",
+      "brand": "Teer",
+      "category": "animation",
+      "dimensions": "300x250",
+      "shortDescription": "Animation Banner creative ad for Teer",
+      "previewImage": "https://iili.io/FDdITOP.png"
+    },
+    {
+      "name": "Takeover 840",
+      "slug": "toffee-takeover-840",
       "brand": "Toffee",
-      "category": "ClickToCall",
-      "dimensions": "970x250",
-      "shortDescription": "ClickToCall creative ad for Toffee",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover 840 creative ad for Toffee",
+      "previewImage": "https://iili.io/FDdMumg.png"
     },
     {
-      "name": "Contest Campaign",
-      "slug": "tvs-contest",
+      "name": "Antarjal Floating",
+      "slug": "toffee-antarjal-floating",
+      "brand": "Toffee",
+      "category": "Floating",
+      "dimensions": "336x280",
+      "shortDescription": "Antarjal Floating creative ad for Toffee",
+      "previewImage": "https://iili.io/FDdM8v9.png"
+    },
+    {
+      "name": "Football Mini Game Shoot",
+      "slug": "tvs-football-mini-game-shoot",
       "brand": "TVS",
-      "category": "Contest",
-      "dimensions": "970x90",
-      "shortDescription": "Contest creative ad for TVS",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Gamification",
+      "dimensions": "300x250",
+      "shortDescription": "Football Mini Game Shoot creative ad for TVS",
+      "previewImage": "https://iili.io/FDdUyE7.jpg"
+    },
+    {
+      "name": "Cricket Prediction",
+      "slug": "tvs-cricket-prediction",
+      "brand": "TVS",
+      "category": "Prediction",
+      "dimensions": "300x250",
+      "shortDescription": "Cricket Prediction creative ad for TVS",
+      "previewImage": "https://iili.io/FDdgO67.png"
+    },
+    {
+      "name": "Bike Lead Gen",
+      "slug": "tvs-bike-lead-gen",
+      "brand": "TVS",
+      "category": "Scratch",
+      "dimensions": "300x250",
+      "shortDescription": "Bike Lead Gen creative ad for TVS",
+      "previewImage": "https://iili.io/FDdrxol.png"
     },
     {
       "name": "Countdown Campaign",
@@ -1824,13 +1879,22 @@
       "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      "name": "Draggable Campaign",
-      "slug": "x-ceramics-draggable",
+      "name": "Carousel",
+      "slug": "x-ceramics-carousel",
       "brand": "X-Ceramics",
-      "category": "Draggable",
-      "dimensions": "728x90",
-      "shortDescription": "Draggable creative ad for X-Ceramics",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Carousel",
+      "dimensions": "300x250",
+      "shortDescription": "Carousel creative ad for X-Ceramics",
+      "previewImage": "https://iili.io/FD2dcb4.png"
+    },
+    {
+      "name": "Slider Accordian",
+      "slug": "x-ceramics-slider-accordian",
+      "brand": "X-Ceramics",
+      "category": "accordian",
+      "dimensions": "300x250",
+      "shortDescription": "Carousel creative ad for X-Ceramics",
+      "previewImage": "https://iili.io/FD231K7.png"
     }
   ],
   "brands": [
@@ -1921,7 +1985,9 @@
   ],
   "categories": [
     "3D",
+
     "Animation",
+    "accordian",
     "Audio",
     "Broken",
     "Carousel",

@@ -1,0 +1,178 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Teer3D</title>
+    <meta name="Author" content="Joy Adhikary Contact: 01707288408">
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link type="text/css" rel="stylesheet" href="css/teer.css">
+    <script src="js/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style type="text/css">
+        .App__app-infinity-root_oWTYjHpu[data-v-30750c37] {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            z-index: 9999999999;
+            background: rgba(0, 0, 0, 0.151);
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .App__app-infinity-root_oWTYjHpu *[data-v-30750c37] {
+            all: initial;
+            line-height: normal;
+            font-family: 'Didact Gothic'
+        }
+
+        .App__app-infinity-root_oWTYjHpu .App__modal_2AmObnlq[data-v-30750c37] {
+            width: 580px;
+            height: 380px;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            background-size: cover;
+            padding-top: 60px;
+            padding-left: 40px;
+            transition: 0.2s ease;
+            transform: scale(0.8);
+            opacity: 0;
+            box-sizing: border-box;
+            overflow: hidden
+        }
+
+        .App__app-infinity-root_oWTYjHpu .App__modal_2AmObnlq .App__bg_26IhAl-s[data-v-30750c37] {
+            position: absolute;
+            top: -178px;
+            right: -229px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 680px;
+            height: 680px;
+            z-index: -1
+        }
+
+        .App__app-infinity-root_oWTYjHpu .App__modal_2AmObnlq .App__title_3PUPKFHQ[data-v-30750c37] {
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 600;
+            color: white
+        }
+
+        .App__app-infinity-root_oWTYjHpu .App__modal_2AmObnlq .App__subtitle_CrJbwup5[data-v-30750c37] {
+            margin-top: 10px;
+            font-size: 22px;
+            color: white
+        }
+
+        .App__app-infinity-root_oWTYjHpu .App__modal_2AmObnlq .App__list_2EZssklE[data-v-30750c37] {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 4px
+        }
+
+        .App__app-infinity-root_oWTYjHpu .App__modal_2AmObnlq .App__list_2EZssklE .App__item_3p4UGIAt[data-v-30750c37] {
+            display: flex;
+            align-items: center;
+            margin: 6px 0;
+            font-size: 18px;
+            color: white
+        }
+
+        .App__app-infinity-root_oWTYjHpu .App__modal_2AmObnlq .App__list_2EZssklE .App__item_3p4UGIAt img[data-v-30750c37] {
+            margin-right: 10px;
+            margin-bottom: -3px;
+            width: 14px;
+            height: auto
+        }
+
+        .App__app-infinity-root_oWTYjHpu .App__modal_2AmObnlq .App__rate-btn_1bvgWF3U[data-v-30750c37] {
+            all: initial;
+            margin-top: 25px;
+            font-size: 14px;
+            color: white;
+            width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ff9f4a;
+            border-radius: 70px;
+            padding: 12px 20px;
+            margin-left: 15px;
+            box-sizing: border-box;
+            font-family: 'Didact Gothic';
+            cursor: pointer
+        }
+    </style>
+</head>
+
+<body>
+    <div id="adRect">
+        <div class="demo" id="demo" onclick="ctafunction();">
+            <div class="demo__content" id="demo__content">
+                <div class="demo__img frame1" id="demo__img"></div>
+                <!-- <div class="demo__img frame2" id="demo__img"></div>
+                <div class="demo__img frame3" id="demo__img"></div>
+                <div class="demo__img frame4" id="demo__img"></div>
+                <div class="demo__img frame5" id="demo__img"></div> -->
+            </div>
+
+        </div>
+        <!-- 
+        <div class="element_holder">
+          
+            <img src="img/text.png" alt="" class="logo noevent abs opacity0" style="opacity: 1; top: 4px; transform: translate(-25px, 0px);">
+          
+        </div> -->
+     
+    </div>
+
+    <script>
+        var ctaURL = "";
+        var imgHolder = document.getElementById("demo__img");
+
+        function ctafunction() {
+            window.open(ctaURL);
+        }
+
+        window.addEventListener("load", () => {
+            let tl = gsap.timeline({
+                // paused: true,
+                // repeat: -1,
+                // yoyo: true,
+                onComplete: function () {
+
+                }
+            });
+            tl.to('.logo', 0.7, {
+                delay: 0.2,
+                scale: 1,
+                x: -25,
+                top: 4,
+                opacity: 1,
+                ease: 'power2.out'
+            })
+            tl.to('.txt1, .web', 1, {
+                x: -60,
+                opacity: 1,
+                ease: 'power2.out'
+            }, '-=0.2')
+            tl.to('.bina', 1, {
+                opacity: 1,
+                x: 60,
+                ease: 'power2.out'
+            }, '-=0.8')
+        });
+    </script>
+
+
+
+
+
+
+</body></html>

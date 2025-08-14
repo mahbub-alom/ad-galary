@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SunQuick Floating V6</title>
+  <style>
+    :root {
+      --background-bg: url('images/mobile.png');
+    }
+
+    @media (min-width: 601px) {
+      :root {
+        --background-bg: url('images/desktop.png');
+      }
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background-bg);
+      width: 100dvw;
+      height: 100dvh;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Floating Code -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+  <div class="ppm_centerTap">
+    <img src="images/uncap.png" class="ppm_uncapText" alt="" draggable="false">
+    <img src="images/tap.png" class="ppm_tap_hand" alt="" srcset="">
+  </div>
+  <div class="ppm_box_splash">
+    <img src="images/splash.gif" class="ppm_splash_gif" alt="" draggable="false">
+    <img src="images/orange.png" class="ppm_bottle ppm_orange" alt="" draggable="false">
+    <img src="images/mango.png" class="ppm_bottle ppm_mango" alt="" draggable="false">
+    <img src="images/berry.png" class="ppm_bottle ppm_berry" alt="" draggable="false">
+  </div>
+
+  <div id="ppm_video-player" class="video-wrapper">
+    <video id="ppm_video" src="media/vid.mp4" loop=""></video>
+    <div class="ppm_video-controls">
+      <button id="ppm_toggle" class="ppm_toggle">
+        <i class="material-icons">play_arrow</i>
+      </button>
+      <button id="ppm_sound" class="ppm_sound">
+        <i class="material-icons">volume_up</i>
+      </button>
+    </div>
+  </div>
+  <img src="images/closebtn.png" class="ppm_closeBtn_takeover" alt="" srcset="">
+  <script src="js/script.js"></script>
+  <!-- End of Floating code -->
+
+
+</body></html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flick football</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="pp_container">
+    <img src="images/bgv2.jpg" alt="" class="pp_bg pp_absolute" draggable="false">
+    <div class="pp_startBtn pp_absolute">
+      PLAY</div>
+    <div class="pp_slide_2">
+      <img src="images/keeper.png" alt="" class="pp_keeper pp_absolute" draggable="false">
+      <img src="images/hand.png" alt="" class="pp_hand pp_absolute pp_hidden pp_zeroOpacity" draggable="false">
+      <img src="images/shadow.png" alt="" class="pp_shadow pp_absolute pp_hidden" draggable="false">
+      <img src="images/ball.png" alt="" class="pp_ball pp_absolute pp_hidden" draggable="false">
+      <img src="#" alt="" class="pp_topFlag pp_absolute pp_hidden" draggable="false">
+      <div class="flag_select pp_hidden pp_zeroOpacity">
+        <img src="images/Select%20Your%20Team.png" class="pp_absolute pp_selectTeam" alt="" srcset="">
+        <img src="images/a.png" alt="" class="pp_2nd_flag_a pp_absolute" draggable="false" onclick="topFlagOperation('atop')">
+        <img src="images/b.png" alt="" class="pp_2nd_flag_b pp_absolute" draggable="false" onclick="topFlagOperation('btop')">
+        <img src="images/c.png" alt="" class="pp_2nd_flag_c pp_absolute" draggable="false" onclick="topFlagOperation('ctop')">
+        <img src="images/d.png" alt="" class="pp_2nd_flag_d pp_absolute" draggable="false" onclick="topFlagOperation('dtop')">
+        <img src="images/e.png" alt="" class="pp_2nd_flag_e pp_absolute" draggable="false" onclick="topFlagOperation('etop')">
+        <img src="images/f.png" alt="" class="pp_2nd_flag_f pp_absolute" draggable="false" onclick="topFlagOperation('ftop')">
+        <img src="images/g.png" alt="" class="pp_2nd_flag_g pp_absolute" draggable="false" onclick="topFlagOperation('gtop')">
+      </div>
+
+      <div class="pp_ball_replica pp_absolute"></div>
+      <div class="pp_goal_state pp_absolute pp_hidden">
+        <div class="pp_goal_text  pp_hidden pp_zeroOpacity">
+          GOAL
+        </div>
+      </div>
+      <div class="pp_chance pp_absolute">
+        <img src="images/ball.png" alt="" class="pp_ball_ch" id="ball_1" draggable="false">
+        <img src="images/ball.png" alt="" class="pp_ball_ch" id="ball_2" draggable="false">
+        <img src="images/ball.png" alt="" class="pp_ball_ch" id="ball_3" draggable="false">
+      </div>
+      <div class="pp_score_div pp_absolute" draggable="false">
+        <span id="pp_score">0</span>
+      </div>
+      <img src="images/leadbefore.png" alt="" class="pp_lead_before pp_absolute pp_hidden pp_zeroOpacity" draggable="false">
+
+      <div class="pp_finalScore pp_hidden pp_zeroOpacity">
+        <span>Your Score</span>
+        <span id="finalScore">26</span>
+        <div class="pp_againBtn">Again <i class="material-icons">refresh</i></div>
+        <div class="pp_getOffer">Contest Entry</div>
+
+      </div>
+    </div>
+    <div class="pp_slide_3 pp_hidden">
+      <!-- <div class="pp_slide_3 pp_hidden pp_zeroOpacity"> -->
+      <img src="images/leadbg.jpg" alt="" class="pp_submit_bg pp_absolute " draggable="false">
+      <img src="images/btn.png" alt="" class="pp_submit_btn pp_absolute" draggable="false">
+      <img src="images/uporerlekha.png" alt="" class="pp_uporer_lekha pp_absolute" draggable="false">
+
+
+      <form action="#">
+        <input type="text" id="name" name="name" placeholder="Name" onkeyup="checkName()"><br>
+        <input type="number" id="mobile_no" name="mobile_no" placeholder="Mobile number" onkeyup="checkMobileNumber()"><br>
+        <input type="number" id="age" name="age" placeholder="Age" min="2" max="100" onkeyup="checkAge()"><br>
+        <select id="district" name="district" placeholder="District" class="js-searchBox" onchange="checkDistrict()">
+        </select>
+
+      </form>
+    </div>
+
+    <div class="pp_slide_4 pp_hidden">
+      <img src="images/leaderboardbg.png" alt="" srcset="" class="pp_leader_bg pp_absolute">
+      <img src="images/today1.png" alt="" srcset="" class="pp_today1 pp_absolute pp_hidden">
+      <img src="images/today2.png" alt="" srcset="" class="pp_today2 pp_absolute">
+      <img src="images/tournament1.png" alt="" srcset="" class="pp_tournament1 pp_absolute pp_hidden">
+      <img src="images/tournament2.png" alt="" srcset="" class="pp_tournament2 pp_absolute">
+
+
+
+      <div style="height: 110px;" class="pp_absolute tableDiv">
+
+        <table class="dataTable">
+          <colgroup>
+            <col span="1" style="width: 12px;">
+            <col span="1" style="width: 35px;">
+            <col span="1" style="width: 10px;">
+            <col span="1" style="width: 24px;">
+            <col span="1" style="width: 18px;">
+          </colgroup>
+          <tbody id="tbodyAdd">
+            <tr>
+              <td>1</td>
+              <td>Mozibur Rahman</td>
+              <td>27</td>
+              <td>*-616791</td>
+              <td>27</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- <div class="pp_finalPage pp_absolute  pp_hidden pp_zeroOpacity ">Thanks for <br> Playing</div> -->
+    <!-- <img src="./slide5/2ndslide.jpg" alt="" class="check pp_absolute"> -->
+
+    <audio src="media/goal2.mp3" id="goal"></audio>
+    <audio src="media/noGoal.mp3" id="noGoal"></audio>
+  </div>
+  
+  <script src="js/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-searchbox.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/Draggable.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body></html>

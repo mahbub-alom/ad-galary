@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100dvh;
+  user-select: none;
+/*  background-color: #fff;*/
+}
+
+.ppm_container {
+  width: 300px;
+  height: 250px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.ppm_closeBtn {
+  bottom: 225px;
+  right: 19px;
+  z-index: 1;
+}
+
+/* ppm_slide_1 */
+.ppm_bg {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+}
+
+.centerPart {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.container p {
+  margin-bottom: 15px;
+  color: #e7e8ea;
+  text-align: justify;
+}
+
+.highlight {
+  background-color: #e7e8ea;
+  background-image: linear-gradient(to right, #e7e8ea 0%, #e7e8ea 100%);
+  line-height: 1.5em;
+}
+
+.sideImageList {
+  position: fixed;
+  bottom: 0;
+  right: 2vw;
+  width: 300px;
+  min-width: 300px;
+  height: 250px;
+}
+.secondaryDiv{
+
+}
+
+.ppm_text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.ppm_gif {
+  width: 66%;
+  position: absolute;
+  bottom: 0;
+  left: 19%;
+}
+
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}
+
+.facebookDiv {
+  position: relative;
+  /* top: 0; */
+  right: 0;
+  width: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  margin: 0 0;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.parentDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* gap: 5px; */
+  top: 39px;
+}
+
+.helloText {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1877f2;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 25px;
+}
+
+.fb-login-button{
+  position: absolute !important;
+  left: -109px;
+  top: -2px;
+}

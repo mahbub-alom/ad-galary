@@ -1,0 +1,72 @@
+:root {
+  --ad-container-width: 300px;
+  --ad-container-height: 250px;
+  --ad-background-color: #fff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+  user-select: none;
+}
+
+.ppm_container {
+  background-color: var(--ad-background-color);
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+  position: relative;
+  overflow: hidden;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+}
+
+
+/* ppm_slide_1 */
+.ppm_bg {
+  top: 0px;
+  left: 0px;
+}
+.ppm_tapHand {
+  top: 94px;
+  left: 104px;
+}
+.ppm_video {
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+}
+
+
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}

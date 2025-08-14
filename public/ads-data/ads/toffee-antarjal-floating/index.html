@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toffee Day Two Three</title>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="sideImageList">
+    <img alt="" class="ppm_absolute ppm_closeBtn" draggable="false" src="images/closebtn.png">
+
+    <div class="parentDiv">
+      <div class="helloText">Hello</div>
+      <div class="facebookDiv">
+        <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
+      </div>
+    </div>
+    <div class="secondaryDiv">
+      <img src="images/bg.png" class="ppm_bg">
+      <img src="images/day2_3.png" class="ppm_text">
+      <img src="images/Picture2.gif" class="ppm_gif">
+    </div>
+  </div>
+
+
+  <!-- js -->
+  <script async="" defer="" crossorigin="anonymous" src="js/sdk.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/script.js"></script>
+      <script>
+        let cm_id = 123;
+      document.querySelector('.ppm_closeBtn').addEventListener('click', function(e) {
+        fetch(`https://rh.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=close_btn`)
+      e.stopPropagation()
+      gsap.to('.sideImageList', {
+        y: '70px',
+        x: '70px',
+        scale: .1,
+        opacity: 0,
+        display: 'none',
+        duration: 1
+      });
+    })
+    document.querySelector('.sideImageList').addEventListener('click',()=>{
+      window.open(`{CLICK_MACRO}`);
+    })
+  </script>
+  <script type="text/javascript">
+    var data = document.querySelector("._8kto");
+
+    console.log(data);
+
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: "160185875960118",
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: "v12.0",
+      });
+      //
+
+      FB.getLoginStatus(function (res) {
+        console.log(res);
+        if (res.status == "connected") {
+          FB.api("/me", function (fbUser) {
+            console.log(fbUser.name);
+            $(".hi").html("Hi " + fbUser.name);
+            // document.querySelector('.fb-login-button').style.display = 'block'
+          });
+        } else {
+          console.log("not connected");
+          // document.querySelector('.fb-login-button').style.display = 'none'
+        }
+      });
+    };
+  </script>
+
+
+</body></html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>840: Takeover</title>
+  <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+
+  <style>
+    :root {
+      --background-bg: url('images/mobile.png');
+    }
+
+    @media (min-width: 601px) {
+      :root {
+        --background-bg: url('images/desktop.jpeg');
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff00;
+      width: 100dvw;
+      height: 100dvh;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Takeover Code: Start From Here -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+  <div class="ppm_container">
+    <div class="ppm_curtainContainer">
+      <img src="images/1.png" class="ppm_curtainImg1" alt="">
+      <img src="images/2.png" class="ppm_curtainImg2" alt="">
+    </div>
+    <div class="ppm_toffeeContainer">
+      <img src="images/copy1.png" class="ppm_upperText" alt="">
+
+    </div>
+    <div class="spinnerContainer">
+      <div class="spinnerSlot">
+        <div class="spinnerTrack">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+        </div>
+      </div>
+      <div class="spinnerSlot">
+        <div class="spinnerTrack">
+          <img src="images/0.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/2_1.png" alt="">
+        </div>
+      </div>
+      <div class="spinnerSlot">
+        <div class="spinnerTrack">
+          <img src="images/0.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/2_1.png" alt="">
+          <img src="images/0.png" alt="">
+          <img src="images/4.png" alt="">
+          <img src="images/8.png" alt="">
+          <img src="images/0.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="ppm_vid_div">
+    <video id="ppm_video_takeover" class="ppm_video_takeover" src="media/vid1.mp4" muted="true" playsinline=""></video>
+    <div class="ppm_video-controls">
+      <button id="ppm_toggle" class="ppm_toggle">
+        <i class="material-icons">play_arrow</i>
+      </button>
+      <button id="ppm_sound" class="ppm_sound">
+        <i class="material-icons">volume_off</i>
+      </button>
+    </div>
+    <img src="images/closebtn.png" class="ppm_closeBtn_linear" alt="" srcset="" style="display: none;">
+  </div>
+  <div class="ppm_footerContainer">
+    <img src="images/image.png" class="ppm_footerModel" alt="">
+    <img src="images/copy2.png" class="ppm_footerLogo" alt="">
+    <img src="images/price.png" class="ppm_footerPrice" alt="">
+    <img src="images/logo_blue_small.png" class="ppm_logo_linear" alt="" srcset="" draggable="false">
+  </div>
+
+  <script>
+    var cm_id = 1999;
+    function getExtraData() { var t; let e = function t() { var e = document.cookie.split(";"); if (window.location !== window.parent.location ? 0 : 1) e = document.cookie.split(";"); else try { e = window.parent.document.cookie.split(";") } catch (i) { e = document.cookie.split(";") } for (var o = {}, n = 0; n < e.length; n++) { var r = e[n].split("="); o[(r[0] + "").trim()] = unescape(r.slice(1).join("=")) } return o }(), i = ((t = new XMLHttpRequest).open("GET", "https://www.cloudflare.com/cdn-cgi/trace", !1), t.send(null), newData = t.responseText.trim().split("\n").reduce(function (t, e) { return t[(e = e.split("="))[0]] = e[1], t }, {})); return { user_agent: i.uag, browser_cookies: e._ga, client_ip: i.ip } } let extraData = (console.log(!0), getExtraData()); function submitInteraction(t, e = e) { fetch(`https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${t}&user_agent=${e?.user_agent}&browser_cookies=${e?.browser_cookies}&client_ip=${e?.client_ip}`) }
+
+    let takeoverLandingUrl = `https://toffeelive.com/en/watch/4K2IQZUBrjBfS2_RdJf3`;
+    function openLandingUrl() {
+      submitInteraction('clicked',extraData);
+      window.open(`${takeoverLandingUrl}`)
+    }
+    document.querySelector('.ppm_vid_div').addEventListener('click', () => { openLandingUrl() });
+    document.querySelector('.ppm_container').addEventListener('click', () => { openLandingUrl() });
+    document.querySelector('.ppm_footerContainer').addEventListener('click', () => { openLandingUrl() });
+  </script>
+  <script src="js/script.js"></script>
+
+  <!-- End Takeover Code-->
+
+
+</body></html>

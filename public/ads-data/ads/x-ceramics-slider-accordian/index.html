@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Slider</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="options">
+
+          <div class="option active" style="--optionBackground:url('images/elegence.jpg');">
+            <div class="shadow"></div>
+          </div>
+          <div class="option" style="--optionBackground:url('images/MESMARING-NATURE.jpg');">
+            <div class="shadow"></div>
+          </div>
+          <div class="option" style="--optionBackground:url('images/NATURAL-STONE.jpg');">
+            <div class="shadow"></div>
+
+          </div>
+          <div class="option" style="--optionBackground:url('images/website-post.04.jpg');">
+            <div class="shadow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script> let cm_id = 165; </script>
+  <script src="js/extra-data-1.js"></script>
+  <script>
+    let extraData = function () {
+      console.log(typeof (getExtraData) === 'function')
+      if (typeof (getExtraData) === 'function') {
+        return getExtraData()
+      } else {
+        return {};
+      }
+    }();
+    function submitInteraction(type, extraData = extraData) {
+      fetch(`https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${type}&user_agent=${extraData?.user_agent}&browser_cookies=${extraData?.browser_cookies}&client_ip=${extraData?.client_ip}`);
+    }
+  </script>
+  <script id="rendered-js">
+    $(".option").click(function () {
+      if ($(this).hasClass("active")) {
+        window.open(`{CLICK_MACRO}`)
+      } else {
+        $(".option").removeClass("active");
+        $(this).addClass("active");
+        submitInteraction('tap',extraData)
+      }
+    });
+  </script>
+
+
+</body></html>

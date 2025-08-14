@@ -1,0 +1,203 @@
+.ppm_container {
+  /* background: #ff000066; */
+  bottom: 0;
+  position: fixed;
+  right: 0;
+  width: 100dvw;
+  aspect-ratio: 1/1.65;
+  overflow: hidden;
+}
+
+.ppm_closeBtn_takeover {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  bottom: 50%;
+  width: 24px;
+}
+
+.ppm_logo_linear {
+  z-index: 9999;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  width: 16px;
+}
+
+@media (min-width: 601px) {
+  .ppm_container {
+    aspect-ratio: 2.1/1;
+  }
+}
+
+
+.ppm_lowerBackground_content {
+  position: absolute;
+  bottom: 0%;
+  width: 40%;
+  right: 30%;
+  aspect-ratio: 345/345;
+  /* background: #AF142B; */
+}
+
+
+
+@media (min-width: 601px) {
+  .ppm_lowerBackground_content {
+    width: 16%;
+    right: 42%;
+  }
+}
+
+.ppm_tree {
+  position: absolute;
+  bottom: -2%;
+  width: 90%;
+}
+
+.ppm_postBoxContainer {
+  position: absolute;
+  bottom: -2%;
+  width: 38%;
+  /* background: #AF142B66; */
+  right: 5%;
+  aspect-ratio: 234/404;
+}
+
+.ppm_post1 {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+.ppm_post2 {
+  position: absolute;
+  bottom: 45%;
+  width: 71%;
+  right: 14%;
+}
+
+.ppm_envolope {
+  position: absolute;
+  bottom: 50%;
+  width: 50%;
+  right: 24%;
+}
+
+.ppm_cta {
+  position: absolute;
+  bottom: 2%;
+  width: 40%;
+  right: 22%;
+}
+
+.ppm_side_container {
+  position: absolute;
+  bottom: 20%;
+  width: 45%;
+  right: 0%;
+  aspect-ratio: 450/550;
+  /* background: #AF142B66; */
+}
+
+
+
+@media (min-width: 601px) {
+  .ppm_side_container {
+    bottom: 10%;
+    width: 20%;
+    right: 0%;
+  }
+}
+
+.ppm_bottle {
+  position: absolute;
+  bottom: 15%;
+  width: 30.5%;
+  right: 67%;
+  z-index: 4;
+  display: none;
+}
+
+
+.ppm_letter_container {
+  display: none;
+}
+
+.ppm_letter_back {
+  position: absolute;
+  bottom: 24%;
+  width: 63.5%;
+  right: 8%;
+  z-index: 5;
+}
+
+.ppm_letter_card {
+  position: absolute;
+  bottom: 26%;
+  width: 54.5%;
+  right: 13%;
+  z-index: 10;
+  aspect-ratio: 334/232;
+}
+
+.ppm_letter_card_back_card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ppm_letter_text {
+  position: absolute;
+  bottom: 10%;
+  width: 84%;
+  right: 8%;
+}
+
+.ppm_letter_top {
+  position: absolute;
+  bottom: 24%;
+  width: 63.5%;
+  right: 8%;
+  z-index: 15;
+}
+
+.ppm_letter_lid {
+  position: absolute;
+  bottom: 35%;
+  width: 65.5%;
+  right: 7%;
+  transform-origin: top center;
+  z-index: 20;
+}
+
+
+.ppm_flying_elms {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+}
+
+.singleElm {
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+  width: 15%;
+}
+
+@media (min-width: 601px) {
+  .singleElm {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 10%;
+  }
+}
+
+.ppm_flying_elms {
+  display: none;
+}
+
+.ppm_oil_elm {
+  width: 10%;
+}

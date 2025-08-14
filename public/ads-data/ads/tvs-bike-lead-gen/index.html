@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+	<script type="text/javascript" src="js/Tween.js"></script>
+</head>
+<body>
+
+	<div id="adArea" class="rct">
+        <div id="endAnimCont" class="rct">
+		  <div id="bg1" class="scalex05"></div>
+        </div>
+        <div id="over" class="rct"></div>
+	    <canvas id="ctx" width="600px" height="500px" class="scalex05"></canvas>
+        <div id="scratch" class="scalex06 pulse noEvents"></div>
+		<div class="lead_box">
+            <div class="headings">� ২১,২৭৩ পর্যন্ত ছাড়!</div>
+            <small>**শর্ত প্রযোজ্য</small>
+            <div>
+                <input type="tel" name="tel" class="input_box tel_box" placeholder="ফোন নাম্বার*">
+            </div>
+
+			<div>
+				<input type="text" name="name" class="input_box name_box" placeholder="নাম">
+                <input type="text" name="jela" class="input_box jela_box" placeholder="জেলা">
+			</div>
+            
+            <div>
+                <select name="choice" class="input_option choice_box" onfocus="this.size=3;" onblur="this.size=1;" onchange="this.size=1; this.blur();">
+                    <option value="#">পছন্দের মডেল</option>
+                    <option value="Apache RTR 2V">Apache RTR 2V</option>
+                    <option value="Apache RTR 2V RE">Apache RTR 2V RE</option>
+                    <option value="Apache RTR 4V">Apache RTR 4V</option>
+                    <option value="Stryker">Stryker</option>
+                    <option value="Metro">Metro</option>
+                    <option value="Metro Plus">Metro Plus</option>
+                    <option value="Radeon">Radeon</option>
+                    <option value="XL 100">XL 100</option>
+                </select>
+            </div>
+			<div>
+				<input type="button" name="btn" value="সাবমিট" class="input_btn">
+			</div>
+		</div>
+        <div class="lead_box2">
+            <div class="message">
+                <div style="margin-top: 180px;">
+                    <input type="button" name="btn" value="বিস্তারিত জানুন" class="input_btn landing">
+                </div>
+            </div>
+        </div>
+	</div>
+<script src="js/test.js"></script>
+<script>
+    var ctaUrl = "https://www.facebook.com/tvsmetrofamily/";
+    
+var rSrc;
+var revealImg = new Image();
+var assets = {
+    init: {
+        url: '//ms.purplepatch.online/tvs/scratch/images/',
+    }
+};
+
+    var curCount = 0;
+    var countNeed = 2;
+    function countLoad(){
+        curCount++;
+        if(curCount == countNeed){
+            init();
+        }
+    }
+    revealImg.onload = function() {
+    // console.log(revealImg);
+        countLoad();
+    };
+revealImg.src = assets.init.url + "bg2.jpg";
+rSrc = assets.init.url + "bg1.jpg";
+</script>
+
+</body></html>
