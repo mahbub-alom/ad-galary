@@ -1,0 +1,157 @@
+:root {
+  /* --background-bg-fridge: url('./assets/firstfridge.png'); */
+  /* --background-bg-logo: url('./assets/logo_full.png'); */
+  --background-bg: url('../images/BG.png');
+}
+
+
+.ppm_container {
+  position: fixed;
+  top: 0px;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 999999;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.ppm_bg_takeover {
+  width: 100%;
+  height: 100%;
+}
+
+.ppm_left {
+  position: absolute;
+  left: 0;
+  width: 50dvw;
+  height: 100dvh;
+  background-image: var(--background-bg);
+  background-position: left;
+  background-size: 200% 100%;
+  display: none;
+}
+
+.ppm_right {
+  position: absolute;
+  right: 0;
+  width: 50dvw;
+  height: 100dvh;
+  background-image: var(--background-bg);
+  background-position: right;
+  background-size: 200% 100%;
+  display: none;
+}
+
+
+
+.ppm_second_slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ppm_model_side {
+  width: 40dvw;
+  height: 100dvh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.ppm_product_side {
+  width: 40dvw;
+  text-align: center;
+  display: none;
+}
+
+.ppm_fridge {
+  width: 80%;
+  position: relative;
+  top: 5dvh;
+}
+
+.ppm_model {
+  height: 85dvh;
+  position: relative;
+  /* display: none; */
+}
+
+.ppm_mnemonic {
+  width: 60%;
+  position: relative;
+  transform: translate(0%, -20%);
+}
+.ppm_tagline{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  opacity: 0;
+  width: 50dvw;
+}
+.ppm_mini_container {
+  width: 100dvw;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  opacity: 0;
+}
+
+.ppm_linear_bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+/*  height: 250px;*/
+}
+
+.ppm_linear_copy {
+  position: absolute;
+  bottom: -5dvh;
+  width: 18%;
+  left: 6%;
+  display: none;
+}
+
+.ppm_linear_mnemonic {
+  position: absolute;
+  bottom: 4dvh;
+  width: 12%;
+  left: 29%;
+  display: none;
+}
+
+.ppm_linear_fridge {
+  position: absolute;
+  bottom: 4dvh;
+  width: 20%;
+  right: 30%;
+  display: none;
+  opacity: 0;
+}
+.ppm_linear_tag {
+  position: absolute;
+  bottom: 16dvh;
+  width: 22%;
+  left: 25%;
+  display: none;
+  /* opacity: 0; */
+  /* transform: translateX(-50%); */
+  opacity: 0;
+}
+.ppm_linear_title {
+  position: absolute;
+  bottom: 11dvh;
+  width: 22%;
+  right: 5%;
+  display: none;
+  opacity: 0;
+}
+
+.ppm_closeBtn_linear {
+  position: absolute;
+  right: 1%;
+  bottom: 15dvh;
+}

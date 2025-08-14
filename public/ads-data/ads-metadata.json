@@ -1586,73 +1586,126 @@
       "shortDescription": "Samsung Gol Draggable Animation creative ad for Samsung",
       "previewImage": "https://iili.io/FtpfF6u.jpg"
     },
-   
 
-    {
-      "name": "Image Overlay Campaign",
-      "slug": "smc-image-overlay",
-      "brand": "SMC",
-      "category": "Image Overlay",
-      "dimensions": "970x90",
-      "shortDescription": "Image Overlay creative ad for SMC",
-      "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-
-  
-    {
-      "name": "Lead Generation Campaign",
-      "slug": "sandalina-lead-generation",
+      {
+      "name": "Takeover",
+      "slug": "sandalina-takeover",
       "brand": "Sandalina",
-      "category": "Lead Generation",
-      "dimensions": "728x90",
-      "shortDescription": "Lead Generation creative ad for Sandalina",
-      "previewImage": "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "Full Screen",
+      "shortDescription": "Takeover creative ad for Sandalina",
+      "previewImage": "https://iili.io/FtpExNp.png"
     },
-    {
-      "name": "Location Campaign",
-      "slug": "savlon-location",
+
+       {
+      "name": "Twinkle Floating",
+      "slug": "savlon-twinkle-floating",
       "brand": "Savlon",
-      "category": "Location",
-      "dimensions": "728x300",
-      "shortDescription": "Location creative ad for Savlon",
-      "previewImage": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Floating",
+      "dimensions": "full takeover",
+      "shortDescription": "Twinkle: Floating creative ad for Savlon",
+      "previewImage": "https://iili.io/Ftp6qHx.png"
     },
-    {
-      "name": "Morph Campaign",
-      "slug": "shanta-morph",
+
+      {
+      "name": "Interactive Takeover",
+      "slug": "shanta-interactive-takeover",
       "brand": "Shanta",
-      "category": "Morph",
-      "dimensions": "970x250",
-      "shortDescription": "Morph creative ad for Shanta",
-      "previewImage": "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "Full Screen",
+      "shortDescription": "Interactive Takeover creative ad for Shanta",
+      "previewImage": "https://iili.io/Fty3grG.png"
     },
-    {
-      "name": "Motion Campaign",
-      "slug": "shohoz-motion",
+
+       {
+      "name": "Tickets Bus",
+      "slug": "shohoz-tickets-bus",
       "brand": "Shohoz",
-      "category": "Motion",
-      "dimensions": "728x90",
-      "shortDescription": "Motion creative ad for Shohoz",
-      "previewImage": "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Dyanmic URL",
+      "dimensions": "300x250",
+      "shortDescription": "Tickets Bus creative ad for Shohoz",
+      "previewImage": "https://iili.io/Fty0nFs.png"
     },
-    {
-      "name": "Parallax Campaign",
-      "slug": "shukhee-parallax",
+       {
+      "name": "Air",
+      "slug": "shohoz-air",
+      "brand": "Shohoz",
+      "category": "Animation",
+      "dimensions": "300x250",
+      "shortDescription": "Air creative ad for Shohoz",
+      "previewImage": "https://iili.io/Fty1nWP.png"
+    },
+
+        {
+      "name": "Parallax Tilt",
+      "slug": "shukhee-parallax-tilt",
       "brand": "Shukhee",
       "category": "Parallax",
-      "dimensions": "728x300",
-      "shortDescription": "Parallax creative ad for Shukhee",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "dimensions": "300x250",
+      "shortDescription": "Parallax tilt creative ad for Shukhee",
+      "previewImage": "https://iili.io/Ftykq3Q.png"
     },
-    {
-      "name": "Prediction Campaign",
-      "slug": "singer-prediction",
+
+        {
+      "name": "Floating Shop Now",
+      "slug": "singer-floating-shop-now",
       "brand": "Singer",
-      "category": "Prediction",
-      "dimensions": "728x300",
-      "shortDescription": "Prediction creative ad for Singer",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Floating",
+      "dimensions": "",
+      "shortDescription": "Floating  Shop Now creative ad for Singer",
+      "previewImage": "https://iili.io/Ftyrjcb.png"
     },
+   
+    {
+      "name": "Takeover Saline",
+      "slug": "smc-takeover-saline",
+      "brand": "SMC",
+      "category": "Takeover",
+      "dimensions": "screen takeover",
+      "shortDescription": "Takeover Saline creative ad for SMC",
+      "previewImage": "https://iili.io/FtybVF2.png"
+    }, 
+    {
+      "name": "Floating Footer",
+      "slug": "smc-floating-footer",
+      "brand": "SMC",
+      "category": "Floating",
+      "dimensions": "970x250",
+      "shortDescription": "Floating Footer creative ad for SMC",
+      "previewImage": "https://iili.io/FtymoH7.png"
+    }, 
+    {
+      "name": "Video Plus",
+      "slug": "smc-video-plus",
+      "brand": "SMC",
+      "category": "Video",
+      "dimensions": "300x250",
+      "shortDescription": "Video Plus creative ad for SMC",
+      "previewImage": "https://iili.io/FtypT7I.png"
+    }, 
+ 
+    {
+      "name": "Parallax Lexus",
+      "slug": "smc-parallax-lexus",
+      "brand": "SMC",
+      "category": "Parallax",
+      "dimensions": "300x250",
+      "shortDescription": "Parallax Lexus creative ad for SMC",
+      "previewImage": "https://iili.io/FD9vuTP.png"
+    }, 
+    {
+      "name": "Countdown",
+      "slug": "smc-Countdown",
+      "brand": "SMC",
+      "category": "Countdown",
+      "dimensions": "300x250",
+      "shortDescription": "Countdown creative ad for SMC",
+      "previewImage": "https://iili.io/FD9UBGn.png"
+    }, 
+
+ 
+
+
     {
       "name": "Ramadan Campaign",
       "slug": "sundora-ramadan",

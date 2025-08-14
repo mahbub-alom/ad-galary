@@ -1,0 +1,125 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>In-banner Video by Purplepatch</title>
+    <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      #ppm_container {
+        width: 300px;
+        height: 250px;
+        top: 0;
+        left: 0;
+        perspective: 1500px;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: #000000;
+      }
+
+      #ppm_video {
+        width: 300px;
+        height: 250px;
+        left: 0;
+        position: relative;
+      }
+
+      .ppm_video-controls {
+        top: -35px;
+        position: relative;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .ppm_sound {
+        float: right;
+        background: 0 0;
+        color: #fff;
+        border: none;
+        outline: 0;
+      }
+
+      .ppm_toggle {
+        background: 0 0;
+        color: #fff;
+        border: none;
+        outline: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+    <div id="ppm_container" onclick="ppm_click()">
+      <div id="ppm_video-player" class="video-wrapper">
+        <video id="ppm_video" src="media/smc_video.mp4" autoplay="" muted="true" loop="" playsinline=""></video>
+        <div class="ppm_video-controls">
+          <button id="ppm_toggle" class="ppm_toggle">
+            <i class="material-icons">play_arrow</i>
+          </button>
+          <button id="ppm_sound" class="ppm_sound">
+            <i class="material-icons">volume_off</i>
+          </button>
+        </div>
+      </div>
+    </div>
+      <script> let cm_id = 151; </script>
+      <script src="js/extra-data-1.js"></script>
+    <script>
+      function ppm_click() {
+        window.open("{CLICK_MACRO}", "_blank");
+      }
+      let extraData = getExtraData()
+      function submitInteraction(type,extraData) {
+        fetch(`https://advisorapi.purplepatch.online/ssp/richmedia_events?cm_id=${cm_id}&pub_id=${window.location.host}&type=${type}&user_agent=${extraData.user_agent}&browser_cookies=${extraData.browser_cookies}&client_ip=${extraData.client_ip}`);
+      }
+
+
+      var player = document.querySelector("#ppm_video-player");
+      var video = player.querySelector("#ppm_video");
+      var toggle = player.querySelector("#ppm_toggle");
+      var sound = player.querySelector("#ppm_sound");
+
+      var playIcon = `<i class="material-icons">play_arrow</i>`;
+      var pauseIcon = `<i class="material-icons">pause</i>`;
+      var volumeUp = `<i class="material-icons">volume_up</i>`;
+      var volumeOff = `<i class="material-icons">volume_off</i>`;
+
+      function togglePlay(e) {
+        e.stopPropagation();
+        submitInteraction('play_pause',extraData)
+        var playOrPause = video.paused ? "play" : "pause";
+        video[playOrPause]();
+      }
+
+      function updatePlayPause(e) {
+        e.stopPropagation();
+        var playPauseIcon = this.paused ? playIcon : pauseIcon;
+        toggle.innerHTML = playPauseIcon;
+      }
+
+      function toggleSound(e) {
+        e.stopPropagation();
+        submitInteraction('mute_unmute',extraData)
+        var soundIcon = video.muted ? volumeUp : volumeOff;
+        sound.innerHTML = soundIcon;
+
+        if (video.muted) video.muted = false;
+        else video.muted = true;
+      }
+
+      video.addEventListener("play", updatePlayPause);
+      video.addEventListener("pause", updatePlayPause);
+      toggle.addEventListener("click", togglePlay);
+      sound.addEventListener("click", toggleSound);
+    </script>
+  
+
+</body></html>
