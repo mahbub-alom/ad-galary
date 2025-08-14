@@ -1,0 +1,105 @@
+:root {
+  --ad-container-width: 300px;
+  --ad-container-height: 250px;
+  --ad-background-color: #fff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+  user-select: none;
+}
+
+.ppm_container {
+  background-color: var(--ad-background-color);
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  width: var(--ad-container-width);
+  height: var(--ad-container-height);
+}
+
+
+/* ppm_slide_1 */
+.ppm_slide_1 {
+width: 300px;
+height: 250px;
+padding: 5px;
+}
+.ppm_callBtn {
+  bottom: 18px;
+  right: 37px;
+}
+.card {
+  position: relative;
+  width: 290px;
+  height: 240px;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 1s ease;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 10px;
+}
+
+.card .front {
+  /* background-color: #3498db; */
+  background-image: url('../images/1.jpg');
+  background-size: cover;
+}
+
+.card .back {
+  /* background-color: #e74c3c; */
+  transform: rotateY(180deg);
+  background-image: url('https://ms.purplepatch.online/flip/realme/dec-24/v1/assets/2.jp1.jpg?v1.1');
+  background-size: cover;
+}
+
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel With Video</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .ppm_container {
+      position: relative;
+      width: 300px;
+      height: 250px;
+      background: url('images/bg.png');
+      background-size: 100% 100%;
+      background-position: center;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s;
+      width: 250px;
+    }
+
+    .swiper-slide-active {
+      transform: scale(1.2) !important;
+      z-index: 999999999 !important;
+    }
+
+    .ppm_video,
+    .ppm_image {
+      width: 200px;
+    }
+    .ppm_video{
+      border-radius: 10px;
+    }
+    .swiper-wrapper{
+      height: 90% !important;
+    }
+    .ppm_cta{
+      position: absolute;
+      bottom: 8%;
+      left: 30%;
+      width: 40%;
+      z-index: 99999999;
+      cursor: pointer;
+    }
+
+    #ppm_video {
+      width: 200px;
+      aspect-ratio: 1280/720;
+      position: relative;
+    }
+
+    .ppm_video-controls {
+      bottom: 0px;
+      position: absolute;
+      padding-left: 5px;
+      padding-right: 5px;
+      z-index: 1000;
+      width: 200px;
+    }
+
+    .ppm_sound {
+      float: right;
+      background: 0 0;
+      color: #FFF1CC;
+      border: none;
+      outline: 0;
+      font-size: 12px;
+    }
+
+    .ppm_toggle {
+      background: 0 0;
+      color: #FFF1CC;
+      border: none;
+      outline: 0;
+    }
+    #ppm_video-player{
+      width: 200px;
+      aspect-ratio: 1280/720;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      position: relative;
+    }
+    .material-icons{
+      font-size: 18px !important;
+    }
+    .ppm_swipe{
+      position: absolute;
+      bottom: 100px;
+      left: 130px;
+      width: 40px;
+      z-index: 999999999;
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <div class="ppm_container swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div id="ppm_video-player" class="video-wrapper">
+          <video id="ppm_video" src="media/vid.mp4" autoplay="" muted="true" loop="" playsinline=""></video>
+          <div class="ppm_video-controls">
+            <button id="ppm_toggle" class="ppm_toggle">
+              <i class="material-icons">play_arrow</i>
+            </button>
+            <button id="ppm_sound" class="ppm_sound">
+              <i class="material-icons">volume_off</i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/1.png" alt="" class="ppm_image ppm_image_1">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/5.png" alt="" class="ppm_image ppm_image_2">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/3.png" alt="" class="ppm_image ppm_image_3">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/4.png" alt="" class="ppm_image ppm_image_4">
+      </div>
+      <!-- <div class="swiper-slide">
+        <img src="./300_250_5.png" alt="" class="ppm_image ppm_image_5">
+      </div> -->
+    </div>
+    <img src="images/cta.png" alt="" class="ppm_cta">
+    <img src="images/swipe.png" alt="" class="ppm_swipe">
+  </div>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: -20,
+      grabCursor: true,
+      slideToClickedSlide: true,
+      on: {
+        slideChange: function () {
+          console.log('Slide changed');
+        },
+      },
+    });
+
+    // GSAP animation for carousel hint
+    const carouselContainer = document.querySelector('.swiper-wrapper');
+    const hintAnimation = gsap.timeline({repeat:-1})
+    .to(carouselContainer, { x: "+=50", duration: 1.5, ease: "none" })
+    .to(carouselContainer, { x: "-=100", duration: 3, ease: "none" })
+    .to(carouselContainer, { x: "+=50", duration: 1.5, ease: "none" })
+
+
+    const swipeAnimation = gsap.timeline({onComplete:()=>{
+gsap.to('.ppm_swipe',{display:'none',opacity:0,duration:0.1})
+   }})
+    .to('.ppm_swipe', {x:'+=120',duration:1.5,ease:'none',})
+    .to('.ppm_swipe', {x:'-=240',duration:3,ease:'none',})
+    .to('.ppm_swipe', {x:'+=120',duration:1.5,ease:'none',})
+    // Stop animation on interaction
+    carouselContainer.addEventListener('mousedown', () => {
+      hintAnimation.kill();
+      gsap.to('.ppm_swipe', {
+        duration: 0.1,
+        ease:'none',display:'none',opacity:0
+      });
+    });
+
+    carouselContainer.addEventListener('touchstart', () => {
+      hintAnimation.kill();
+      gsap.to('.ppm_swipe', {
+        duration: 0.1,
+        ease:'none',display:'none',opacity:0
+      });
+    });
+
+    document.querySelector('.ppm_cta').addEventListener('click', () => {
+      window.open('https://raywhiteltd.com/', '_blank');
+    });
+
+    gsap.to('.ppm_cta', {
+      duration: 0.5,
+      scale: 1.06,
+      ease:'none',
+      repeat:-1,
+      yoyo:true
+    });
+
+
+    var player = document.querySelector("#ppm_video-player");
+    var video = player.querySelector("#ppm_video");
+    var toggle = player.querySelector("#ppm_toggle");
+    var sound = player.querySelector("#ppm_sound");
+
+    var playIcon = `<i class="material-icons">play_arrow</i>`;
+    var pauseIcon = `<i class="material-icons">pause</i>`;
+    var volumeUp = `<i class="material-icons">volume_up</i>`;
+    var volumeOff = `<i class="material-icons">volume_off</i>`;
+
+    function togglePlay(e) {
+      e.stopPropagation();
+      var playOrPause = video.paused ? "play" : "pause";
+      video[playOrPause]();
+    }
+
+    function updatePlayPause(e) {
+      e.stopPropagation();
+      var playPauseIcon = this.paused ? playIcon : pauseIcon;
+      toggle.innerHTML = playPauseIcon;
+    }
+
+    function toggleSound(e) {
+      e.stopPropagation();
+      var soundIcon = video.muted ? volumeUp : volumeOff;
+      sound.innerHTML = soundIcon;
+
+      if (video.muted) video.muted = false;
+      else video.muted = true;
+    }
+
+    video.addEventListener("play", updatePlayPause);
+    video.addEventListener("pause", updatePlayPause);
+    toggle.addEventListener("click", togglePlay);
+    sound.addEventListener("click", toggleSound);
+  </script>
+
+
+</body></html>

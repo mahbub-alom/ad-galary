@@ -1,0 +1,11 @@
+.ppm_container{
+  height: 250px;
+    width: 300px;
+    margin: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+body{
+  margin: 0 auto;
+}

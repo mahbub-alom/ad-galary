@@ -1,0 +1,126 @@
+:root {
+  --container-width: 460px;
+  --container-height: calc(var(--container-width) / 2);
+}
+@media (max-width: 601px) {
+  :root {
+    --container-width: 90dvw;
+    --container-height: calc(var(--container-width) / 2);
+  }
+}
+.ppm_container {
+  position: fixed;
+  width: min(90dvw, calc(90dvh * 672/753));
+  aspect-ratio: 672/753;
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #FE02A722; */
+}
+
+
+.ppm_closeBtn_linear {
+  position: absolute;
+  right: 1%;
+}
+
+.ppm_closeBtn_linear {
+  top: 1px;
+  right: 3px;
+  width: 30px;
+}
+@media (max-width: 601px) {
+  .ppm_closeBtn_linear {
+    top: 1px;
+    right: 1px;
+    width: 24px;
+  }
+}
+
+.row {
+  display: flex;
+  gap: 0;
+}
+
+/* First row */
+.row-1 .box-1 {
+  width: 332px;
+  aspect-ratio: 332/232;
+}
+.row-1 .box-2 {
+  width: 340px;
+  aspect-ratio: 340/232;
+}
+
+/* Second row */
+.row-2 .box-3 {
+  width: 332px;
+  aspect-ratio: 332/215;
+}
+.row-2 .box-4 {
+  width: 340px;
+  aspect-ratio: 340/215;
+}
+
+/* Third row */
+.row-3 .box-5 {
+  width: 332px;
+  aspect-ratio: 332/216;
+}
+.row-3 .box-6 {
+  width: 340px;
+  aspect-ratio: 340/216;
+}
+
+/* Fourth row */
+.row-4 .box-7 {
+  width: 173px;
+  aspect-ratio: 173/90;
+}
+.row-4 .box-8 {
+  width: 163px;
+  aspect-ratio: 163/90;
+}
+.row-4 .box-9 {
+  width: 163px;
+  aspect-ratio: 163/90;
+}
+.row-4 .box-10 {
+  width: 173px;
+  aspect-ratio: 173/90;
+}
+
+
+
+/* Box Styles */
+.box {
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.box .front,
+.box .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.box .front {
+  transform: rotateY(0deg);
+}
+
+.box .back {
+  transform: rotateY(180deg);
+}
+
+.box img {
+  width: 100.4%;
+  height: 100.5%;
+  object-fit: cover;
+}
