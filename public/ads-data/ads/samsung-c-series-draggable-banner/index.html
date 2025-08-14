@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung C-Series Draggable Banner</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/ads.css">
+  </head>
+
+  <body style="display: none;">
+    <div class="mainHeader">
+      <button class="backBtn" onclick="javascript:document.location.href='../'">
+        <i class="material-icons backArrow">arrow_back</i>
+      </button>
+      <div class="viewChanger">
+        <div class="desktopIconDiv activeView" onclick="desktopIconClicked()">
+          <i class="material-icons desktopIcon">computer</i>
+        </div>
+        <div class="mobileIconDiv notActiveView" onclick="mobileIconClicked()">
+          <i class="material-icons mobileIcon">smartphone</i>
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer mainContainerMbl">
+      <div class="newsDiv" style="padding: 8px">
+        
+    </div>
+    
+
+    <script src="js/gsap.min.js"></script>
+    <script>
+      document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+      });
+      document.addEventListener('keydown', event => {
+        if ((event.ctrlKey || event.metaKey) && (event.shiftKey) && (event.key === 'I' || event.key === 'J') || event.keyCode === 123) {
+            event.preventDefault();
+        }
+    });
+    </script>
+    <script>
+          let vidUrl = "videos_uploaded/sam_XjDIdft.mkv";
+          let bannerName = "Samsung C-Series Draggable Banner";
+          let bannerDecription = `Revolutionize your digital exploration with our Draggable Innovative HTML Creative Banner! Dive into a dynamic and interactive journey, where every movement sparks innovation. Elevate your online presence with this draggable marvel – the future of engaging and customizable content!
+
+- Draggable
+- Animation
+- Interactive`;
+          let bannerDimension = `300x250`;
+          let hideUrl = (`True` == 'False')?0:1;
+          let showRedirectURL = (`False` == 'False')?0:1;
+          let mobileUrl = `None`;
+          let desktopUrl = `None`;
+          let iframeUrl = `#`;
+          //if that url is an link to video
+          iframeUrl = `#`;
+          
+          console.log(hideUrl)
+          bannerDecription = bannerDecription.replaceAll("\n", "<br />");
+
+
+          function mobileView() {
+              document.querySelector('.viewChanger').style.display = 'none'
+              document.querySelector('.mainContainer').innerHTML = `
+              <div class="newsDiv" style="padding:8px;">
+                <h1 style="color:#3f3030;">${bannerName}</h1>
+              <div class="videoContainer">
+                <video autoplay muted loop controls>
+                  <source src="/media/${vidUrl}">
+                </video>
+              </div>
+                <div class="midIframe">
+                <iframe src=${iframeUrl} frameborder="0" width="300" height="250" scrolling="no" style="overflow:hidden;border:1px solid #cccccc44;"></iframe>
+                </div>
+                <h4 style="color:#897b7b;margin-top: 5px;">Banner Dimension: <span style="color:#3f3030;"> ${bannerDimension}</span></h4>
+                <h4 style="color:#3f3030;margin-top: 5px;">${bannerDecription}</h4>
+
+                <p><span class="highlight">A major earthquake measuring 7.0 on the Richter scale has struck the city, causing widespread damage and panic among residents. The earthquake, which occurred at 3:00 PM local time, has resulted in numerous buildings collapsing and leaving many people injured or trapped.</span></p>
+                <p><span class="highlight">Rescue efforts are currently underway, with emergency services and local volunteers working to evacuate those who are trapped and provide medical aid to the injured. The city's hospitals have been overwhelmed with the number of casualties, and people are being urged to donate blood to help those in need.</span></p>
+                <div class="midIframe">
+                  <iframe src=${iframeUrl} frameborder="0" width="300" height="250" scrolling="no" style="overflow:hidden;"></iframe>
+                </div>
+                <p><span class="highlight">Rescue efforts are currently underway, with emergency services and local volunteers working to evacuate those who are trapped and provide medical aid to the injured. The city's hospitals have been overwhelmed with the number of casualties, and people are being urged to donate blood to help those in need.</span></p>
+        </div>`
+        hideVidUrl()
+          }
+
+
+          function mobileIconClicked() {
+              document.querySelector('.desktopIconDiv').classList.add('notActiveView')
+              document.querySelector('.desktopIconDiv').classList.remove('activeView')
+              document.querySelector('.mobileIconDiv').classList.remove('notActiveView')
+              document.querySelector('.mobileIconDiv').classList.add('activeView')
+              document.querySelector('.mainContainer').innerHTML = `
+        <div class="mobileMainContainer">
+        <div class="mobileContainer">
+          <img src="/static/img/mobileIcon/mobile.png""../assets/mobile.png" alt="" srcset="" style="width: 100%;">
+          <div class="mobileNewsContainer">
+            <div class="newsDiv">
+              <h1 style="color:#3f3030;">${bannerName}</h1>
+              <div class="videoContainer">
+                <video autoplay muted loop>
+                  <source src="/media/${vidUrl}">
+                </video>
+              </div>
+              <div class="midIframe">
+              <iframe src=${iframeUrl} frameborder="0" width="300" height="250" scrolling="no" style="overflow:hidden;border:1px solid #cccccc44;"></iframe>
+              </div>
+
+              <h4 style="color:#897b7b;margin-top: 5px;">Banner Dimension: <span style="color:#3f3030;"> ${bannerDimension}</span></h4>
+              <h4 style="color:#3f3030;margin-top: 5px;">${bannerDecription}</h4>
+
+              <p><span class="highlight">A major earthquake measuring 7.0 on the Richter scale has struck the city, causing widespread damage and panic among residents. The earthquake, which occurred at 3:00 PM local time, has resulted in numerous buildings collapsing and leaving many people injured or trapped.</span></p>
+              <p><span class="highlight">Rescue efforts are currently underway, with emergency services and local volunteers working to evacuate those who are trapped and provide medical aid to the injured. The city's hospitals have been overwhelmed with the number of casualties, and people are being urged to donate blood to help those in need.</span></p>
+              <div class="midIframe">
+                <iframe src=${iframeUrl} frameborder="0" width="300" height="250" scrolling="no" style="overflow:hidden;"></iframe>
+              </div>
+              <p><span class="highlight">Rescue efforts are currently underway, with emergency services and local volunteers working to evacuate those who are trapped and provide medical aid to the injured. The city's hospitals have been overwhelmed with the number of casualties, and people are being urged to donate blood to help those in need.</span></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        `
+        hideVidUrl()
+              // console.log(mobileContent)
+          }
+
+          function desktopIconClicked() {
+
+              document.querySelector('.desktopIconDiv').classList.remove('notActiveView')
+              document.querySelector('.desktopIconDiv').classList.add('activeView')
+              document.querySelector('.mobileIconDiv').classList.add('notActiveView')
+              document.querySelector('.mobileIconDiv').classList.remove('activeView')
+              document.querySelector('.mainContainer').innerHTML = `
+        <div class="newsContainer">
+          <div class="newsDiv">
+            <h1 style="color:#3f3030;">${bannerName}</h1>
+      <div class="videoContainer">
+        <video autoplay muted loop controls>
+          <source src="/media/${vidUrl}">
+        </video>
+      </div>
+            <div class="midIframe">
+            <iframe src=${iframeUrl} frameborder="0" width="300" height="250" scrolling="no" style="overflow:hidden;border:1px solid #cccccc44;"></iframe>
+            </div>
+
+            <h4 style="color:#897b7b;">Banner Dimension: <span style="color:#3f3030;"> ${bannerDimension}</span></h4>
+            <h3 style="color:#3f3030;">${bannerDecription}</h3>
+
+            <p><span class="highlight">A major earthquake measuring 7.0 on the Richter scale has struck the city, causing widespread damage and panic among residents. The earthquake, which occurred at 3:00 PM local time, has resulted in numerous buildings collapsing and leaving many people injured or trapped.</span></p>
+            <p><span class="highlight">Rescue efforts are currently underway, with emergency services and local volunteers working to evacuate those who are trapped and provide medical aid to the injured. The city's hospitals have been overwhelmed with the number of casualties, and people are being urged to donate blood to help those in need.</span></p>
+            <p><span class="highlight">The cause of the earthquake is still unknown, but experts are investigating and will provide more information as soon as it becomes available. The city has declared a state of emergency and is asking for help from neighboring cities and the government to deal with the aftermath of the disaster.</span></p>
+            <p><span class="highlight">A major earthquake measuring 7.0 on the Richter scale has struck the city, causing widespread damage and panic among residents. The earthquake, which occurred at 3:00 PM local time, has resulted in numerous buildings collapsing and leaving many people injured or trapped.</span></p>
+            <p><span class="highlight">Rescue efforts are currently underway, with emergency services and local volunteers working to evacuate those who are trapped and provide medical aid to the injured. The city's hospitals have been overwhelmed with the number of casualties, and people are being urged to donate blood to help those in need.</span></p>
+
+          </div>
+        </div>
+        `
+        hideVidUrl()
+      }
+    </script>
+    <script src="js/ads.js"></script>
+  
+
+</div></body></html>

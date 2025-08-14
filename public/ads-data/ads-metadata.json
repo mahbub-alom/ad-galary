@@ -1513,23 +1513,81 @@
     },
 
     {
-      "name": "Gamification Campaign",
-      "slug": "robi-gamification",
+      "name": "Floating",
+      "slug": "robi-floating",
       "brand": "Robi",
-      "category": "Gamification",
-      "dimensions": "728x300",
-      "shortDescription": "Gamification creative ad for Robi",
-      "previewImage": "https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "category": "Takeover",
+      "dimensions": "side screen",
+      "shortDescription": "Floating creative ad for Robi",
+      "previewImage": "https://iili.io/FteoXff.png"
     },
     {
-      "name": "Hover Campaign",
-      "slug": "rosa-hover",
+      "name": "Takeover Tiles",
+      "slug": "rosa-takeover-tiles",
       "brand": "Rosa",
+      "category": "Takeover",
+      "dimensions": "full takeover",
+      "shortDescription": "Takeover Tiles creative ad for Rosa",
+      "previewImage": "https://iili.io/FteI7lj.png"
+    },
+    {
+      "name": "Carousel",
+      "slug": "sailor-carousel",
+      "brand": "Sailor",
+      "category": "Video",
+      "dimensions": "300x250",
+      "shortDescription": "Carousel creative ad for Sailor",
+      "previewImage": "https://iili.io/Fteud4s.png"
+    },
+
+      {
+      "name": " Tv Unfold Flip Animation",
+      "slug": "samsung-tv-unfold-flip-animation",
+      "brand": "Samsung",
+      "category": "Flip",
+      "dimensions": "takeover",
+      "shortDescription": "Tv Unfold Flip Animation creative ad for Samsung",
+      "previewImage": "https://iili.io/FtbZX0F.png"
+    },
+      {
+      "name": "Watch: Hover",
+      "slug": "samsung-watch-hover",
+      "brand": "Samsung",
       "category": "Hover",
       "dimensions": "300x600",
-      "shortDescription": "Hover creative ad for Rosa",
-      "previewImage": "https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "shortDescription": "TV Interactive creative ad for Samsung",
+      "previewImage": "https://iili.io/FtbtN49.png"
     },
+      {
+      "name": "C-Series Draggable Banner",
+      "slug": "samsung-c-series-draggable-banner",
+      "brand": "Samsung",
+      "category": "Draggable",
+      "dimensions": "300x250",
+      "shortDescription": "C-Series Draggable Banner creative ad for Samsung",
+      "previewImage": "https://iili.io/FtmaBna.png"
+    },
+
+      {
+      "name": "Swipe and Fireworks Animation",
+      "slug": "samsung-swipe-and-fireworks-animation",
+      "brand": "Samsung",
+      "category": "swipe",
+      "dimensions": "300x250",
+      "shortDescription": "Swipe and Fireworks Animation creative ad for Samsung",
+      "previewImage": "https://iili.io/FtmcLXe.jpg"
+    },
+      {
+      "name": "Gol Draggable Animation",
+      "slug": "samsung-gol-draggable-animation",
+      "brand": "Samsung",
+      "category": "Draggable",
+      "dimensions": "300x250",
+      "shortDescription": "Samsung Gol Draggable Animation creative ad for Samsung",
+      "previewImage": "https://iili.io/FtpfF6u.jpg"
+    },
+   
+
     {
       "name": "Image Overlay Campaign",
       "slug": "smc-image-overlay",
@@ -1539,24 +1597,8 @@
       "shortDescription": "Image Overlay creative ad for SMC",
       "previewImage": "https://images.pexels.com/photos/3008355/pexels-photo-3008355.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
-    {
-      "name": "Interactive Campaign",
-      "slug": "sailor-interactive",
-      "brand": "Sailor",
-      "category": "Interactive",
-      "dimensions": "728x90",
-      "shortDescription": "Interactive creative ad for Sailor",
-      "previewImage": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "name": "Interscroller Campaign",
-      "slug": "samsung-interscroller",
-      "brand": "Samsung",
-      "category": "Interscroller",
-      "dimensions": "728x90",
-      "shortDescription": "Interscroller creative ad for Samsung",
-      "previewImage": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
+
+  
     {
       "name": "Lead Generation Campaign",
       "slug": "sandalina-lead-generation",

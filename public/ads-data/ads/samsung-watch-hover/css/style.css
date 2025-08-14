@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+margin: 0 auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+.ppm_container {
+  margin: 0 auto;
+  width: 300px;
+  height: 600px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.ppm_check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  height: 600px;
+  width: 300px;
+}
+
+
+/* ppm_slide_1 */
+.ppm_bg {
+  top: 0px;
+  left: 0px;
+}
+.ppm_hoverText {
+  top: 93px;
+  left: 90px;
+}
+.ppm_button {
+  bottom: 38px;
+  left: 90px;
+  cursor: pointer;
+}
+.ppm_brand {
+  bottom: 98px;
+  left: 88px;
+}
+
+.ppm_dot1 {
+  bottom: 203px;
+  left: 66px;
+  /* background: red; */
+}
+
+
+.ppm_dot2 {
+  bottom: 293px;
+  left: 98px;
+  /* background: red; */
+}
+.ppm_dot3 {
+  bottom: 308px;
+  left: 149px;
+  /* background: red; */
+}
+
+
+.ppm_line1 {
+  bottom: 212px;
+  left: 23px;
+  /* background: red; */
+}
+.ppm_line2 {
+  bottom: 302px;
+  left: 77px;
+  /* background: red; */
+}
+.ppm_line3 {
+  bottom: 318px;
+  left: 107px;
+  /* background: red; */
+}
+
+
+
+/* Utility class */
+.ppm_absolute {
+  position: absolute;
+}
+
+.ppm_hidden {
+  display: none;
+}
+
+.ppm_zeroOpacity {
+  opacity: 0;
+}
+
+.error {
+  outline: 2px solid red !important;
+}
+
+.success {
+  outline: 2px solid rgb(9, 148, 39) !important;
+}
