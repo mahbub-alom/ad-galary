@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useRouter } from "next/navigation";
 
 // Define validation schema with Zod
 const formSchema = z.object({
@@ -19,7 +20,9 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 export default function UniqueLoginPage() {
+  const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("");
 
   const {
     register,
@@ -33,9 +36,28 @@ export default function UniqueLoginPage() {
     },
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log(data);
-    // Authentication logic here
+  const onSubmit = async (data: FormValues) => {
+    try {
+      const response = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // Just store username in localStorage (not secure!)
+        localStorage.setItem("username", data.username);
+        router.push("/");
+      } else {
+        setError(result.message || "Login failed");
+      }
+    } catch (err) {
+      setError("Failed to connect to server");
+    }
   };
 
   return (
