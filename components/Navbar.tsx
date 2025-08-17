@@ -26,13 +26,13 @@ export default function Navbar() {
             >
               Gallery
             </Link>
-            {/* <Link
-              href="/about"
+            <Link
+              href="/login"
               className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
             >
-              About
+              Login
             </Link>
-            <Link
+            {/* <Link
               href="/contact"
               className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
             >
