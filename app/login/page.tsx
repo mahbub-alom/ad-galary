@@ -23,6 +23,7 @@ export default function UniqueLoginPage() {
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const {
     register,
@@ -37,26 +38,29 @@ export default function UniqueLoginPage() {
   });
 
   const onSubmit = async (data: FormValues) => {
+    setLoading(true);
+    setError("");
+
     try {
-      const response = await fetch("/api/login", {
+      const res = await fetch("/api/login", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
+      const result = await res.json();
 
-      if (result.success) {
-        // Just store username in localStorage (not secure!)
-        localStorage.setItem("username", data.username);
-        router.push("/");
-      } else {
+      if (!res.ok) {
         setError(result.message || "Login failed");
+      } else {
+        // ✅ Login success
+        router.push("/");
       }
     } catch (err) {
-      setError("Failed to connect to server");
+      console.error(err);
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -175,11 +179,26 @@ export default function UniqueLoginPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="flex justify-center items-center bg-gradient-to-r from-fuchsia-600 hover:from-fuchsia-700 to-violet-700 hover:to-violet-800 shadow-lg px-4 py-3 border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-300 focus:ring-offset-2 w-full font-medium text-white text-sm transition-all"
+                disabled={loading}
+                className={`flex justify-center items-center bg-gradient-to-r from-fuchsia-600 to-violet-700 shadow-lg px-4 py-3 border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-300 focus:ring-offset-2 w-full font-medium text-white text-sm transition-all ${
+                  loading
+                    ? "opacity-70"
+                    : "hover:from-fuchsia-700 hover:to-violet-800"
+                }`}
               >
-                Sign In <FiArrowRight className="ml-2" />
+                {loading ? "Signing in..." : "Sign In"}{" "}
+                <FiArrowRight className="ml-2" />
               </motion.button>
             </form>
+            {error && (
+              <motion.p
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mt-2 text-rose-600 text-sm text-center"
+              >
+                {error}
+              </motion.p>
+            )}
           </div>
         </div>
       </motion.div>
