@@ -3,22 +3,12 @@ import { getAdBySlug, getAdsMetadata } from "@/lib/ads";
 import type { Metadata } from "next";
 
 interface AdPageProps {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>; // <- params is now a Promise
 }
 
-export async function generateStaticParams() {
-  const metadata = await getAdsMetadata();
-  return metadata.ads.map((ad) => ({
-    slug: ad.slug,
-  }));
-}
-
-export async function generateMetadata({
-  params,
-}: AdPageProps): Promise<Metadata> {
-  const ad = await getAdBySlug(params?.slug);
+export async function generateMetadata({ params }: AdPageProps): Promise<Metadata> {
+  const { slug } = await params; // <- await params
+  const ad = await getAdBySlug(slug);
 
   if (!ad) {
     return {
@@ -42,7 +32,8 @@ export async function generateMetadata({
 }
 
 export default async function AdPage({ params }: AdPageProps) {
-  const ad = await getAdBySlug(params.slug);
+  const { slug } = await params; // <- await params
+  const ad = await getAdBySlug(slug);
 
   if (!ad) {
     notFound();
