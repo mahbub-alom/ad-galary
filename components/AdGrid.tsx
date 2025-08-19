@@ -74,7 +74,7 @@ export default function AdGrid({ ads, loading, error }: AdGridProps) {
           ? Array.from({ length: ITEMS_PER_PAGE }).map((_, index) => (
               <SkeletonCard key={index} />
             ))
-          : currentAds.map((ad) => <AdCard key={ad.id} ad={ad} />)}
+          : currentAds.map((ad) => <AdCard key={ad.slug} ad={ad} />)}
       </div>
 
       {/* Pagination Controls */}
