@@ -15,16 +15,15 @@ export default function AdCard({ ad }: AdCardProps) {
       {/* Ad Preview */}
       <div className="relative bg-gray-100 aspect-video overflow-hidden">
         <Link href={`/ads/${ad.slug}`} target="_blank">
-       <Image
-  src={ad.previewImage}
-  alt={ad.name}
-  fill
-  priority
-  placeholder="blur"
-  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABC..." 
-  className="object-cover group-hover:scale-105 transition-transform duration-300"
-/>
-
+          <Image
+            src={ad.previewImage}
+            alt={ad.name}
+            fill
+            priority
+            placeholder="blur"
+            blurDataURL="/placeholder/placeholder.png"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+          />
         </Link>
 
         {/* Hover Overlay */}
