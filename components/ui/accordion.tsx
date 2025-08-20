@@ -32,10 +32,10 @@ const AccordionTrigger = React.forwardRef<
         "flex flex-1 justify-between items-center px-2 py-2 transition-all",
 
         // when open
-        "data-[state=open]:bg-[#2596be] data-[state=open]:text-white data-[state=open]:rounded-md",
+        "data-[state=open]:bg-[#0B1D51] data-[state=open]:text-white data-[state=open]:rounded-md",
 
         // on hover (but not sticky unless open)
-        "hover:bg-[#2596be] hover:text-white hover:rounded-md",
+        "hover:bg-[#0B1D51] hover:text-white hover:rounded-md",
 
         // icon rotation when open
         "[&[data-state=open]>svg]:rotate-180",

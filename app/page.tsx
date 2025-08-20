@@ -12,7 +12,7 @@ export default function Home() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-7xl">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="mb-2 font-bold text-[#0F828C] text-3xl">Creative Ad Gallery</h1>
+          <h1 className="mb-2 font-bold text-[#0B1D51] text-3xl">Creative Ad Gallery</h1>
           <p className="text-gray-600">
             Discover our collection of innovative advertisements across multiple brands and categories.
           </p>

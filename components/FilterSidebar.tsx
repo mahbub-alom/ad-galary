@@ -50,7 +50,7 @@ export default function FilterSidebar({
           {hasActiveFilters && (
             <button
               onClick={onClearFilters}
-              className="flex items-center space-x-1 text-[#0F828C] hover:text-[#06eaff] text-sm transition-colors"
+              className="flex items-center space-x-1 text-[#0B1D51] hover:text-[#521cd1] text-sm transition-colors"
             >
               <X className="w-4 h-4" />
               <span>Clear</span>
@@ -84,7 +84,7 @@ export default function FilterSidebar({
                         onChange={(e) =>
                           handleBrandChange(brand, e.target.checked)
                         }
-                        className="border-gray-300 rounded focus:ring-[#0F828C] focus:ring-2 text-[#0F828C]"
+                        className="border-gray-300 rounded focus:ring-[#0B1D51] focus:ring-2 text-[#0B1D51]"
                       />
                       <span className="text-gray-700 group-hover:text-gray-900 text-sm transition-colors">
                         {brand}
@@ -115,7 +115,7 @@ export default function FilterSidebar({
                         onChange={(e) =>
                           handleCategoryChange(category, e.target.checked)
                         }
-                        className="border-gray-300 rounded focus:ring-[#0F828C] focus:ring-2 text-[#0F828C]"
+                        className="border-gray-300 rounded focus:ring-[#0B1D51] focus:ring-2 text-[#0B1D51]"
                       />
                       <span className="text-gray-700 group-hover:text-gray-900 text-sm transition-colors">
                         {category}

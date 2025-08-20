@@ -41,7 +41,7 @@ export default function AdCard({ ad }: AdCardProps) {
 
       {/* Card Content */}
       <div className="p-4">
-        <h3 className="mb-2 font-semibold text-gray-900 group-hover:text-[#0F828C] text-lg line-clamp-2 transition-colors">
+        <h3 className="mb-2 font-semibold text-gray-900 group-hover:text-[#0B1D51] text-lg line-clamp-2 transition-colors">
           <Link href={`/ads/${ad.slug}`} target="_blank">
             {ad?.brand}: {ad?.name}
           </Link>
