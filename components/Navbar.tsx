@@ -10,25 +10,26 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="top-0 z-50 sticky bg-white shadow-sm border-b">
+    <nav className="top-0 z-50 sticky bg-[#0a0a3c] shadow-sm border-b">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image src={logo} alt="Logo" width={100} height={100} />
           </Link>
+             {/* <img src="/logo/logo.png" class="ppm_logo_linear" alt="" draggable="false" style="width: 40px;height: auto;background:#0a0a3c; border-radius: 10px;"></img> */}
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
+              className="font-medium text-white hover:text-[#0F828C] transition-colors"
             >
               Gallery
             </Link>
             <Link
               href="/login"
-              className="font-medium text-gray-700 hover:text-[#0F828C] transition-colors"
+              className="font-medium text-white hover:text-[#0F828C] transition-colors"
             >
               Login
             </Link>

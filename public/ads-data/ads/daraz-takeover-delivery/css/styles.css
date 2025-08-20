@@ -1,0 +1,71 @@
+/* Default styles for all devices */
+body {
+    background: url('../images/bg_new.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hidden{
+    display: none;
+}
+.abs{
+    position: absolute;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.daraz6{
+    width: 100vw;
+    height: auto;
+    left: 353px;
+    top: 172px;
+}
+
+
+
+.fadeOut {
+    animation: fadeOut 1s ease-in;
+}
+
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+}
+
+/* Media query for desktop and laptop */
+@media only screen and (min-width: 768px) {
+    .daraz6 {
+        width: 100vw;
+        height: auto;
+        left: 353px;
+        top: 172px;
+    }
+
+    .cross {
+        width: 1vw;
+        height: 3vh;
+        left: 90vw;
+        top: 5px;
+    }
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 767px) {
+    .daraz6 {
+        width: 500px;
+        height: auto;
+        left: -39px;
+        top: 21vh;
+        position: fixed;
+    }
+
+    .cross {
+        width: 4vw;
+        height: 4vw;
+        left: 90vw;
+        top: 5px;
+    }
+}
