@@ -4,13 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, Zap } from "lucide-react";
 import Image from "next/image"; 
-import logo from "@/public/logo/logo.png"; 
+import logo from "@/public/logo/logoss.png"; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="top-0 z-50 sticky bg-[#0B1D51] shadow-sm border-b">
+    <nav className="top-0 z-50 sticky bg-[#0B1D51] shadow-sm py-2 border-b">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
